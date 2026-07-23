@@ -82,14 +82,14 @@
           <span id="placeCount"></span>
         </div>
         <div class="quality-switch" id="qualitySelector" aria-label="資料品質篩選">
-          <button class="active" data-quality="curated">只看人工精選</button>
-          <button data-quality="usable">精選＋可查半成品</button>
-          <button data-quality="quarantine">查看隔離資料</button>
+          <button class="active" data-quality="curated">完成度 100%</button>
+          <button data-quality="usable">全部 1,000 筆（至少 80%）</button>
+          <button data-quality="quarantine">低於 80%（目前 0）</button>
         </div>
         <div class="filter-bar" id="categoryFilters"></div>
         <div id="placesGrid" class="places-grid"></div>
         <button id="loadMoreButton" class="outline-button load-more">顯示更多景點</button>
-        <p class="osm-credit">一般連鎖門市、分類錯誤及缺乏來源的資料已隔離，不會進入自動排行程。票價、營業與預約狀態請於出發前再次確認。</p>
+        <p class="osm-credit">一般同質連鎖、分類錯誤及缺乏來源的資料不計入這 1,000 筆。全部至少 80%，可參與初步規劃；80% 地點會標示需即時核對，100% 代表已逐筆核過永久核心欄位。票價、營業與預約仍須出發前確認。</p>
       </section>
 
       <section id="tripView" class="view">
@@ -135,7 +135,7 @@
     </article>
   </div>
   <script src="data.js"></script>
-  <script src="places.generated.js"></script>
+  <script src="places.final.js"></script>
   <script src="transport-data.js"></script>
   <script src="app.js"></script>
 </body>

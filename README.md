@@ -15,9 +15,10 @@ python3 -m http.server 4173
 ## 已有功能
 
 - 繁體中文桌面與手機版面
-- 110 筆人工精選核心地點（含 30 筆具官方來源與價位分類的特色餐廳），加上 1,000 筆 OpenStreetMap／Wikidata 永久候選資料
+- 最終廣義東京資料固定 1,000 筆：959 筆完成度 80%、41 筆完成度 100%；全部可追溯且低於 80% 不輸出
+- 分布包含特色餐廳 355、購物 209、寺社 183、美景／城市名勝 101、玩樂 62、藝文 74，另有市場、動漫與歷史類
 - 1,089 筆 Google Place ID 供日後即時詳情比對；不永久保存受限制的 Google 內容
-- 468 筆具可追溯中文名稱；其餘以日文原名顯示並標記待中文覆核
+- 110 筆人工精選與 442 筆 Wikimedia 實體使用繁中主名；OSM 店家若無來源繁中名，顯示羅馬字＋繁中類型暫名並保留日文原名，明確標記待校名
 - 精選資料顯示人氣；資料庫候選顯示資料品質，避免把資料完整度冒充人氣
 - 依美食、購物、神社寺廟、動漫、自然、夜景與親子偏好改變推薦
 - 東京近郊包含鎌倉／江之島、橫濱、箱根、富士河口湖、日光、川越、輕井澤、千葉迪士尼
@@ -34,16 +35,19 @@ python3 -m http.server 4173
 - 這是前端雛形，已載入靜態資料匯出，但尚未連接真正的 AI、即時路線、登入及付款。
 - 交通時間與費用是展示用估算，不能用於真實旅程。
 - 景點營業時間、票價與無障礙狀況仍須接入官方或授權資料來源。
-- 目前永久候選層嚴格稽核為半成品 267、無行程參考性 733；另有 110 筆人工精選推薦。隔離列不會被宣稱為景點或進入排行程。
-- 一般連鎖門市與錯誤分類資料已隔離，只能在稽核模式查看，不會進入自動行程。
+- 舊版 1,000 筆仍保留作錯誤案例與稽核基準，但 APP 已改讀 `places.final.js`，不再載入舊垃圾候選。80% 地點可參與初步規劃並強制標示即時核對；100% 表示已逐筆核對永久核心欄位。
+- 一般同質連鎖與錯誤分類資料不再載入 APP；特色連鎖需逐筆說明分店差異才可保留。
 - 每個地點現在可以點開查看資料狀態、中文／日文／英文名稱、簡介或誠實的缺資料說明、費用、營業資訊與來源。
 - Google Place ID 索引不是完整景點內容；Google 名稱、評分、評論、地址與照片須依條款即時取得。
 - 「儲存行程」與「查看地圖」目前是介面示意。
 
 ## 資料檔案
 
+重建資料前先執行 `python3 -m pip install -r prototype/requirements-data.txt`。
+
 - `database/places.sqlite`：本機建置成果，不提交 Git；可由腳本重建。
-- `places.generated.js`：提供 APP 的 1,000 筆合法永久資料匯出。
+- `places.final.js`：APP 實際載入的最終 1,000 筆；由人工精選、Wikimedia 與 OSM 旅客價值候選去重組成。
+- `places.generated.js`：舊版 OSM 候選匯出，只保留作回歸稽核，不再由 APP 載入。
 - `transport-data.js`：東京 Metro、都營地下鐵與 Skyliner 官方票價基準及來源。
 - `database/google-place-ids.json`：1,089 筆可永久保存的 Google Place ID 索引。
 - `database/*-report.json`：資料筆數、覆蓋、失敗查詢與品質報告。
@@ -55,6 +59,9 @@ python3 -m http.server 4173
 - `scripts/export_places_for_app.py`：SQLite 到前端資料的可重現匯出。
 - `scripts/build_google_place_ids.py`：固定 100 次、IDs Only、無重試的成本安全索引程式。
 - `scripts/probe_google_routes.py`：有請求上限、無重試且不保存回應的 Routes API 交通驗證工具。
+- `scripts/build_traveler_value_catalog.py`：從 Wikimedia 建立廣義東京跨語言旅客實體，低於 80% 不輸出。
+- `scripts/build_osm_food_shopping_catalog.py`：從 OSM 快取重選 300 筆多料理美食與 150 筆高價值購物候選。
+- `scripts/build_final_catalog.mjs`：合併三層資料、去重並固定輸出最終 1,000 筆。
 
 ## 景點研究來源
 
