@@ -15,7 +15,7 @@ python3 -m http.server 4173
 ## 已有功能
 
 - 繁體中文桌面與手機版面
-- 61 筆人工精選核心地點，加上 1,000 筆 OpenStreetMap／Wikidata 永久候選資料
+- 69 筆人工精選核心地點（含第一批 8 筆具官方來源的特色餐廳），加上 1,000 筆 OpenStreetMap／Wikidata 永久候選資料
 - 1,089 筆 Google Place ID 供日後即時詳情比對；不永久保存受限制的 Google 內容
 - 468 筆具可追溯中文名稱；其餘以日文原名顯示並標記待中文覆核
 - 精選資料顯示人氣；資料庫候選顯示資料品質，避免把資料完整度冒充人氣
@@ -26,7 +26,7 @@ python3 -m http.server 4173
 - 收藏必去景點
 - 選擇 3–7 天、每日預算與旅行步調
 - 長者、兒童與嬰兒車同行設定
-- 依東京區域模板與 266 筆目前可推薦地點（61 精選＋205 資料完整候選）產生每日行程
+- 依東京區域模板與 69 筆人工精選產生每日行程；未完成候選一律不得自動推薦
 - 顯示時間軸、停留時間、交通時間、步行量與預估費用
 
 ## 目前限制
@@ -34,7 +34,9 @@ python3 -m http.server 4173
 - 這是前端雛形，已載入靜態資料匯出，但尚未連接真正的 AI、即時路線、登入及付款。
 - 交通時間與費用是展示用估算，不能用於真實旅程。
 - 景點營業時間、票價與無障礙狀況仍須接入官方或授權資料來源。
-- 只有 61 筆人工精選資料具有人氣、票價與描述；其餘候選不會宣稱已人工驗證。
+- 目前嚴格稽核為完整 0、半成品 644（含 69 筆人工精選）、無行程參考性 425；其餘候選不會宣稱已人工驗證。
+- 一般連鎖門市與錯誤分類資料已隔離，只能在稽核模式查看，不會進入自動行程。
+- 每個地點現在可以點開查看資料狀態、中文／日文／英文名稱、簡介或誠實的缺資料說明、費用、營業資訊與來源。
 - Google Place ID 索引不是完整景點內容；Google 名稱、評分、評論、地址與照片須依條款即時取得。
 - 「儲存行程」與「查看地圖」目前是介面示意。
 
@@ -44,6 +46,9 @@ python3 -m http.server 4173
 - `places.generated.js`：提供 APP 的 1,000 筆合法永久資料匯出。
 - `database/google-place-ids.json`：1,089 筆可永久保存的 Google Place ID 索引。
 - `database/*-report.json`：資料筆數、覆蓋、失敗查詢與品質報告。
+- `database/quality-audit-report.json`：完整／半成品／無參考性與連鎖灌水稽核。
+- `research/v4-quality-and-product-benchmark.md`：旅行社、近郊、美食分類、旅遊工具與使用者評論研究。
+- `scripts/audit_place_quality.py`：可重跑的產品級資料品質門檻。
 - `scripts/build_places_database.py`：OSM 分區、分類、快取與配額選取。
 - `scripts/enrich_wikidata_labels.py`：Wikidata 中文／英文名稱補充。
 - `scripts/export_places_for_app.py`：SQLite 到前端資料的可重現匯出。

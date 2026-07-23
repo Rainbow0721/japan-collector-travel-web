@@ -1,6 +1,6 @@
 // V2 精選資料：只讓人工整理、具華語旅客價值的地點進入推薦池。
 // admission 為成人參考門票（日圓）；實際票價、營業日與預約狀態仍須出發前確認。
-const p=(id,name,nameJa,nameEn,area,zone,category,emoji,duration,admission,popularity,tags,desc,lat,lng,transit=0)=>({id,name,nameJa,nameEn,area,zone,category,emoji,duration,admission,cost:admission,popularity,rating:(4+popularity/100).toFixed(1),tags,desc,lat,lng,transit});
+const p=(id,name,nameJa,nameEn,area,zone,category,emoji,duration,admission,popularity,tags,desc,lat,lng,transit=0,details={})=>({id,name,nameJa,nameEn,area,zone,category,emoji,duration,admission,cost:admission,popularity,rating:(4+popularity/100).toFixed(1),tags,desc,lat,lng,transit,...details});
 const TOKYO_PLACES=[
 // 台東・墨田・上野
 p('sensoji','淺草寺・雷門','浅草寺・雷門','Sensō-ji & Kaminarimon','淺草','asakusa','神社寺廟','⛩',100,0,96,['初訪必去','寺廟','御守'],'東京最具代表性的寺廟，與仲見世商店街一起安排。',35.7148,139.7967),
@@ -14,6 +14,15 @@ p('yanaka','谷中銀座商店街','谷中銀座商店街','Yanaka Ginza','谷�
 p('nezu','根津神社','根津神社','Nezu Shrine','根津','ueno','神社寺廟','⛩',70,0,69,['千本鳥居','杜鵑花','安靜'],'以鳥居與杜鵑花聞名，能和谷中、上野組成慢遊路線。',35.7202,139.7609),
 p('akihabara','秋葉原電器街','秋葉原電気街','Akihabara Electric Town','秋葉原','ueno','動漫娛樂','🎮',150,0,90,['動漫','電器','扭蛋'],'動漫、模型、遊戲、扭蛋與電器採買核心區。',35.6984,139.7731),
 p('kanda','神田明神','神田神社','Kanda Myojin Shrine','御茶之水','ueno','神社寺廟','⛩',60,0,69,['動漫聖地','御守','商業祈願'],'鄰近秋葉原，結合傳統信仰與動漫文化。',35.7019,139.7677),
+// 特色美食：只收錄具明確料理目的與可追溯官方來源的店家，不用一般連鎖門市灌水
+p('kanda-matsuya','神田松屋蕎麥麵','神田まつや','Kanda Matsuya','神田','ueno','特色餐廳','🥢',75,0,82,['蕎麥麵','老店','午餐'],'神田代表性的傳統蕎麥麵老店，適合安排在秋葉原、神田明神或御茶之水行程之間。',35.6961164,139.7687772,0,{cuisine:'蕎麥麵',priceBand:'¥1,000–2,000 參考',officialUrl:'http://www.kanda-matsuya.jp/',reservationNote:'尖峰可能排隊，出發前查官方營業日'}),
+p('kanda-yabusoba','神田藪蕎麥','神田藪蕎麦','Kanda Yabu Soba','神田','ueno','特色餐廳','🥢',75,0,80,['蕎麥麵','老店','建築'],'東京具代表性的藪系蕎麥麵店之一，可與神田、秋葉原散策組成午餐停靠點。',35.69702,139.7686698,0,{cuisine:'蕎麥麵',priceBand:'¥1,000–3,000 參考',officialUrl:'https://www.yabusoba.net/',reservationNote:'營業與候位方式以官方公告為準'}),
+p('dozeu-iidaya','飯田屋泥鰍鍋','どぜう飯田屋','Dojo Iidaya','淺草','asakusa','特色餐廳','🍲',80,0,77,['江戶料理','泥鰍鍋','老店'],'主打江戶傳統泥鰍料理，適合想吃東京地方飲食、而不是一般連鎖餐點的旅客。',35.7140337,139.7915788,0,{cuisine:'泥鰍鍋／江戶料理',priceBand:'¥2,000–4,000 參考',officialUrl:'https://dozeu.com/',reservationNote:'料理接受度因人而異；兒童與長者先確認菜色'}),
+p('mutekiya','無敵家拉麵','無敵家','Muteki-ya','池袋','ikebukuro','特色餐廳','🍜',70,0,83,['拉麵','池袋','排隊'],'池袋知名拉麵店，適合拉麵偏好明確且願意候位的旅客；不應把排隊時間當成固定值。',35.7269184,139.7116325,0,{cuisine:'拉麵',priceBand:'¥1,000–2,000 參考',officialUrl:'https://www.mutekiya.com/',reservationNote:'熱門時段常需候位，現場過長應啟用備選'}),
+p('satou-kichijoji','吉祥寺 SATOU 元祖炸牛肉丸','吉祥寺さとう','Steak House Satou','吉祥寺','west','特色餐廳','🥩',45,0,78,['炸牛肉丸','街頭小吃','吉祥寺'],'吉祥寺商店街的人氣肉舖小吃，適合作為井之頭公園與商店街之間的短停靠，而非正式正餐。',35.7039427,139.5790177,0,{cuisine:'炸牛肉丸／牛肉',priceBand:'¥500–1,500 參考',officialUrl:'https://www.shop-satou.com/shop/kichijouji1/index.html',reservationNote:'可能排隊，避免阻塞商店街動線'}),
+p('yoshimuraya','吉村家','吉村家','Yoshimuraya','橫濱','yokohama','特色餐廳','🍜',75,0,84,['家系拉麵','橫濱發祥','排隊'],'被視為橫濱家系拉麵的重要源流店，適合把「想吃家系拉麵」列為明確美食目的的旅客。',35.4630322,139.6150687,0,{cuisine:'家系拉麵',priceBand:'¥1,000–2,000 參考',officialUrl:'http://ieke1.com/',reservationNote:'候位風險高，需準備同區備選'}),
+p('hibiya-matsumotoro','日比谷松本樓','日比谷松本楼','Hibiya Matsumotoro','日比谷','central','特色餐廳','🍛',80,0,70,['洋食','咖哩','歷史餐廳'],'位於日比谷公園內的歷史洋食餐廳，可搭配皇居、銀座或有樂町，適合想體驗日本洋食文化的人。',35.6737913,139.7558071,0,{cuisine:'日本洋食／咖哩',priceBand:'¥1,500–4,000 參考',officialUrl:'https://matsumotoro.co.jp/',reservationNote:'不同樓層與餐廳型態可能不同，先查官方'}),
+p('athome-cafe','@home cafe 女僕咖啡總店','＠ほぉ～むカフェ 本店','@home cafe','秋葉原','ueno','特色餐廳','🎀',90,0,72,['女僕咖啡','動漫文化','體驗型'],'秋葉原具代表性的體驗型女僕咖啡，賣點是互動文化而不只是餐點；不喜歡角色互動者可排除。',35.6995541,139.7707877,0,{cuisine:'主題咖啡',priceBand:'入場與餐點依官方方案',officialUrl:'https://www.cafe-athome.com/',reservationNote:'確認入場規則、費用與拍照限制'}),
 // 中央・東京站・灣岸
 p('tsukiji','築地場外市場','築地場外市場','Tsukiji Outer Market','築地','central','美食市場','🍣',120,0,95,['海鮮','早餐','玉子燒'],'熱門海鮮與街頭小吃區，建議上午前往並避開尖峰。',35.6655,139.7707),
 p('toyosu-market','豐洲市場','豊洲市場','Toyosu Market','豐洲','bay','美食市場','🐟',120,0,72,['壽司','市場','清晨'],'專業批發市場與餐飲區，適合對市場文化有興趣的人。',35.6442,139.7811),

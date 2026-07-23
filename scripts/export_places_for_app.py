@@ -6,6 +6,8 @@ import sqlite3
 from collections import Counter
 from pathlib import Path
 
+from audit_place_quality import audit
+
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "database" / "places.sqlite"
 OUTPUT_PATH = ROOT / "places.generated.js"
@@ -38,13 +40,15 @@ def main() -> None:
     rows = connection.execute("SELECT * FROM places ORDER BY quality_score DESC, name_ja").fetchall()
     output = []
     for row in rows:
+        quality = audit(row)
         category, emoji, duration = CATEGORY_MAP[row["category"]]
         chinese = (row["name_zh_hant"] or "").strip()
         name = chinese or row["name_ja"]
         verified_name = bool(chinese)
         traceable = bool(row["official_url"] or row["wikidata"])
-        recommendation_eligible = verified_name and traceable and row["quality_score"] >= 55
-        tags = [row["subcategory"], row["cuisine"], "可追溯來源" if traceable else "待來源覆核"]
+        # 自動推薦只接受真正完成的資料；半成品仍可供搜尋與人工查閱。
+        recommendation_eligible = quality["tier"] == "完整"
+        tags = [row["subcategory"], row["cuisine"], quality["tier"]]
         if row["wheelchair"]:
             tags.append(f"輪椅：{row['wheelchair']}")
         output.append({
@@ -53,7 +57,14 @@ def main() -> None:
             "sourceCategory": row["category"], "emoji": emoji, "duration": duration, "admission": 0,
             "popularity": min(79, round(row["quality_score"] * .72)), "qualityScore": row["quality_score"],
             "tags": [tag for tag in tags if tag][:4],
-            "desc": f"{row['area_cluster']}的{row['category']}候選；資料來自 OpenStreetMap" + ("及 Wikidata。" if row["wikidata"] else "。"),
+            "desc": (
+                f"這筆資料記錄的是位於{row['area_cluster']}的{row['category']}，"
+                f"現有類型標記為「{row['cuisine'] or row['subcategory'] or '待確認'}」。"
+                "目前只有地點身份與來源可追溯，尚未完成旅客導向的人工簡介與行程查核。"
+            ),
+            "introStatus": "待人工編輯", "dataTier": quality["tier"],
+            "qualityReasons": quality["reasons"], "cuisine": row["cuisine"] or "",
+            "openingHours": row["opening_hours"] or "", "isLowValueChain": quality["isLowValueChain"],
             "lat": row["latitude"], "lng": row["longitude"], "transit": 0,
             "sourceUrl": row["source_url"], "officialUrl": row["official_url"] or "",
             "nameStatus": row["translation_status"], "verificationStatus": row["verification_status"],
@@ -69,6 +80,8 @@ def main() -> None:
         "rows": len(output),
         "withChineseName": sum(item["nameStatus"] != "needs_zh_review" for item in output),
         "recommendationEligible": sum(item["recommendationEligible"] for item in output),
+        "tiers": Counter(item["dataTier"] for item in output),
+        "lowValueChainRows": sum(item["isLowValueChain"] for item in output),
         "categories": Counter(item["sourceCategory"] for item in output),
         "areas": Counter(item["area"] for item in output),
     }

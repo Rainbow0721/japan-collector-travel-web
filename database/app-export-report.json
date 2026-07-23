@@ -1,7 +1,12 @@
 {
   "rows": 1000,
   "withChineseName": 468,
-  "recommendationEligible": 205,
+  "recommendationEligible": 0,
+  "tiers": {
+    "半成品": 575,
+    "無行程參考性": 425
+  },
+  "lowValueChainRows": 261,
   "categories": {
     "動漫娛樂與主題樂園": 26,
     "藝文展覽與博物館": 88,

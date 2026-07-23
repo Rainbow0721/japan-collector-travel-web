@@ -81,10 +81,15 @@
           <div class="search-box">⌕ <input id="placeSearch" type="search" placeholder="搜尋中文、日文、英文名稱、美食、購物、神社或近郊…"></div>
           <span id="placeCount"></span>
         </div>
+        <div class="quality-switch" id="qualitySelector" aria-label="資料品質篩選">
+          <button class="active" data-quality="curated">只看人工精選</button>
+          <button data-quality="usable">精選＋可查半成品</button>
+          <button data-quality="quarantine">查看隔離資料</button>
+        </div>
         <div class="filter-bar" id="categoryFilters"></div>
         <div id="placesGrid" class="places-grid"></div>
         <button id="loadMoreButton" class="outline-button load-more">顯示更多景點</button>
-        <p class="osm-credit">目前僅顯示人工精選推薦池；票價、營業與預約狀態請於出發前再次確認。</p>
+        <p class="osm-credit">一般連鎖門市、分類錯誤及缺乏來源的資料已隔離，不會進入自動排行程。票價、營業與預約狀態請於出發前再次確認。</p>
       </section>
 
       <section id="tripView" class="view">
@@ -115,6 +120,19 @@
 
   <div id="loadingOverlay" class="loading-overlay hidden" aria-live="polite">
     <div class="loader-mark">旅</div><h2>正在安排最順的東京動線</h2><p id="loadingText">理解你的旅行偏好…</p><div class="loading-line"><span></span></div>
+  </div>
+  <div id="placeModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalPlaceName">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="place-detail-panel">
+      <button id="closePlaceModal" class="modal-close" aria-label="關閉景點介紹">×</button>
+      <span id="modalPlaceTier" class="detail-tier"></span>
+      <h2 id="modalPlaceName"></h2>
+      <p id="modalPlaceAliases" class="detail-alias"></p>
+      <p id="modalPlaceIntro" class="detail-intro"></p>
+      <dl id="modalPlaceFacts" class="detail-facts"></dl>
+      <div id="modalPlaceWarnings" class="detail-warnings"></div>
+      <div class="detail-actions"><a id="modalSourceLink" target="_blank" rel="noopener">查看資料來源</a><button id="modalSaveButton">加入行程候選</button></div>
+    </article>
   </div>
   <script src="data.js"></script>
   <script src="places.generated.js"></script>
