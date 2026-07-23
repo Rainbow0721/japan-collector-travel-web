@@ -7,7 +7,7 @@ vm.createContext(context);
 vm.runInContext(`${fs.readFileSync("prototype/data.js", "utf8")}\nthis.curated = TOKYO_PLACES;`, context, {filename:"prototype/data.js"});
 vm.runInContext(`${fs.readFileSync("prototype/places.generated.js", "utf8")}\nthis.generated = DATABASE_PLACES;`, context, {filename:"prototype/places.generated.js"});
 
-assert.equal(context.curated.length, 69, "人工精選應為 69 筆");
+assert.equal(context.curated.length, 76, "人工精選應為 76 筆");
 assert.equal(context.generated.length, 1000, "永久候選應為 1,000 筆");
 assert.ok(context.curated.every(place => place.name && place.nameJa && place.nameEn && place.desc), "人工精選須具中英日名稱與簡介");
 assert.equal(context.generated.filter(place => place.recommendationEligible).length, 0, "未完整候選不得自動推薦");
@@ -17,8 +17,13 @@ assert.equal(context.generated.filter(place => place.isLowValueChain).length, 26
 assert.ok(context.generated.filter(place => place.isLowValueChain).every(place => !place.recommendationEligible), "一般連鎖不得進推薦池");
 
 const curatedRestaurants = context.curated.filter(place => place.category === "特色餐廳");
-assert.equal(curatedRestaurants.length, 8, "第一批特色餐廳應為 8 筆");
+assert.equal(curatedRestaurants.length, 15, "特色餐廳應為 15 筆");
 assert.ok(curatedRestaurants.every(place => place.officialUrl && place.cuisine && place.priceBand), "特色餐廳須有官方來源、料理類型與價位帶");
+assert.ok(['壽司','燒鳥','壽喜燒','螃蟹','炸豬排'].every(cuisine => curatedRestaurants.some(place => place.cuisine.includes(cuisine))), "主要美食分類尚未接入");
+
+vm.runInContext(`${fs.readFileSync("prototype/transport-data.js", "utf8")}\nthis.transport = TRANSPORT_REFERENCE;`, context, {filename:"prototype/transport-data.js"});
+assert.equal(context.transport.tokyoMetro.fareBands[0].ic, 178, "東京 Metro IC 最低票價應為 ¥178");
+assert.equal(context.transport.toeiSubway.fareBands.at(-1).ticket, 430, "都營地下鐵最高紙票級距應為 ¥430");
 
 console.log(JSON.stringify({
   curated: context.curated.length,
