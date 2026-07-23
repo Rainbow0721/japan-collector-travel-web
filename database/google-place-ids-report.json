@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-23T17:26:16.424606+00:00",
+  "requestLimit": 100,
+  "requestsAttempted": 100,
+  "uniquePlaceIds": 1089,
+  "failures": [],
+  "byCategory": {
+    "美食餐廳與市場": 399,
+    "購物百貨與商店街": 179,
+    "神社寺廟與歷史文化": 327,
+    "地標娛樂與自然": 184
+  }
+}

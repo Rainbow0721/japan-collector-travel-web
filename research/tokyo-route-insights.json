@@ -1,0 +1,74 @@
+{
+  "updatedAt": "2026-07-23",
+  "method": "整理公開可見的旅行社商品標題、官方推薦行程、論壇行程請益與公開使用者行程，只保留景點共現與動線模式，不複製原文內容。",
+  "v2Corrections": [
+    "OpenStreetMap 原始資料不等於旅遊推薦；未經策展的資料只可當搜尋候選，不進入自動排行程。",
+    "中文名稱作主標，日文及英文作副標，沒有可靠中文名稱的地點暫不進推薦池。",
+    "推薦排序先看華語旅客偏好與跨來源共現，再看區域動線、同行者限制、預約及天候風險。",
+    "基本旅費只計餐食、區域交通與門票；住宿、機票及個人購物分開顯示。",
+    "廣義東京包含千葉迪士尼、鎌倉江之島、橫濱、箱根、富士河口湖、日光、川越及輕井澤等主流近郊。"
+  ],
+  "sourceGroups": [
+    {
+      "type": "台灣旅行社",
+      "sources": [
+        {"name": "雄獅旅遊", "url": "https://travel.liontravel.com/detail?normgroupid=49b7f352-5c44-47ab-ba33-9e4150b20662"},
+        {"name": "可樂旅遊東京關東", "url": "https://www.colatour.com.tw/C000_Portal/C000_HP01A_Main.aspx?DepartureCity=TPC%2CTSA&TourArea=A-02"},
+        {"name": "東南旅遊日本", "url": "https://tour.settour.com.tw/japan.html"}
+      ],
+      "patterns": [
+        "五日團常配置一整天迪士尼或主題樂園",
+        "東京市區經典點常見淺草寺、晴空塔、上野阿美橫町與台場",
+        "常加入富士山、箱根、河口湖、輕井澤或橫濱鎌倉其中一個近郊日",
+        "購物通常以 OUTLET、銀座、新宿或大型商場作為收尾"
+      ]
+    },
+    {
+      "type": "自由行社群",
+      "sources": [
+        {"name": "Dcard 東京四天三夜分享", "url": "https://www.dcard.tw/f/japan_travel/p/260161577"},
+        {"name": "Dcard 東京行程分享請益", "url": "https://www.dcard.tw/f/travel/p/227118886"},
+        {"name": "PTT 攜帶長輩東京行程請益", "url": "https://www.ptt.cc/bbs/Japan_Travel/M.1755368459.A.196.html"}
+      ],
+      "patterns": [
+        "自由行使用者重視每天只跨少量區域，避免為了打卡過度折返",
+        "紅眼或抵達日需要安排飯店休息及低強度活動",
+        "帶長輩時築地、銀座、東京站可同日，但要注意炎熱、步行與休息",
+        "明治神宮、原宿、表參道、澀谷與預約制展望台適合組成一日",
+        "使用者需要可隨時交換整天行程、加入購物筆記與保留預約"
+      ]
+    },
+    {
+      "type": "公開行程平台",
+      "sources": [
+        {"name": "去趣 chicTrip App Store 公開說明與版本紀錄", "url": "https://apps.apple.com/tw/app/%E5%8E%BB%E8%B6%A3-chictrip/id6443825385"},
+        {"name": "Funliday 東京城市公開行程", "url": "https://www.funliday.com/cities/18260497?hl=zh_tw"},
+        {"name": "Funliday 東京五天四夜推薦", "url": "https://www.funliday.com/posts/tokyo-5days-4nights/"},
+        {"name": "Funliday 使用者東京五日遊", "url": "https://www.funliday.com/m_Njk2NzVhYTcwNTZjMWFlYzNkZjNhZWUw0/trips/69675caceabfe523354aa2d0"}
+      ],
+      "patterns": [
+        "去趣公開主打地圖找景點、推薦排序、AI 一鍵順路排序、公開行程、共同記帳與行李清單，代表使用者不只需要排程，也需要旅前及旅中工具",
+        "去趣的 Top 30 與使用者互動可作弱熱度訊號，但平台未公開完整排名演算法，不可直接當作客觀人氣",
+        "上野、淺草、隅田川與晴空塔是穩定的東東京組合",
+        "築地、台場與銀座可依交通方式組合，但須檢查跨灣時間",
+        "哈利波特影城需預留四至五小時，不適合塞入過多景點",
+        "公開行程頁的閱讀數、按讚與複製數可作為弱熱度訊號，不能視為真實到訪量"
+      ]
+    }
+  ],
+  "rankingSignals": {
+    "officialTourism": 5,
+    "multipleAgencyCooccurrence": 4,
+    "multipleCommunityCooccurrence": 4,
+    "singlePublicItinerary": 1,
+    "routeCoherence": 5,
+    "reservationRiskPenalty": -2,
+    "elderlyOverloadPenalty": -4
+  },
+  "productRules": {
+    "agencyDataRole": "判斷台灣市場常見景點組合與近郊需求，不照抄趕場節奏。",
+    "communityDataRole": "判斷折返、炎熱、步行、抵達日、長輩與預約等真實風險。",
+    "platformDataRole": "觀察使用者需要的收藏、複製、分享、排序、記帳與旅前工具。",
+    "copyrightRule": "只保存景點、公開網址與自行歸納的模式，不複製文章或完整行程文字。"
+  }
+}

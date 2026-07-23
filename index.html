@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ed">
+  <title>旅伴｜東京 AI 私人地陪</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="旅伴首頁">
+        <span class="brand-mark">旅</span>
+        <span><strong>旅伴</strong><small>TABI MATE</small></span>
+      </a>
+      <nav>
+        <button class="nav-link active" data-view="planner">規劃旅程</button>
+        <button class="nav-link" data-view="explore">探索東京</button>
+        <button class="nav-link" data-view="trip">我的行程</button>
+      </nav>
+      <button class="profile-button" aria-label="會員設定">R</button>
+    </header>
+
+    <main>
+      <section id="plannerView" class="view active">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">TOKYO · AI PRIVATE GUIDE</span>
+            <h1>一句話，排好你的<br><em>東京每一天。</em></h1>
+            <p>告訴我們想去哪裡、和誰旅行，交通、時間、預算與備案都幫你排好。</p>
+            <div class="trust-row">
+              <span>✓ 動線最佳化</span><span>✓ 同行者照護</span><span>✓ 隨時可調整</span>
+            </div>
+          </div>
+
+          <form id="plannerForm" class="planner-card">
+            <div class="step-label"><span>01</span> 描述這趟旅行</div>
+            <textarea id="tripPrompt" rows="4" placeholder="例如：東京 5 天 4 夜，第一次去，帶 65 歲的媽媽，喜歡美食和日劇，不想太趕，想去淺草、澀谷和築地。">東京 5 天 4 夜，第一次去，帶媽媽，喜歡美食和購物，不想太累，必去淺草、澀谷和築地。</textarea>
+            <div class="quick-fields">
+              <label>旅遊天數<select id="days"><option value="3">3 天</option><option value="4">4 天</option><option value="5" selected>5 天</option><option value="6">6 天</option><option value="7">7 天</option></select></label>
+              <label>每日預算<select id="budget"><option value="6000">約 ¥6,000</option><option value="10000" selected>約 ¥10,000</option><option value="16000">約 ¥16,000</option><option value="25000">約 ¥25,000+</option></select></label>
+            </div>
+            <div class="field-group">
+              <span class="field-title">旅行步調</span>
+              <div class="segmented" id="paceSelector">
+                <button type="button" data-value="leisurely">悠閒</button>
+                <button type="button" class="selected" data-value="balanced">均衡</button>
+                <button type="button" data-value="intensive">充實</button>
+              </div>
+            </div>
+            <div class="field-group">
+              <span class="field-title">同行成員</span>
+              <div class="chip-row" id="partySelector">
+                <button type="button" class="chip selected" data-value="adult">一般成人</button>
+                <button type="button" class="chip" data-value="elderly">有長者</button>
+                <button type="button" class="chip" data-value="child">有小孩</button>
+                <button type="button" class="chip" data-value="stroller">嬰兒車</button>
+              </div>
+            </div>
+            <button class="primary-button" type="submit"><span>幫我排好行程</span><b>→</b></button>
+            <p class="form-note">試著分別輸入「美食購物」、「神社文化」或「想去鎌倉」看看不同結果</p>
+          </form>
+        </div>
+
+        <section class="popular-section">
+          <div class="section-heading">
+            <div><span class="eyebrow">POPULAR NOW</span><h2>第一次東京，從這些開始</h2></div>
+            <button class="text-button" data-view="explore">查看精選地點 →</button>
+          </div>
+          <div id="featuredGrid" class="featured-grid"></div>
+        </section>
+      </section>
+
+      <section id="exploreView" class="view">
+        <div class="page-heading"><span class="eyebrow">TOKYO & POPULAR DAY TRIPS</span><h1>探索廣義東京</h1><p>東京市區加上鎌倉、箱根、富士河口湖、日光、川越、輕井澤等熱門近郊；先求精準，不再用冷門資料湊數。</p></div>
+        <div class="explore-tools">
+          <div class="search-box">⌕ <input id="placeSearch" type="search" placeholder="搜尋中文、日文、英文名稱、美食、購物、神社或近郊…"></div>
+          <span id="placeCount"></span>
+        </div>
+        <div class="filter-bar" id="categoryFilters"></div>
+        <div id="placesGrid" class="places-grid"></div>
+        <button id="loadMoreButton" class="outline-button load-more">顯示更多景點</button>
+        <p class="osm-credit">目前僅顯示人工精選推薦池；票價、營業與預約狀態請於出發前再次確認。</p>
+      </section>
+
+      <section id="tripView" class="view">
+        <div id="emptyTrip" class="empty-state">
+          <span class="empty-icon">旅</span><h2>還沒有行程</h2><p>先告訴我們想怎麼玩東京，AI 地陪會幫你安排。</p>
+          <button class="primary-button compact" data-view="planner">開始規劃</button>
+        </div>
+        <div id="tripResult" class="trip-result hidden">
+          <div class="trip-header">
+            <div><span class="eyebrow">YOUR TOKYO JOURNEY</span><h1>東京 <span id="resultDays">5</span> 日慢旅</h1><p id="resultSummary"></p></div>
+            <div class="trip-actions"><button class="outline-button" id="regenerateButton">重新安排</button><button class="primary-button compact">儲存行程</button></div>
+          </div>
+          <div class="trip-layout">
+            <aside class="trip-sidebar">
+              <div class="summary-card"><span>整趟基本旅費</span><strong id="totalCost">¥0</strong><small>餐食＋交通＋門票；不含住宿、機票、購物</small></div>
+              <div class="summary-stats"><div><strong id="totalStops">0</strong><span>景點</span></div><div><strong id="totalWalk">0 km</strong><span>步行</span></div></div>
+              <div id="dayTabs" class="day-tabs"></div>
+            </aside>
+            <div class="day-content">
+              <div class="day-overview"><div><span id="dayArea">東京</span><h2 id="dayTitle">第一天</h2></div><div class="weather-pill">☀ 24°C · 適合步行</div></div>
+              <div id="timeline" class="timeline"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="loadingOverlay" class="loading-overlay hidden" aria-live="polite">
+    <div class="loader-mark">旅</div><h2>正在安排最順的東京動線</h2><p id="loadingText">理解你的旅行偏好…</p><div class="loading-line"><span></span></div>
+  </div>
+  <script src="data.js"></script>
+  <script src="places.generated.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6540 @@
+{
+  "generatedAt": "2026-07-23T17:26:16.424606+00:00",
+  "storagePolicy": "Only Google Place IDs are persisted; IDs are exempt from caching restrictions.",
+  "places": [
+    {
+      "googlePlaceId": "ChIJPd37MMGOGGARvJ2hfxoiNVE",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJf555jwSPGGARS_KDFiREz9M",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ01gyQQCPGGARJgCZ5sh2wW4",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJPYwFnNGNGGARYEeXwiYQPe8",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ99yU6b-OGGAR2NfOuMg0JUA",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJh7eDrwCPGGARCs9fpCkKS2U",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJSTVEQMCOGGARa74pG98OyD0",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJwcm3KdKOGGARH4yIA-OuoyQ",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJa08ZHmGPGGARyyvBjn_Tee4",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJBVio6sCOGGAR0TITCNXrvVE",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJNcSCXJ6OGGARK52_L88BB7M",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJVVVRd5-OGGAR9x-w-dOxjRY",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJox26VjWPGGAR3s4NJfnEgww",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJy_a4RtmPGGARi18ikcVKECI",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ79EaJsGOGGARHgsoZXYMZO0",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJxe2ldZ-OGGARd0uCtTrefEk",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJW4-7z_iJGGAR3DNQUg6tv9Y",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJVVX2CMeOGGAROyRFSykcs0s",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJ5TfJz8COGGAR9eBGMh-sF3w",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJHXftzMGPGGARFiSZImFPm30",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJGWQTiJ6OGGAROCH9_MWoXgA",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJVWkOQMCOGGARr8YDdynuhWM",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJURUg8Z6OGGAROREW1kvB7_A",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJXYV-6JWOGGAR85vIZbM1RCE",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJFaljG5yOGGARXtsoLaPiPF0",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ8T1GpMGOGGARDYGSgpooDWw",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJx62FmcGOGGARDxQTl8Zx6U4",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJP7lRfyiMGGARqb1QQhfm9EQ",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJA8RvD8GOGGARdoKfX1LNAcQ",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ-X4hzjKMGGARDSsGeHOACgw",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJS50K18KOGGARx4D8Zs9NA0Q",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJAQAMd8GOGGAR945X-Jjf2ug",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ0YwG28aOGGARvRKAXIBWqNk",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJz-3ScJiOGGARmxnMARIPu5M",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJowLlTd2OGGARR-BEdamTD5w",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ18PKhtSNGGARqBnt1MDvTiI",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJgyWCBZaOGGAR9yZ2qTeh9_s",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJs0s4j4GOGGARZwSDJ4mP5Tc",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJVQ12Xr6OGGARPHTDfGa-Jy4",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJtbB5atONGGARS2lb1uRdhXw",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJ__-brpqOGGARpX31ZpieS-I",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJ8fH0kNSNGGARscVX6gSpMzo",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJaRkFc1iPGGARyblzxFEFOeM",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJE62UxMKOGGARu94hiDn4FCM",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJLxG1LN2OGGAReBajvFvv95s",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJl6EKrtWNGGARjKIK9cEvKjc",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJw2qQRZuOGGARWmROEiM2y7E",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJZ4oTScOOGGAR16BfN7ADXMk",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJr2cNBsGOGGARSX3xfkspQHc",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ_UlItvCNGGARP1NMx2sFsYg",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ35ov0dCOGGARKvdDH7NPHX0",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJnfMBjgOPGGARGb9FQVZUcM8",
+      "discoveredByRegion": "台東區 淺草 上野 谷中",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJs5tCVxyMGGARJswUvIj4drc",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJX0W8Ux2MGGART-OF07C9BCc",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJhaIleBKNGGARmVrhdnYt0Nk",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJxzg9PwCPGGARklR1tLfG2ZU",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJSSuW66eOGGARI8ZpJvEwgLE",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ12b2iqeOGGARGdLqvJW0GyQ",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJEUyq6OqPGGARHS9zCQiRHIw",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJSbNFXR2MGGARxVZtuYHC8r8",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJKTP54qeOGGARsZf1fyU2jxU",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ10v48ByMGGAR8bOCzz_L2Bo",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJN2UoRR2MGGARPrpOSvznx7o",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJGU_M2aeOGGARdnOLcMYXuXs",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJH8I5hKeOGGARmUfM9eARA_g",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJC7faDqiOGGARl1Mt2NF5m54",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJZzSYoB2MGGARfBcicn7sx28",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJb6zFhaeOGGARCzV3aiBjDcc",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ34MW1hyMGGARsJ1e3aP3xS4",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJA_UgUx2MGGARYubrjSyLflg",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJV5YIVXaPGGARm8O15TmaX2k",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJZXPDhR2MGGAR-o8jPkzUbes",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJrzAPtqCOGGARI81q02S-x_E",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJ__-AdayOGGAR6EGPwvcpzTA",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ2Zf6HvmLGGAR8_uRpStwthc",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJPZiMHgCPGGAR0_wVSJZzW5g",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ7RsWzB6MGGARi3xBv7bkl_M",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJS2dPOKiOGGAREfQsUq73wP0",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJaQiTNRmMGGARRIdlDDuf8BQ",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJb-mOVxyMGGAR7ifrxzK_R0A",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJvZOW7h2MGGARtA-SobCjAz8",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJAQCxLRmMGGARwuZGIsWgmAc",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJmY9L9lCJGGAR3ydy0pQ5y8A",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJMxKP1paOGGARHz7Kw7zQTyY",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJzZoDahmMGGARcyo3sBiD8Sg",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ23e9yBiMGGARz7foyCHMz54",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJTXkqZ06JGGARL9xPfBq5xk0",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJpQd7ZqiOGGARsRs2aimeHl4",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJD7xVrNuNGGARTGvk1WfwdnI",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJXXII3a6OGGARN7hHgD9SmNw",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJwfegutyLGGARGjiY-L2eSps",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJpSsEW6iOGGARWk8JntgvNMA",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJf2129yiMGGAR9I6Yoe-1uHY",
+      "discoveredByRegion": "千代田區 東京站 丸之內 秋葉原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJY7E23t6LGGARcW9PaNpUTRs",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJW2cLzSGLGGARXAKXv6EkbqI",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJoylsI9-LGGAREFepCWo2oeM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJsQIg2t6LGGAR8w_OrbyqA3U",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJY7E23t6LGGAR-m-wzG_vjvM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ-QKc3N6LGGARveCkpWcEmsM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJvdCmUtKLGGARc4X_HUK8b-E",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ8c4X2d6LGGARjNJLJz1lAHg",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJIw1YEtmLGGARdWgvKs50S7A",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJcddeUP6LGGARH8SKJAb_hmk",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ1x_6sReLGGARAzSUSIFloxs",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJjzOyEQCLGGAR8BA5HSSfpMo",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJNaLGMN-LGGARI_wVuIjLSfs",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJLQuiy9iLGGAROKPbh_M2DAU",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJP0yI3d6LGGARAvFhG-bnXJU",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJpYBA196LGGARHJnwxaxGNKg",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJnR5IIt-LGGARP9X3Qg8n3GA",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJs-ytIN-LGGAR9FN1xEveeN0",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJz4fNKt-LGGARHrewpxKDz7s",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJX9MhjuaLGGARvoMvduRK-5E",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJAQAsR--LGGAR_AmB8WMDy88",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJi4H1PO6LGGAReahD3PnvSyw",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJE1wGD-iLGGARyisyYKXJcV8",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJAQ4EnOWLGGAR7aQEhpJkdKc",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJy18lj-iLGGARJq-X6_EXofY",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJaQ_xQPyLGGARBPvtwIjivTA",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJRQ2BJ-SLGGARBo5lWSuc-jM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJjz_yQt-LGGARkyfs8FyJeVA",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJa4JUjdiLGGARfzINTSU_X0s",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJC2xnkb6LGGARJL0d222opIg",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ5SZMmreMGGARcz8QSTiJyo8",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJAQDEyOaLGGARzPai8Z_1q8I",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJOxnXfOSLGGARhqr5ZxdBOk8",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJq6q63UOMGGAR7zYBKd7iI3I",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJY_l_l1CJGGARjsiFsINr9ww",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJtbY4fG-JGGARBcvW4yUB2rM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJAUDZ9eaLGGAR4YyXXHdoqs8",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJmyHLzuuLGGAR_dp7Ams-EI4",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJVVUBmZ_zGGARrEy-Ua3psAY",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJw7xWUseLGGARMaKV8AOPjOY",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJK0TdDneLGGARVxJ3MHC0emY",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ5UeNcsuJGGARN4gbN_rF39k",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJB6auIuOLGGARBvLsA5QlrRg",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ4W4dM52JGGARld0hfrQ9WIM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJCewJkL2LGGAR3Qmk0vCTGkg",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ-4cUjpWLGGAR3WvQDrzxU38",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ4Rr2JWiLGGARcyRSHuZ-9G8",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJbWVFlTCKGGARr5l6ox-7_CA",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJqxjn6uGLGGAR-zL56mBgkIM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJh5F6GpuNGGARZ6dHiggrfyQ",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJGQd8_z-JGGARYzyvCC7TphM",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ5zOC7K2JGGARr0GGHO4bZHE",
+      "discoveredByRegion": "中央區 築地 銀座 日本橋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJV4N_dNuMGGARLwyjN8oukiE",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJJbYu9ZmNGGARQN-9DHwAl-E",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ9wkGD0ONGGARNSbVDoFbSc8",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJP9eKBdeMGGAR0zzBXJNVj5A",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJzb-CnmKNGGAR0jwrfoSLDE8",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJPwGlGtqMGGARS67p3v_g9XQ",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ9ztrpduMGGARte1BM8ccdIs",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJcw7MGcOMGGARxjcp2aNgnO0",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJr7mGZdmMGGARjxoMFeHApXE",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ18MWiNqMGGARsZO5vEUCONc",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJ5-LVSdGMGGARO2nfNb18X8c",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJeQiJANeMGGAR8zaGpVXXXz4",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJubHyMNaMGGARFRSq4A7C3Uo",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJc4kqknONGGARMBGOLubRgk0",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJfzhPwsKMGGAR0-TdF6xyD2U",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJlw1lS8OMGGARVHjwB6djh40",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJn-vIENeMGGARupKqXakdVIA",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJqS0THNuMGGARab6oEFL78zw",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJkZhCGJ2NGGARkW-O7H1eU50",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJdcigLNiMGGARdVla9DLier0",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ_zhzEkONGGARch8hW-wHRzg",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJAQDAANuMGGAR_wizPtglexs",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ8YZAzg2NGGARNiagN7D6leY",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ_TibA9qMGGARNYmVIFyGU9k",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ05576NmMGGARlCnERJue3Y4",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJq6qqjtCMGGARbhyw-fHkymM",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJpT6_gNCMGGARgYQPQwXP3g0",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJh9EUPNGMGGAR1Q9xRKA2-TA",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJMxx7bsWMGGARdrUfch90sVw",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJX95-BAmpQjQRq_HWXOOLID8",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJP6jlUFiLGGAR5fwuswd1KXA",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJP6oqgv2NGGARqV5VFswMftQ",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJK9584NuMGGARVKfZjpYoQDs",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJPyOTG8KMGGARh_IXobWxHmo",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJKxXgZirzGGARz3KqnDzxHAE",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJO4g9OSuNGGAR7DvooJGv9Jk",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ8VLVBuTsGGARfIDGqQDmC0Q",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ9RJ2PJGMGGARwG4ChjnDW3I",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJgeazv1aMGGARQh5cREuvLjI",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJby6MuZKMGGARLgd-bEuhB7M",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJx6PKXlqMGGAR5gDIJambKD4",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJtwl53MKMGGARDMDH0T-4sQA",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJO1_KDtaMGGAR_rMFx_8-hMk",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJFZmQijCNGGARTGdM5ATq-aw",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJd_ZwuDyNGGARtqx0z7VVGEQ",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ405JOmuNGGAREnlj4_KeSj4",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJ25pLS-eMGGARLDGzRxlnL1U",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJEbzGgfaNGGARGi4V2AYTN28",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJAQBrOtuMGGARPZyRlEEd3fk",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJnctryNSMGGARLv4MknPFseU",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJL7oFpizzGGARH-npuiADZeQ",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJCT5xMDuNGGARnjCtiCWRCcI",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJOXB02sKMGGAR-Dn4MvA1dAc",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJoTcat9SMGGAR6GGG8zdcZvE",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ5zKZqB-NGGAR2X7x6XUaqb8",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJzRzI3HSNGGARRwZW6AtJfi0",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJHbmX5irzGGARBj0zemuQqck",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJPQSrYNiMGGARwlBNXP_on_E",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJQzspfbXzGGARvs5BrfF7PMA",
+      "discoveredByRegion": "新宿區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJK7NEQ6OMGGAROeZ_ndIeQrE",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ06N2yEGLGGARycMkSbjIBYQ",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJIZq0CKSMGGARAQsSvKqAiyg",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJvZGpatuLGGARt5FmKaSrzjI",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJq-oe3BWLGGARLqnZ9rjZXCQ",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJV_MYba2MGGARYCmxOPY_cPA",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJY24wMRSLGGARdbDv6D2KdHE",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJu9W4zVeLGGARXn0xCjGINF8",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJeSARaKSMGGARNZFd94VMO6k",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJJRd91xWLGGARDktpB9XZvLU",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJu-P65UCLGGARQDAg_VSeU7I",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ2V4tJcCLGGARmcu8ZpshQTc",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJL51pWnmNGGAR-e2hoAztmTQ",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJczoD1RSLGGAROzAP4tfVfns",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJIUfKC6SMGGARahDQi91cnXE",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJb-WUHY2LGGARk4yL0e1rWE8",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJY68jRKOMGGAR0SH-kADyQ14",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJ8f017NeNGGAR8kBGnNHZ_yE",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJBZ8nrcuNGGARdmf4okgecAU",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ_9GsagCNGGAR6auqGPod5nY",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJj0CdfaSMGGAROHhLfxE208o",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJCx6jgqGMGGARpfB5UIap15k",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJr4J6pKmMGGARdQLOgrzToH4",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJaer4Wa2NGGARhA8rpi8h5Do",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJcyH-4qiMGGARGzk4lZCx2xo",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJscDhJ4SLGGARbx0GlzPi9ng",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ7WUBoDGLGGARaK3ikXtAfDg",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJhxxszamMGGARcuAXpFunolU",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJtYmVtKSMGGARuV1DwEbFzZ0",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJsaXxzGaNGGARQsc9JaY2gQw",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ6xA0pKSMGGAREB8mFuuaPYo",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ_yy1ybqMGGAR0tPR4qiHDVY",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJAQCnnaaMGGARv3e26w2Kczk",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJW40URLuMGGARgo4q_fJdYsA",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ5SZMmreMGGARqBUU4sVwUIM",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJObjKemGNGGARmPX6OzvYpXY",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJJzR9pLqMGGARn__Fp9eG3sg",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJsyv0pLqMGGARO-cDLT1bCeU",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJX5PFF0GLGGARxGm8yW4jlZ8",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ04pwyreMGGARKvoa9AYdtp8",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJHT9f_baMGGARDI98NbVp800",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJ_7TR7f-LGGARDgn4GscDis4",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJMwpiebSMGGARPr_454zHvDQ",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJx1e971eLGGARum8w_tnpFwI",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJURWUIuaNGGARvtlnJNz-AFQ",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJPULLZU-LGGARsv8E3tigyqQ",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJK9EM68qLGGARacmu4KJj5SA",
+      "discoveredByRegion": "澀谷區 原宿 惠比壽",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJP-vO9nuLGGARGJ2q8uryJUA",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJP1lEhXeLGGARhk5zBfKyb_A",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJk0W3LvOLGGARlzZhS753row",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJM9xJEHeLGGARAshMWUgC_ls",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ__9ThIKLGGAR2FCxue47YLg",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJU2MukniLGGAR1qSN4ds5Pus",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJA2lWTYOLGGARX8a8h5uxq4M",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJi0-ensKLGGARSTP0Ul5A3uw",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJg5RCD3eLGGAR6dbIHRM98w8",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJP-vO9nuLGGARBcn3DnSz8WI",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJJSI0QC6LGGARwWmKE3MWmj8",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ6ZxC3naLGGARsO0xQaW0zdY",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJtbHDALyLGGARKW-fVXZaFms",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJaYt93b6LGGARRTt3Y7YkqVg",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJO5OmTj6LGGARI4qn-SQNbGk",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJcwi8eUWLGGARtYr2tdGzY5E",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJP6eEPwCLGGARZ8S7RaCYYSc",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJeRVH0XmLGGARvB4b7NmNAV4",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ9wTV9LmLGGARYsJxSfoK5f0",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ1b_6yqqLGGARmwFmebP1DNY",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJpbpu0_mJGGARd9sJ-psh9Gc",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJAzqKoZOLGGARm8GYfYwJvlM",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJHSjjaoKLGGARTp_Q0o4lKg8",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJKwbstHeLGGARxzy-ttu57CM",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ5_kEroKLGGARU4NlyGSJt8Y",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJC3Cf2PuLGGAROO00ukl8JwA",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJZ-IvPoeLGGARLvxGgByEzvU",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJK-keEn6MGGARyZaLZnQVdgU",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ44TQBHmLGGARb25dWPO4k18",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJu-01WXXtA2AR0rCgeGb0Vlc",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJdW2DQ8-LGGARdN05HouZT6I",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJ1cngb2CLGGARqrMJ87j1pUA",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJ0w5BJQCLGGAROdWk0AeLDDI",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ4_ZvIgCLGGARLUI8wFAnNA0",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJQzHHXQCLGGARyIGpvYlcjsM",
+      "discoveredByRegion": "港區 東京鐵塔 六本木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJvbQjwzKNGGARWxJuQ14BYxA",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJd_kIJ2iNGGARzbI-17Azk4I",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJwbhoX16NGGARqMgZHv4nHJc",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJvcqETQCNGGARqshkU4gX4Ys",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJVVXB7F2NGGARjJx89wsrFys",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ-V3x6F2NGGAR8-QoPEtE82A",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJU9ZPE2-NGGARwiJyx0Id61E",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJcY6dQCGNGGARfkTs28pUo5U",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJS5KF4r2NGGARBgwkScu_y3k",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJJ8cSyWmNGGAR7Ax6gcdCnTI",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJP2Q_hNGNGGARgY6E5Q58B6s",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJx5lmpGiNGGAR2iFNXazBcNk",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJizEoVl6NGGARAH_Ni18v1-g",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJw_xk312NGGARGAQsycVwIhE",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJhT_wQW-NGGARyeOCR2L-W-I",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJwfPjpWiNGGARDEm92Oq2Ppc",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJX4TmkV6NGGARDothhkgN_Mw",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJgbmsREGNGGARmy2hPwqDx3o",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJEQo9F2-NGGARySiYS8C8FGM",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJ4Z2gpXKNGGARy4aMi71lZZQ",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ55exm12NGGAR1Ow4aniLzzc",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJGTv5_meNGGARHu5zMjfBms0",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJYd7zG12NGGARR22xK_K-1lA",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ77P-l2eNGGARDOfWUgFt9qg",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJd80kRG6NGGARcp9werbteWQ",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJZZnCnWeNGGARb-f8twHaqvQ",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJp3QZnl6NGGARZutxWNSWeAw",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ7ckYLWqNGGARPZkZFm12HsA",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJdxQlS6eSGGARnS_CXc4VikU",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ3xQ6ameNGGARO_J6_sNWAjw",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJtW7K92qNGGARBBLnvRhDQPM",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJcd_uaQyNGGAR3QXqOmlcmOM",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ_47ZBliNGGARUvneD65360c",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJX5md1GuNGGARHAX5GHw0g_o",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJqfsaeqKSGGARfgknyzzHVvc",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJtdEQkmONGGARp_PII0lSBso",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ9WXXk0SNGGARPiVFjHbggA4",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJV-DP9miNGGARRffKfs190d0",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJAe0COQWNGGARrIl0NIcJZgw",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJL0AGHnSNGGARO52IGkVZHJU",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJ5ZneDlSNGGARR-LaaHjCT9w",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJq6pqU2mNGGARMIR691Qo43s",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJQyqDs5qNGGARNO7TBNb9ofI",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJMZVITVyNGGARSNITQ5VS1yU",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJz3At5aCSGGARqHAj79VznkA",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJi05dW2aNGGARdxGP5pBsUqc",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJEYGB8VuNGGAREZDl-sEFssA",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ8eoBuPiNGGARslLvUbWw0oA",
+      "discoveredByRegion": "豐島區 池袋",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJiXsyjf-PGGAR3G9iaPQ3tj8",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJD9Pd-daOGGARCYgMMXqki5E",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJUaJR8NaOGGAR48j6xkTvMeY",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJUaJR8NaOGGARbaGu0XYUkl4",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJvaHCbTWJGGARQEoQw7yMfGk",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJO6bK3daOGGARYEFGg4Xm-VI",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ-RuzASGPGGARlTmOgTcTmSw",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ6wN-YwWPGGARsO8zz3rdW7g",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJUyLw9daOGGAR1E7fwMVZJfA",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ6w0KdSiPGGARKIyT3GivScU",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJZyyvbiiPGGARpZcbeTj5v6Y",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJMYNlINuOGGAR3n-uxi-8QhQ",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJuzsPGtOIGGARiuw1T6CVpC8",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJAeuPnfuPGGARO2sUV54UZh0",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJsXzn6AOPGGAR1nAPCvlWbPA",
+      "discoveredByRegion": "墨田區 晴空塔 兩國",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJIw1YEtmLGGARqleScsgA2Kk",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJPe37zheJGGARa2m0dAcshHA",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ2XoCO9mLGGARlulkZtm4R2Q",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJlVzTQeCJGGARBJBnw8Oku6M",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJE6NVO9mLGGARUiKvcRmKzN4",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJJ1XphGeJGGARK0BhX9lYd7Y",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ_SvuyD-JGGARUQZhJInwMIc",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJIw1YEtmLGGARb8Yp3lsy50U",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJMQrt3xSJGGARodqeZudITLc",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJaX6cwT2JGGARKz3KrG7DRWU",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJjXrjVBmJGGARhX5BgDf6vg0",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJzWqhgqOJGGARwnrjxgdv83s",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJueKS2zWJGGARbw-zC_0qigI",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJGTP74RaJGGARy5Fp3vNCwn4",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJ-XIDvjmJGGARrjzWH_R8bnQ",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJLeWV9xKJGGAR8I5XCkUhauE",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJAQAQJxKJGGAR-CTitlawD5Q",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ05k3KRaJGGARSFT1UW8wxkw",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJsYT-eNGIGGARrtlQxrayK0M",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJzVF1JhaJGGARjYpSc8B0xzM",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJAeE93h-JGGAR8GoDyrej05Y",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJgUfjbRSJGGARag9RbRLeVD4",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJddt-chuJGGARDHrwEnQv27I",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJkVTxfReJGGARHTiPPNhZrhk",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ7bIgW6KJGGARA5Hcnfzdmbk",
+      "discoveredByRegion": "江東區 豐洲 台場 清澄白河",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJD1_MPjaNGGARjvnJU9r3-OY",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJcRRPoS6MGGARe-LEXkndq_s",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJublUIwaNGGARGI0SGt-pwu8",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJAQDMmX3yGGARnZHYsWEFcoQ",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJVVUB0qeNGGARk7lzKprcocw",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJNfCYE1WMGGARWVLqAwCmjeU",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ5TvAfn2NGGAR3-NqYsjUnvQ",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJr53zMHSNGGAR9Yf1DCN85Rc",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJfxotES2MGGARt441x9n4cto",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJkYbVMJ2NGGAROsREgUFhIv4",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJ97S7LWiNGGARQCrAHo2nbqk",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJm32JTyCMGGARUkmHPgH1t5c",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJMQNDabaNGGARtqr4Fse8Ex8",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJHxPGfkyMGGAR2F8PQgPTCqw",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJkyl5eSGMGGAR1eFeLND64bo",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ8zF3v0mMGGARVY-TJ2eeaFw",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJr_wiwEuMGGARQB4XrzcDDFc",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJBVDeRkaMGGARXsIjrhYCIhs",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJz7syL0-MGGARF4CJTahUeis",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJldbxPMqNGGARWbKvyD8YpcY",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJG6-DRkaMGGARfNPsypukSoQ",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJNUJcHMeNGGARb1eKV3H-kL8",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJYUQ-972NGGAR5W_2E0N3SHY",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJrbtw0seNGGARBV2U3F9_5x4",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJK6xdQTyMGGARfIpx2vmaXeE",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJSzrqbRGNGGARV-AIwH9FCcU",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJcX3cAs6NGGARcMfBuIdFC2A",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJL4d3IRCNGGARLgwLV5juOxg",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJuxkVQeCNGGARfFgbeDEPG6g",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJI8IPbQGNGGARDf2bgi4fOlM",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ5y4oAKaNGGARcvharm_NhsU",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJR_R7EUeMGGARkM8KN9bIkM0",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJ4135o6-NGGARq2qeawO7Bwk",
+      "discoveredByRegion": "文京區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJ1V1L30eLGGARslYU9qgg_zY",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJjRJEiB_1GGARsKKq4uooKbw",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJrQFdYbaLGGARMkzFUh2beYs",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJteEip_uKGGARI5RdjsvClhY",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJs65o_huLGGARB5AadChjJKU",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJvbj9QC83aDQRmY71AQoCQkY",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ8wE4Kc2LGGAR2jzEDk_C7bg",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJEWO2A8A1aDQReD3hwOA0M3I",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJNdqcb1U2aDQRueGw71POBlI",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJeUo1MxLzGGAR7goAMaeBYxI",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJd_wVZOD0GGARZ3lyztPz5bM",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJmRdfCh_1GGARKzIUqdeqFQI",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJW9fE3UiLGGAR_HkDv9w9nvY",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJmZ9nCOs1aDQRfZmhW1ZqXA0",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJsfDxPXTzGGARY0AIFJtTwFQ",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJcWN6JEqLGGARm0kXph5LFT8",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJq_fYt4iLGGARrOojmQ4IMyE",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJBWEY2TaLGGARUo7agjyMqbw",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJhw3oHTmLGGARNkVN7pJKuvs",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJPT-f1BiLGGARGt4Zf8NljlA",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJW0b5GyGLGGARv_Y3HAAEtKo",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJIyRnqyGLGGARKb2q3fMZ-fU",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ3SZmvTeLGGARcux0cvjjXqk",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJP7UGa2uNGGARI1GCX_AkGx8",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJB-5_Btb0GGARJo8Cl8O1xfY",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJswoXvqv0GGAR-zUHKpl4s0k",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJB_vchdMIAWARujTEUIZlr2I",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJnSJkkreOGGARyDX_3LuR2MI",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJjQFpeyGLGGARTzsub1i4PU8",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJwz-gQI5jGGARTtUb_JXwOO0",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJZ4dcAFOLGGARflIh1jzcgIo",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJNVZtkB-LGGAR6Pz2MxHkSFY",
+      "discoveredByRegion": "目黑區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJq6p-6PDzGGARn9e_RRkcl4Y",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJZa5iyhTzGGAR7ff4mKFIIms",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJox6yrCjzGGARcR_QM-bO8Wo",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJd2G_bbT1GGAR0pcJMz0rB6c",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJtTTr3oRTXTQRBK3Kc5HQRDU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ53QHqeT1GGAR_yIsayz5AqE",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ_Um8PFb0GGAR0gaJqrp3vl0",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ14NCeln1GGARkKkzvntWyUo",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJt5jz3GjzGGAR7MPeslbrj48",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJB0WiWxH0GGARyFyfoyYQi9Q",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJ43cRfGnzGGAR-1t8ZE6hqCY",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJVVXhqmvzGGAR4kfxgke67Ys",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJbUxVhpX0GGARDpHOzyy3TJw",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJKwrFib3zGGARGjcn0G51aWs",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJC3oOFcr1GGARBZppc_Us8BU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJybl5yvHxGGARJoVYC592McQ",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJIfOBVpbzGGARyDhQrDbDr18",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJVVWV3z_0GGARlmuWyKGhjH0",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJGXx7uhX0GGARmY9OkTqKd_w",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJBdOJi6vzGGARaNLsv0y99_8",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJD8vk7B71GGARadZ0BmxjQ-A",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJucXsANrzGGARak8HPnIjqkU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJkcHjiVeLGGAR63L4jvwYjxE",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJVf818KvzGGARw4xSoCT1ehc",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJu10jbpvzGGARb6NEujxUlJI",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJl-s_R3z0GGARvfRRiiMfFhE",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJK1pY93vzGGARWzxh1Xk50CU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJK7T4yQ30GGAR20I5btK3VHE",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJs7B4LWLzGGARzOZquK98pvU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJVZ25lEbxGGARJa532zLmva8",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJw5KuueL0GGAR1C4uLNN0vsA",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJt9uC4WfzGGARQ-AfA4XB-gw",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJC3HhDBL0GGARcdpiVmHOqJs",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJ1cW5mKj0GGAR-fDb_oNtbKo",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJUTaUZ3_zGGARgQ60cC0M16c",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJT6qQIqbzGGAREx4QHm5W0yA",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJXWFFHHLzGGARY_0t7jzfOY4",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJdXLQ-unzGGAREab044qn7Vo",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJJ2iFP5_0GGARPwFJcV3jHEg",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJYdMcaGLzGGARqMTEI4Q2tGU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ0a7FExb0GGARyk7qLtO7wM0",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJKWKHMEf0GGAR35A_6DsudSY",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ8bUYH4PzGGARGY7xZJQtUTU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJrRComXTzGGARh64HHi7Qd2Q",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJowoUlefzGGARUPPPHg2TpgI",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJyywg4SryGGARcXQ8lWFR3mM",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJaVBJBVT0GGARubLtRc1Fq3E",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJtwb_EkT0GGARnqNoC3nlOZM",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJbTbuHb7zGGARV0k7aivxlfY",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJiWqnplH0GGARoqqweTDWF0c",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJzYQQ9Lj0GGARn0fhyWx17Zk",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJq_9UvPL0GGARLQ_J5DdwQm4",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJWV_3objzGGARey_cSMnVoms",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJy7lRjbL1GGARFwSi075gutg",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJmUbGdgdiGGAR-Q6aGHfT5dU",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJo61NSLD0GGARQbSNTpfZzYc",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJZxUu8B71GGAR-0Ggor2EOww",
+      "discoveredByRegion": "世田谷區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJY5mZ55nyGGARFr9LsKUL6mI",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJf9J4tZbyGGARhcuQxqMKCsg",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJg-7dspDyGGARvvDv4E5-tuE",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJg0RqNJfyGGARnRdyTRTnNDc",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJmW2M55byGGARleTOSRIaA_4",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJMdbN2cvyGGARDzNEEp__0TY",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJzfhtmEjuGGARBH3xquPzORI",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJfzBwypbyGGARo9WPNxEDFjY",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJPWdPqJvzGGARpS_LSrdYz0c",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJ14NLjn3yGGAR8iXQTRvmipM",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJE4M5M5fyGGARw8lTP24nkeU",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJEQx4NHzyGGARBimyHdD7Fm8",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJBzNZXpHyGGARCWcHy6ioTkw",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJBeFx25byGGARZhphNqLpNac",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ6XjB3q3zGGARnrRvn2_ufj0",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJWRrlnKDyGGARpaFZp5QgZHA",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJ_wjvOZfyGGAR1gW31uEHlow",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJIZ0pKpfyGGARQthUHTpnlz4",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJ51iv_JPyGGARMx6srWm-kfg",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJlTbSQpfyGGAR5XiwTNh7q_4",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJhcrJJXbyGGARPi_PgHeQshg",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJf-uR9YjyGGAR7k5ytDRC__k",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJM5ljNkXyGGARQ44Gz3BSj8M",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJdTGjo_XyGGARuatQ57NFDH4",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJXyeWutDyGGARtAk5nUbaOyo",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJJQOMrHvyGGARhvbHRXZ1XJc",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ8TIT4GHtGGARtyAPEM5KGK0",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ2eUKzZDtGGAROJGfNDPBf0E",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJV_fWy3XuGGARU9iyy2Z1Fvk",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJAXozDMXyGGARSakOTVtKe20",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJsTK8KovyGGAR1kd6idURqp0",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ5Y1tsJ7yGGARg3nY-OWvmRc",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ_bEYL8_yGGARB6C_OP8LS3k",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJExfmsEbvGGARE34nIdKvXy4",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJjy3XU7ryGGARhjrisCSvuCc",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJpdeKpKTyGGARKu7aL89wfDg",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJVasY9L_yGGARhplwThCdK4s",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJC_CeIV_tGGARNQUQNXfUhKA",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ8wC7hgnyGGAR8C6o2s7eKzA",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJc4wu9E_zGGARWQWGdKZeL9A",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJVdbkoGnuGGARw7ltLMOC2y8",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJiwh6z2jtGGARyZSXeTzclIM",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJAZX8MpnyGGARx5Nnow67zXk",
+      "discoveredByRegion": "中野區 杉並區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJsenoyoRhGGARAw3JA6_K6QU",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJbykfg5BhGGARbaf6BwGGxbU",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJoYyj-JphGGAR12cDwuELfuQ",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJv2gcK5thGGARUOvkhZ62lcA",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJI4U8KLNhGGAR7HOM5yAqJDQ",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJsenoyoRhGGARXTfLDZJZCRo",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ9_8HsP-JGGARDq9HkG_hUxw",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJeXd9QjJgGGARlOpjOkGjPos",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ03VrBuyKGGARb-6EtBOziqM",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJY4L9FTNhGGARVt9RVyDV3ms",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJ7XvQj3OKGGARMeg_ID2BdP4",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJXZQ8lFqKGGARnG8rm_m6DUw",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJqUXtB2eKGGAR5CmAxvDOPOs",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJWUfbFJeKGGARI6nYTu40mBA",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJI0RCSm-KGGARN5YdnSFW22E",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJNXLZTGaKGGARsPvWbWVqflY",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJh64KT6uLGGARKx4cxgOaL54",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ9-dkbvGKGGARNCddlsVqfvo",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJNc20knCKGGARbOgtmJeMWfk",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJgS8gv9RhGGARRz30AIUSjKU",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJgUVTzNZhGGAR2KGJE2LkBH0",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJt3Op1D9hGGAR4j4vf2WW6Ps",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJv4SsDACLGGAR1fjkaHShxoI",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJO9UPnSJhGGARedsoy-8hBbQ",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJg0tES2aKGGARvslGbyFiaZE",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ28Q11meKGGARbOOdjYOOE4A",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJH5iBSBpgGGARLWaPFc4zTXY",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJbTxLS2aKGGARtza_4qVxv28",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJjxbGom-KGGARWxYYgRkOWCE",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJtyrKcPJhGGARmxfa9_zI3JU",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJffRlmQKLGGAR1b8H9PbPYU4",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJcauzzGFhGGAR-Zn09oycrho",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJtWIqLkKKGGARZdQJI-JfzFU",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJOeVN4zxjGGARXRtaPCE8HgM",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJby5CfyiLGGARefBtib5uIdE",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJOypJhY2KGGAROVRw7AyPCNo",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ5QJdvJKKGGARccxm-NEZy4c",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ9_kU6ydgGGARNhbNJUWqPpA",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ1VtpEG6KGGAR2kXa8W7HIiI",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJCb82rw-LGGAR_N3mCI5i-gc",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJC1aZZFeKGGARGLX8IHTOn-c",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJtdOeOImKGGARcQmNU_Y7NXg",
+      "discoveredByRegion": "品川區 大田區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJVynn0aKFGGARr1mTVs-D_Go",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ4aIBcVmOGGARXJnl4WBE3Yc",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJqWvUlEeOGGAR0zPi9aUMtO0",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ11ijcVmOGGAR_RXlBesOxBY",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ4aIBcVmOGGARv-pPv86r1R4",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJf-WsNb2FGGARJM_3uL-jLfQ",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ0bJjNL2FGGAR13cBnsD2JBo",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ9TrbJFCOGGARithUHSlgvxs",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ__8j4o2PGGARcDR1yjQ2UGM",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ4aIBcVmOGGAR2ZLPzAw2has",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJl9ErrM-8JhUR45MS6E-Ssgw",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJAQBUYY6PGGARBYnkQ779-RM",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJmYqxj2mPGGARcnmfqEei00o",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJOwR-8daOGGARccFzVsB5U1E",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJO3RIRqSPGGARVfhWbpEhqI4",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJP-4rnEWFGGAReTYH7P4602k",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJe3Sr3IqPGGARX2HyYASqiZw",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ787hBEKFGGARpn8T8THuqXY",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJXQqzlRCSGGARX2rfl8K0lTU",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJozhC9wmPGGARsWuzNc9yLg8",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJQxS9lKCPGGARBRGmQtjFlK0",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ8_igU1aFGGAR63X-EqDYW1g",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJc9SsLaOFGGARl68K2sCQClU",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ4--1OjmOGGARsYPK4cRxCMk",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJU9_A8YCFGGAR_SfrTYYHT3Q",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJO0OBR0aOGGARf8WRDlpVS2k",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJoQdvGZmFGGARGVy1NN8khqg",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJ4c3zwlGQGGARlAKB-Xosn_Y",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJP6P_6muFGGARQUyWim4tGEU",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJWfu-3MORGGARgrQ8EbNYWjw",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJGVmB0rGPGGARxokR18VMZXM",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJ0z3X8UOFGGARCEVXiiJWuAw",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJcXRhn7yFGGARP7NiGrqRYOw",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJz_MqeyuSGGARaS4HCEJFJ94",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJjYWyNJ2FGGARe6XJ0v_UJXM",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJB3qyjVF9GGARE1Gz1IicoBY",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ65T4s099GGARKhT05Ix6YuI",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJRdVl11GPGGARkGGhAI732rA",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJLR28tsmRGGARGNpmcPFaxyk",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJxeT8osmRGGARjuD-vAigjn8",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ0X6d_06SGGARYZ2sP9fe_Zs",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJQ6pniDeSGGARVtRFu6f_R7Y",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJy4UqLsOPGGAR19a9GTACQKc",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJadg8iniSGGARysxtwtnBjxM",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJS6YYkS6HGGARka9UoQEc9XE",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJtxmQj6mHGGARNFmFcIbjD2w",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJyWHyxN6HGGARGyYnLazhjgA",
+      "discoveredByRegion": "東京北區 足立區 葛飾區 江戶川區",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJZcgAEkDtGGARGQTy6Xx3YH4",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJl7alBTfuGGARrk-lOYlVuY4",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ92ruS9_sGGARZKBuS-vULvc",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJLWaVdDXuGGART_Pg1R3CZ4A",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJKYORYUzuGGARGvk-Syf1bwA",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ-4HncLnsGGAREAGMBNFWBog",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJTTXsWS3vGGARlMalr6E-pSo",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJX9M5rEfuGGAR_aKQQuiYSyw",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJQ6xBTbDvGGARWjMM50vhcgE",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJH0C8qHjsGGARS0XigvOubsE",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJqcuDM5nvGGARyd5DLbfLNL4",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJhxa9k0juGGARrLLZkBu09Ac",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJN5EtDPDvGGARGbW0TnkgnEs",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ8VJw6UfuGGARipDI2iZLP9o",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJpVmiHDjuGGARweBh-igDp5o",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJB0eQ1EfuGGARaKthmgoKqwU",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJHYYRCjjuGGARQEmoz1Mzas0",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJw2wi9kfuGGARTirViZm25jQ",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJLYwD5TTuGGARBZKEP5BV4U0",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ2YwN3kXuGGARwYlx9FACg3M",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJKadEcDbuGGARnrpE3ZLkcYw",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ19UpHMjvGGARse48MDzOCQQ",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJLRZy90ruGGAR7AqksIECQr8",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJG9eUqDfuGGAR_ea8Odfq2MA",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJMWpW_wftGGARaPcaHeNsbIo",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJP75zcDbuGGARDylSkv9IzVo",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJC_BkRUnuGGAR3tojGiIY-RA",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJn2m3lZjuGGARLUz7jLhCvuE",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJA9VAsc2SGGARk1Cp0EkRvuI",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJCZrJMsSSGGAROqOzMVCbUv0",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJTStIrTjuGGARTuA3lIbF40A",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJVVWlPDbuGGARw1Q7hG5r_aU",
+      "discoveredByRegion": "練馬區 板橋區 吉祥寺 三鷹",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJmZCjXl8ZGWARRNiQBR4Tnw8",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJNyaGRqseGWAR8qJ9GZz4p8k",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJz9oLQnwZGWARF19QJM10qqU",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJsyQzh33hGGAR4zGAo8N0BDw",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJw7R_aGMZGWAR1bRBmQajWsE",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJC9RL4azhGGAREzW1g7ZN2tc",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJcfBGf2MZGWARljeqx0MuXTs",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJW2Uqt30ZGWARl6_BIetZBAw",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJg_NJQAAbGWARXo27CN_Cseg",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJJ1WE5IEZGWAR7zTnPYJR9R0",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJky7SgWQZGWARm6KFwjPD-1k",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJi2r4TmAZGWARQ5_ej1GUKiI",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJybXK-3rhGGARmUgQKV-MO5c",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJv-XCe18ZGWARD_OVW-NV9gE",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJkeFlo1gZGWARE1RUdhPdCmM",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJVeffZ1MZGWARGpRcDPo6V40",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJhysE9HDhGGARRzK0rZqJdVs",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ-dEkAk_hGGAR7g4jO0Zx2og",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJz9oLQnwZGWARoscDGt6AUZc",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJXeIh0-MbGWARXR4d-arrwoo",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ38uvt1gZGWARWoq1Y8bMBOc",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJgxi95lTgGGARZU8_3_pBCXc",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJgfU5LiLwGGARCeLsYGYXInI",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJr182Z18ZGWARxYKhJs9WLLU",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ5W5hTqgbGWARB3CgdP2g8Nc",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJy6piaGMZGWARklXINKDIBPw",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJJ1WE5IEZGWARCoD1T0Mdb3M",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJnxueFcM_GWARaK3oBQymHfo",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJwcR9imEZGWARzUIVfRe28ng",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJ1x5igZEZGWARm1-NyuoG3vI",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJl53xgGMZGWARDu3ZJR928LA",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJeXRVFwQbGWAR-f5HraetJVA",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJXZN654EZGWAR2QSI-HGKghY",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ1ePBk9gbGWAR8eHWF1-AzXY",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ19HdqWcZGWARA8zuVl7JqO8",
+      "discoveredByRegion": "立川 高尾山 東京",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJv1XggPxOGGARLQSeehZgtgw",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJKz4R-ONOGGARQwQw-m-ogEM",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJA3KO9eVOGGARAqorawfvozA",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJFT6psuZOGGARbzbOOB9H0Y8",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJSUAYY-ZOGGARUyQcTrjpTzo",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJezvy-ONOGGARlj8VOnZI0TY",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJJ2g4Pe9OGGARaB1ps_miYtk",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJB8jKQuROGGARayKHrH_Vw8o",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ1Z0M9OVOGGARQjf3WtRpYkc",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJAQA96VlPGGAR0TqpQJDAg_A",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJW4_WbuROGGARfUw2YtY8-HE",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJAQBEc-ROGGARAkalQuMuW64",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJA65raE1PGGARRTmmqaBBCsE",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ8bcgReROGGARR7_8PDo7Zdo",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJE_U8ruZOGGARFeW9HjKSRyY",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ__97rBxPGGAROfQ8-FveXNM",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJfe0P-ONOGGARFKhCh9ZQTO0",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJOTfBceROGGARmsvbibHbZ2s",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJoUu8_LZPGGARjiSvjmmeAO4",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJlajiWO9OGGARbrTQUkXDbFI",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJU4B-GpNPGGARwcUCUcEOq1k",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJt0gqYutPGGAR6_qCRSa1DlI",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJvVsEzuVOGGARs99YuxNfbDU",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJYbQ-t-VOGGARgGfXT1WKfQw",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJyfOfTcJFGGARWuSwrMNRNMs",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJu7jgCgBFGGARu8N4XOpns5c",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJxZW_LuROGGARX3CaDOdyffo",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJr6UTdvlOGGART30L2LcRlmc",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJXTiCoXZPGGAR1P_sJVdfuv0",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJYbQ-t-VOGGARSlmkn6iQiAw",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJTc3KZ-ROGGARSZ5OPPnzUGM",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJETfaTyxPGGARzgy4Uqoq9uU",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJcThjCwJPGGARzaHpyW8OBR4",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJofaK5t1PGGARJLYYD4wLIok",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJSdyjbPxOGGARohA5GYPzeuA",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJQcxQBAJPGGARy9OUpizISmU",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJq6peheZOGGARYhEpO9pUqLA",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJGVWRZeZOGGARVVmqjKMdxGw",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJGfzKFe9OGGARTWbgLWl6RHM",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJhbArWU9PGGARMwu_Q5QUPRY",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ20HAcdBPGGARDfh_VItRx_M",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ1SdxB_RFGGAR0a33ulBh61c",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJ0SGVREVPGGAR_fQf0KAqGFg",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJi0cP649PGGARWoVMWhkirhU",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJBbxJ3_JFGGARTO9rLbCTwx4",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJbXkS1-VOGGARoCbASbMXQf0",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJF72sDjRPGGAR9_OwpiVyM-c",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJJ-U4ms9PGGARla5OHrzN7RQ",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJiaqQeLhFGGARtTZQEBCtZ6g",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJtb9OmD1PGGARnuauYLKCzSY",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJpW4I8B9PGGARUe4lgl6oSNw",
+      "discoveredByRegion": "鎌倉 江之島",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJETQYfME1aDQRia25uG7BIzg",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJo9bce_A1aDQRJh0Uo0lexW8",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJwf6cExJcGGARdqO6TRiIWaY",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJZ22anBRcGGARx5aEF1QhgtE",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJyf36nY1cGGARSMvF95H0LHM",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJsdKWDx5dGGARqfGduRx2z0o",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJSXGAhfhcGGARcz3MKth9lJQ",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJK4Pq7GpdGGAROTXfYnXIXqA",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJFW8gguRcGGARs2d1YSn4usk",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJk7AyMWFcGGARsH3a5_yFjuU",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJTaZgtONcGGAR-NBk1CCCh4I",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ3aZt_mBcGGAR1sMIuZChu1w",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ9XSCeN1DGGARQwwdRssNXko",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJvXrBby1dGGARffLkevsVMhs",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJjx7LwPNcGGAREtAFvrqm6vo",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJA-Vqz29bGGAR3wxZrpQmxI0",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJscFiUHNeGGARWlS-QpBncmA",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJmcZyEOFcGGARcDtLJl467rk",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJaXTSqctYGGARAMtFqVXE30k",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJQWU1hdFdGGARymE9W3cU0AU",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ__-Le-9cGGARNY-CTSHwq5A",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJTRC2enlBGGARR82PUNymZUE",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJT1YbKxdcGGAReCUfFA2iNQY",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJpVSJt5JbGGARsMgR58DBjfs",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJ8wBFIp1fGGAR2YaMOZi1ECA",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJEaFmc11cGGARx8g0NQrvYTY",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJvdMQOx9dGGARbLStP8GzB9k",
+      "discoveredByRegion": "橫濱",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJvVoSv-6kGWARL1ITmqu0leM",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJVb7XJjulGWARcTWrQvPZAqU",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJKyns4-6kGWARh8uZCdY2VIQ",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJIzi-x26YGWARdF4J7-5y_E8",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJc8l0sAKlGWARN6J-fxo5DpI",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJQ4QPHtKlGWARXcJkfd2_ono",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJg_wBinqjGWARDb-2MKc_m58",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJ_-Wd7lalGWARnG2aQlAVdHs",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJgXfi68ClGWARd7v1UcTT-k4",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ__870O6kGWARowVAc6nPKUE",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJGdBvLP-kGWARtFNAuaDY4Fg",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJtwL0SmOYGWARpIMXiX-tYb0",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJczrUSf-kGWARCMq_3WYt9Ag",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJUQaq7vmkGWARwviBpxu9v3o",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ01bRcPelGWARg5ygtBk5ias",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJs4TS3mi7GWAROeQI6T1QNdI",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJE0OpSKalGWARI-fVXOTFF48",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJc4AhRz-lGWARGHNC_v8rSys",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJ__9PmP6kGWARRvtrgOSqH4s",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJ6a1xo_ikGWARx9BWgJGmRPs",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJnx5HdwCjGWARZfLM_s9Lihs",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJUSHc6vOkGWARZwbn3R-qyUQ",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ1yakFHWjGWARD9f1BXLI-Rs",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ27fTnfikGWARNe7x7t-Itek",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJGT8bEXWjGWARCUqTSEXsx74",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJW7PDInWjGWARMuaHmAGlKT4",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJtcIqzYuYGWARmuDHR2ij5Ko",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJU8vFJVGgGWARci2xyvG0CN4",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJVVWpsL6YGWARBWouV5AlZ2U",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJcSUF__mkGWARPNv8lqPrAPk",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJSUL-T6afGWARziwfrE_191w",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ__8vMmOYGWARvBpiPC0j0V8",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJZ8pPSOelGWARK7V4J00ejr0",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJWSG0c1OfGWARBJSv4Hk_F7A",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJqwXxBoqYGWAROtwVhyhQS28",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJf1UyeaSjGWARv2Sx5QCjKIA",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJVVWWLYqYGWAR-wbxuzxe3VA",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJpbAGg3SjGWAROvGozKejOeQ",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ8xdp8WSYGWARRaUVLnalZyM",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJm5z_c_iZGWARZKeSECJ4Mds",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJY9_AqFmjGWAReUs9lwA_ztc",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJXfKKh_mkGWARCTR8so2kwE8",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJoc5s09eYGWARLc6MYwI6ZVY",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJeUo6OvOiGWARTc-Vluuwdzc",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJD3rRDwujGWARkYB0JgsY1jU",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ35Qzh6WiGWARclGuY8hsZkk",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ4QpBpmaYGWARozSYk17YAbw",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ2T_gmDWfGWARDrlylK7D0s0",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJiVSpnZWeGWARMkUL4ntVFHI",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJVVVltv-hGWARRGEjZVZEtqs",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ__8PgmaYGWARApl8K5K-3j0",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJh3EXgmaYGWARfUVabTd7AvE",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJOyehj3OkGWARRpHTbGAOBTc",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJhTa7RkOYGWARN49WPSchQ8Y",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJ4asl3nOkGWARWu0Cif8ZbX8",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ4fT1XOykGWARg7qOFwPG3lw",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJabnPcNi7GWAR-_ZV2zancmE",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJn-8TfJa8GWAR7OWPUei-VsQ",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJi0MFcKifGWARo7dIQgUCg_U",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJOX0fTv6hGWARlGSxi0NxV5Q",
+      "discoveredByRegion": "箱根 小田原",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJAQC16jRnGWAR9wS8HLq2phc",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ1xlIF991GWARhCPTCES1sFA",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJK4SZn4VmGWARcZ-vsGukOhY",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJidCHzyleGWARcNKCSH8Z55c",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJAQBAst91GWARrgHbrnJA3QE",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJadzTaRNiGWARprfnABdRij0",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJ__87QEJ2GWAR_otDsfLsYF0",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJlSsLjKZfGWARBCllOgtTLqI",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ1xlIF991GWAR6E1sem0G1Ys",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJE22XQhNiGWAReG5BXnphoFg",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJEed4qrxlGWARzfK2g0Bt4wg",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJCaWq1yhhGWARySJHeQZ2-b0",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJF2tIqNh5GWARoVfAj_bMCdc",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJEd4YWuNnGWARBdT5k3fRmF0",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ0-FaM23gG2ARDFben2v-Hsc",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJO_wC9ghlGWAR5Cbmb_zCLe4",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJFZ0-WtRfGWARmcTS7hNamhg",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJVVWpiyZeGWARQnEv2dEkp08",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJJ48hYwBfGWARoaIoHWP1EAA",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJZxqRaRNiGWARFJ-fBlABAP4",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ0RlSTABnGWARIbYg41zHWF4",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJv5BWRU9eGWARdUrfJXihWsw",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJL7jIyupgGWARMDfArSEwykc",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJu6hYHU1nGWARfaBH0X127o8",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJlYn_tUtnGWARj3htHTIli5Q",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJk7EFiyZeGWARt20NPpY-gv8",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJeWmd6c1gGWARprCJvSG1ARc",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJawwH2kxnGWARfdDuJqxUYdw",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJSZWoi911GWAR7B59eq1-eLw",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJ20BPM0piGWARrlm9cwL_yg4",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJz-e9hO1fGWARvx3wY6PxWLw",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJMSQyt4JgGWARGxEj8inq2wc",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJr_B2Vu16GWARz3xDgSjjOBI",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJfe1C7cxhGWAR9W_CsV--VNo",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJO-U1l1R3GWAR5T8HpoNXyWE",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJVVUZElJeGWAR04jxCrdWqa4",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJq6q6sSlhGWAR_p3QHjGBHTU",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJa6tBLUlfGWAR7CxRFrsjca0",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ94E8hlxeGWARvvvz8F49t3I",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJE_h8kefUG2ARt84QZaZLCNg",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJZz76GrlfGWARUmLXgoMBD6I",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJnYZ9uSlhGWAR0XwJXQrWl54",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJx5KJtI16GWARtBvTly_pS7c",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJGyNiM0piGWARE-RGCkn76KQ",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJE22XQhNiGWAR7gFFugmWBaY",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ_az8rfBmGWARuRRzI2utSwY",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJBdLGvilhGWARgKUTWCWbt08",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ5bgq4bhfGWAR-GlvluDXN0M",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJLRKs2y9nGWARVsj9TMHY06w",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJUZTi35FiGWARFktQw0xQHxU",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJCyaQZBNiGWARB2JmtmNhQPk",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ4XsnJARhGWARfWVWCf2Yd1s",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ48sByzphGWARRhKsQOEFyAE",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJmQlxqTVfGWARU5TdI1Vv0DE",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJl58PTCReGWARbKxWqD0xRo4",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJQ27jYU9nGWARQ0t_m4MKygI",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJCdIFaVVfGWARyFk5o4i-EAU",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJg-RkHAB3GWARscriXnL3WC4",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJAwHhLmlfGWARqOCaiWAUMpo",
+      "discoveredByRegion": "富士河口湖 富士吉田 御殿場",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJfy4pqNGmH2ARVY7wbTSSts0",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJl4fb48-gH2ARdc92S5ajkzE",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ3dTMhdWmH2ARk-3jXiYGiZQ",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJp_lErZmnH2ARbliXB_SDfxw",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ0VOX18-gH2ARhxp6Rq6mFuc",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJ8yiows-gH2ARdFa4to9cPlw",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJn_-ULiunH2ARXCT0BtZPuME",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJrxL9Ps2nH2ARCSFdh50ZVgM",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJZWyJwnifH2ARoJVAqbtWNBg",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJF0MR5MSmH2ARto0YlyRPpLU",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJNSAhU8WmH2ARlA7wenFbUKs",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJ3RdixNWmH2ARkP7AZV9g124",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJHd9-SdqmH2ARKg_vPQ_CUb0",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ0bg0HNumH2ARC2WFfbpXI4E",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJuyLI1lcLH2ARysiiMbtVWW0",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJt-4eVzp1H2ARK5lkEJwtUpk",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJK1a5qzCfH2AR_mgKIclySoA",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJQ2f55s-gH2ARuEI2Crd4Vwg",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJlyKc09OgH2ARt3JqkXullWM",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJbxkZINWnH2ARZQIyFqisgiU",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJhSWfigoLH2ARVAeqstYGEOg",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJTb1xmkB1H2ARQCyDH32vaac",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJxXChY9umH2ARTD_P1ejH3V0",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ6dlsazt1H2ARi4kcnh2PtDg",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJKS6aGACnH2ARVi9czDURPYc",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJu1sKjZqfH2ARcjnX4JTBRf0",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJwb6wwMioH2ARjVZDylifnCc",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJI0JCh9amH2AR5y9YEeyfKjk",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJnzahTQCkH2ARzv-dO19Rkao",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJJUq5YsOmH2ARDWfKwpesiUE",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJIxZ3y9CmH2ARJzVhlW9hYzs",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJWdmAw9amH2ARqD-s8qCx3hU",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJNSAhU8WmH2ARfvrLWWKlxeY",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJwZJfTByvH2AR2uT2ZscGxJ4",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJef6tiNmoH2ARsKxvrVWO1Gw",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJLcUKg8SmH2ARMsTF00Q9LMA",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ2fyi1kayH2ARi3ow8rbzjAg",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJbY06Bd6mH2ARpPvIxy7W-gM",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJIUPzCtqmH2AR3MKL23lXU6o",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJ97QhU8WmH2AR7k6mbzqHj4s",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJn7k3-oenH2ARBs2DMhOxWR4",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJJYuqwjl0H2ARGaWtC9wlluI",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJc0KXG9ymH2AR4NeuXCB8FsQ",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJGe8y3scKH2ARoD3caVyrYu4",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJpaWi7swKH2AR4qcn2zWidjw",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJH7OBX1ukH2ARfA6kXkXFSjs",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJtxxQEVmvH2ARYveutAV4DVw",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJI_dSQzCzH2ARkpZzNs8sD4k",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJWwX5UmufH2AR785TMlSTRLQ",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ1ywCo9SoH2ARyPM0AF_D2Yc",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJI2ijC4KfH2ARMKxo0sE2q9I",
+      "discoveredByRegion": "日光 栃木",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJV5adVwDZGGARqVhGV2RDL0Y",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJk3vhRmHaGGARQ-IQvPa-2yM",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJV7JODpLZGGARkmjghSFQ9iI",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJq7AxD5LZGGAR62R3oTxEHzM",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJV7JODpLZGGARbDvEkCdioBE",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJoWZnI7jbGGARf3DVo04Fkm0",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJDXQko6rZGGARlhhpMwL2ao0",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJp1eRFYHbGGARyfe5Shsq14s",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ-2dBjGHaGGARM8QT2g6S8ic",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJb94h_J7ZGGARFABTX5NAxhQ",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJg6pC7_LbGGAR8Gu6T3jUymU",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJTzBCwWDaGGARpKcOPkuTTPI",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJj_iHaFTbGGARXHBVVY5bsy8",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJIcvdwWDaGGARyDw1Ikr7YZE",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ61sUvGDaGGARWcr55Cw53VQ",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJzQCb0WDaGGARBVn1uBcnf24",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJraJVSGHaGGAR-xR5g3TVb1U",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJVVVFv17aGGAR9Vh1Jo1q4qs",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJm8sgul_aGGARe2Dj5JnBq9U",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJRWHgNmHaGGARFtXxpVqCQHc",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ5yGaolnaGGARBC8A8n1cnvE",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJNd2cyVbaGGARSmv72BO96hY",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJfcW02FbaGGARA5O8oRvbZLg",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJq6oGV2HaGGARw6Vla0AlCcA",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJsUvUkVbaGGARIRPgcMdFuCo",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJw0jCRlnaGGAR69Vrr4t4RSY",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJo0Lvy1PaGGAR5uZL0bJ5NX8",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJF_lWWYfXGGAR2ZYciCTb0mg",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJ5cXQzlPaGGARkalN64WJYGc",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJfQn5MGHaGGARLE8hqd6riYU",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJfbrjD2TaGGAR-qB08o69fUk",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJdxgb_A3bGGAR_b7tPwubn5I",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJrbCsQWHaGGARYf8yVWFvO7k",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJdXR4eyzbGGARaGw6LZ38naA",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJ__tmxWDaGGARESJaC-8sCjQ",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJwbZ6FmrbGGAR2zlQDO5-r00",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJh6XnMk7bGGARsP1Fjjb0szA",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJMzbS6onaGGARXPCQpOZ-zn8",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJvajEEF7aGGARWqggaYZSmaY",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJO3dQdvbaGGARtW67IJWiC-s",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ1T761VnaGGAR1TrtaMMbS4M",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJN_GlXvbaGGARU02h_zcw59M",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJccVrkbfbGGARYdmuDN6t_i4",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJFc3l6onaGGARa-luXsUoEII",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJDeiAmPXaGGARSbAPIn2Tqxc",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJS_5TlYnaGGARk_HVY7Ivtj4",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJPbDXqWDaGGAROeXmgdztEkw",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJq4fdp4zaGGARpO4lBQv3ypA",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJgyN1rhvaGGARkVv16XxU4U8",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJO3dQdvbaGGAR6Q2M44TJY10",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJ34DN_0fBGGAREWISnZ0GJz4",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJFxvECe3bGGARGIKVP5XUXg0",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJUzhQGgDbGGARBu5kaKFrJFU",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJx0ndaYvaGGAR8TufxpM1E60",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJyVGPuInaGGARHninzIuF2Xw",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJc0tiZ4vaGGAR1hq0g2ws95c",
+      "discoveredByRegion": "川越 埼玉",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ5cLxXiXSHWARllLkyB_L_oc",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ5cLxXiXSHWARz4pWcUXMYWk",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJhQBnbUvSHWAR2L0NAqgrqOI",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJdbyiiSXSHWARz45v4J2L8H0",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJo5AK4HrTHWARqpE96CO6ncA",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJYzpy1oXTHWARy7giKJvCbdM",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJcSt_f4bTHWAR_ftblt4yVWQ",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJmXA9bYbTHWARKCk5m2rfPT0",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJvwoBAUrSHWARvv_DJG5rQ20",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJgfu9XnnTHWAR-dSRpjFeWIs",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJ541daXbTHWARGYRpG-V7GhI",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJgzHnGJ_THWAROVZ4LbTLJlE",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJHRj6l6bTHWARXX2TzqHAV-c",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJB1z0hy_SHWARhUCQDv-5_EA",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJB0wpkqvTHWARSz0P2NZMJAI",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ4SZKEnzTHWARMSGxKuFyLZw",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJw8bqU6rTHWAR0gDDX_O29ok",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJwY1OCYLTHWARmwzHtG2msig",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJbR6M137THWARJKFND98qynI",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJsVnDeHvTHWARj6_OtR0gJ5E",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJs2bRqHvTHWARcl6bPa7ly-g",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ70c-tnzTHWARzRkiG8Bc-Q8",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJewD5_mjUHWARkoSGzzO5OT8",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJhyd2jeKGHWARLg80YfuZ-vQ",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJFYs9aaXYHWARsnooiOit2r0",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJqUaopGuF918R6vpw-DMDtyo",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJD5HXelhWHGARbAPbHvSJgRg",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJnXxJDYfTHWAR6bH3l8PMdzE",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJo6GgBf_SHWARv34wkMeeU1Q",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJy80iekYu9l8RmSU5rs3-acA",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJa0LMbErSHWAREPrNivS-S3s",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJy5ErzDrSHWAR6O-7EjbP8ZU",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJhQBnbUvSHWARLmhc8M2QsdM",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJH-Tsy4jTHWARhMxWMPtQciU",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJqTb6sG7RHWARwmzotpPbdaE",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJ_-uzOVLSHWARvO8Ww83TH50",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJh-a7rVsu9l8R_A6PXgFs0hs",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJZSoJPI4OHWAR6DwIYyVsRy8",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJAQBs6k9VHGARMXUoKoR4iug",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJmVmaCoUOHWARVPa8-iAOLZA",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJkWtN0o3VHWARFZhxiPChK2w",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJPc6z3H3THWARwJWHvlplCdM",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJQZhbwZ3UHWARINAVx0MqB6E",
+      "discoveredByRegion": "輕井澤 長野",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJa6piWhTzImARi36J86VOpj8",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJNcyfY1DzImAR3ZTSNbZ8pas",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJm1XkN3bzImARHRo3V2gJ5nI",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJs_0H_BvzImARi2Z8WI-C3sg",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJ64tkTzF9GGARLtKR8ldhyYE",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJQaFONODzImARyI7bkNtBLDs",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJKcMqSwrzImARBe8r8-lGLQo",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJc1foA1vzImAREVRXwsIP040",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ1ejX04L0ImARvRHsOjXiwbg",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJKyUL2g-LImAR0f1MLwlaoY8",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 10
+    },
+    {
+      "googlePlaceId": "ChIJxX6CI3pfImARXOmVd4d8ne0",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJvxgeN3bzImARXi2RXQpZ7LQ",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 12
+    },
+    {
+      "googlePlaceId": "ChIJvxgeN3bzImARl3st6Q9fzZM",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJ68VdtBKLImARwXnbhraMF7M",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJ5aMxMcd9GGARDGZykE0pKA8",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 15
+    },
+    {
+      "googlePlaceId": "ChIJg38CKMmLImARrsgSGcGKMdY",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJ5aMxMcd9GGARrlWEhT7R7_s",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJJ6XDoxqLImAR3cOipbe3fN4",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJX9Dls83zImARaY8UUlmOGLQ",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJp6Telnv0ImARN1hG6hAFrIM",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "美食餐廳與市場",
+      "queryRank": 20
+    },
+    {
+      "googlePlaceId": "ChIJ1ZCzxLaLImAR5cuUnQGvBI8",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJmce_rE2MImARZ6Af3gqiDow",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ__9vix-CImARLs7fd64mSY4",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJ4Q9xCpCLImAR5gD3Xn0aZqc",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "購物百貨與商店街",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJdwY1CxCLImARgIjkYEE8Xoo",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 2
+    },
+    {
+      "googlePlaceId": "ChIJ80OTUDSbImAR-ftcw1vZMJc",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJy8dXq2zzImARlBzqZ6Fokh8",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 4
+    },
+    {
+      "googlePlaceId": "ChIJCzDjoBqLImARvJiplUaRYKI",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJVVWF6hqLImARxaXhCV1O6ec",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJge--oxqLImARCzp9br5fQ44",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJp086VKf0ImARAYfxYxdHmoE",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJ7UQDDhCLImARIhPJFt0f2ig",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "神社寺廟與歷史文化",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJe3k5T1SDImAR16wmAYRZvHQ",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 1
+    },
+    {
+      "googlePlaceId": "ChIJ_Tqf9iGCImARlmrRTAg0rY4",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 3
+    },
+    {
+      "googlePlaceId": "ChIJszdHEQN9GGARy9MJ1TY22eQ",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 5
+    },
+    {
+      "googlePlaceId": "ChIJzaLT0Bl9GGARX3OJ1IrbKdo",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 6
+    },
+    {
+      "googlePlaceId": "ChIJzeae9iGCImARtFg0_eBwt_w",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 7
+    },
+    {
+      "googlePlaceId": "ChIJszdHEQN9GGARJS23SnAdR0E",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 8
+    },
+    {
+      "googlePlaceId": "ChIJS5f0KIIIGGARGR59w2GdX1I",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 9
+    },
+    {
+      "googlePlaceId": "ChIJw83NILyEImARVSC9KiyK4AI",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 11
+    },
+    {
+      "googlePlaceId": "ChIJaaa0g6SLImAROniRCPNgsTs",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 13
+    },
+    {
+      "googlePlaceId": "ChIJRTLSKVN-ImARhPnTKDzmzdQ",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 14
+    },
+    {
+      "googlePlaceId": "ChIJfQYDNZydGGARrDGiPGyy3Fw",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 16
+    },
+    {
+      "googlePlaceId": "ChIJue58NbIBGGAR902_gAxbb4E",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 17
+    },
+    {
+      "googlePlaceId": "ChIJ_-u7JOc8I2ARXxpaP0H_pnQ",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 18
+    },
+    {
+      "googlePlaceId": "ChIJFThBAFKgImARVnKAzV0yLJw",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 19
+    },
+    {
+      "googlePlaceId": "ChIJj4cfP3qJImARAcF-Owkzbi8",
+      "discoveredByRegion": "千葉 舞濱 成田",
+      "discoveredByCategory": "地標娛樂與自然",
+      "queryRank": 20
+    }
+  ]
+}

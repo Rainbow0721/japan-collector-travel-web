@@ -1,0 +1,55 @@
+{
+  "version": 3,
+  "targetTotal": 1000,
+  "principle": "每筆必須有合法來源、中文主名稱、日英副名稱、座標、分類、區域、熱度證據與最後驗證日期；未達標不得進推薦池。",
+  "categoryQuota": {
+    "美食餐廳與市場": 320,
+    "購物百貨與商店街": 180,
+    "神社寺廟與歷史文化": 140,
+    "地標展望與城市散策": 120,
+    "公園自然與季節景觀": 70,
+    "動漫娛樂與主題樂園": 70,
+    "藝文展覽與博物館": 60,
+    "溫泉體驗與特色交通": 40
+  },
+  "areaQuota": {
+    "台東區（淺草、上野、谷中）": 85,
+    "千代田區（東京站、丸之內、秋葉原）": 65,
+    "中央區（築地、銀座、日本橋）": 70,
+    "新宿區": 75,
+    "澀谷區（澀谷、原宿、惠比壽）": 75,
+    "港區（東京鐵塔、六本木、台場西側）": 60,
+    "豐島區（池袋）": 40,
+    "墨田區（晴空塔、兩國）": 35,
+    "江東區（豐洲、台場東側、清澄白河）": 40,
+    "文京區": 25,
+    "目黑區": 25,
+    "世田谷區": 25,
+    "中野與杉並區": 30,
+    "品川與大田區": 25,
+    "其餘東京23區": 50,
+    "吉祥寺、三鷹、立川、高尾山等東京都西側": 55,
+    "鎌倉與江之島": 40,
+    "橫濱": 30,
+    "箱根與小田原": 30,
+    "富士河口湖、富士吉田與御殿場": 35,
+    "日光": 20,
+    "川越": 15,
+    "輕井澤": 15,
+    "千葉、舞濱與成田": 35
+  },
+  "requiredFields": [
+    "id", "nameZhHant", "nameZhHans", "nameJa", "nameEn", "category", "subcategories",
+    "prefecture", "city", "district", "areaCluster", "latitude", "longitude", "officialUrl",
+    "sourceProvider", "providerPlaceId", "rating", "reviewCount", "priceLevel", "popularityScore",
+    "admission", "typicalMealPrice", "openingHours", "reservationRequired", "averageStayMinutes",
+    "wheelchair", "stroller", "elderlyRisk", "rainyDay", "lastVerifiedAt", "confidence"
+  ],
+  "acceptanceRules": [
+    "中文名必須可追溯至官方繁中頁、地圖供應商 zh-TW 結果或可信華語來源。",
+    "餐廳必須有近期營業訊號、足夠評論量或跨來源推薦，不收只有單篇業配的店。",
+    "人氣分數不可只看星等，必須同時考慮評論量、近期性、跨來源共現與台灣旅客相關性。",
+    "Google Places 內容遵守其快取與顯示政策；自有資料與官方資料分欄保存。",
+    "永久歇業、暫停營業、名稱衝突、座標異常或來源過期資料不得推薦。"
+  ]
+}
