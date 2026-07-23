@@ -27,6 +27,16 @@ LOW_VALUE_CHAIN_TOKENS = (
     "gindaco", "築地銀だこ", "sushiro", "スシロー", "kura sushi", "くら寿司", "hamazushi", "はま寿司",
 )
 
+# 這些資料可以留在「地圖搜尋／交通節點」層，但不能算旅遊景點完成度。
+NON_TOURISM_SUBCATEGORIES = {
+    "hotel", "hostel", "guest_house", "information", "station",
+    "convenience", "supermarket", "mobile_phone", "chemist", "car", "car_parts",
+    "hairdresser", "erotic", "wholesale", "laundry", "dry_cleaning",
+}
+GENERIC_FOOD_SUBCATEGORIES = {
+    "coffee_shop", "beef_bowl", "burger", "chicken", "fast_food",
+}
+
 
 def has(value: object) -> bool:
     return bool(str(value or "").strip())
@@ -39,6 +49,8 @@ def audit(row: sqlite3.Row) -> dict[str, object]:
         token.lower() in combined_name for token in LOW_VALUE_CHAIN_TOKENS
     )
     wrong_category = row["category"] == "美食餐廳與市場" and row["subcategory"] in {"attraction", "museum", "hotel"}
+    non_tourism = row["subcategory"] in NON_TOURISM_SUBCATEGORIES
+    generic_food = row["category"] == "美食餐廳與市場" and row["subcategory"] in GENERIC_FOOD_SUBCATEGORIES
     traceable = has(row["source_url"])
     authoritative = has(row["official_url"]) or has(row["wikidata"]) or has(row["wikipedia"])
     names = sum(has(row[key]) for key in ("name_zh_hant", "name_ja", "name_en"))
@@ -52,6 +64,10 @@ def audit(row: sqlite3.Row) -> dict[str, object]:
         reasons.append("一般連鎖門市，不應作為赴日特色美食推薦")
     if wrong_category:
         reasons.append("分類錯誤")
+    if non_tourism:
+        reasons.append("屬住宿、普通車站或日常零售節點，不是旅遊景點")
+    if generic_food:
+        reasons.append("泛用咖啡／速食／牛丼類別，未具特色店家證據")
     if not has(row["name_zh_hant"]):
         reasons.append("缺繁中名稱")
     if not authoritative:
@@ -60,7 +76,7 @@ def audit(row: sqlite3.Row) -> dict[str, object]:
         reasons.append("缺營業時間")
     reasons.extend(f"缺{field}" for field in missing_product_fields)
 
-    if chain or wrong_category or (not has(row["name_zh_hant"]) and not authoritative) or not traceable:
+    if chain or wrong_category or non_tourism or generic_food or (not has(row["name_zh_hant"]) and not authoritative) or not traceable:
         tier = "無行程參考性"
     elif points >= 50:
         tier = "半成品"
@@ -68,7 +84,8 @@ def audit(row: sqlite3.Row) -> dict[str, object]:
         tier = "無行程參考性"
     return {
         "id": row["id"], "name": row["name_zh_hant"] or row["name_ja"], "category": row["category"],
-        "tier": tier, "score": points, "isLowValueChain": chain, "reasons": reasons,
+        "tier": tier, "score": points, "isLowValueChain": chain,
+        "isNonTourism": non_tourism or generic_food, "reasons": reasons,
     }
 
 
@@ -83,6 +100,7 @@ def main() -> None:
     curated_rows = len(re.findall(r"^p\(", CURATED_PATH.read_text(encoding="utf-8"), flags=re.MULTILINE))
     categories = Counter((item["category"], item["tier"]) for item in audited)
     chains = [item for item in audited if item["isLowValueChain"]]
+    non_tourism = [item for item in audited if item["isNonTourism"]]
     report = {
         "rawCandidatesFound": 9443,
         "databaseRows": len(audited),
@@ -100,6 +118,7 @@ def main() -> None:
             "無行程參考性": tiers["無行程參考性"],
         },
         "lowValueChainRows": len(chains),
+        "nonTourismRows": len(non_tourism),
         "byCategoryAndTier": {f"{category}｜{tier}": count for (category, tier), count in sorted(categories.items())},
         "examplesLowValue": chains[:80],
     }
@@ -114,6 +133,7 @@ def main() -> None:
         f"- 半成品：{tiers['半成品'] + curated_rows:,} 筆\n"
         f"- 無行程參考性：{tiers['無行程參考性']:,} 筆\n"
         f"- 一般連鎖門市：{len(chains):,} 筆\n\n"
+        f"- 住宿、普通車站、日常零售與泛用速食：{len(non_tourism):,} 筆（全部隔離）\n\n"
         "完整的定義不是『有座標就算』，而是足以安全放進旅客每日 schedule。"
         "目前資料庫沒有真實簡介、建議停留、費用與旅客價值證據欄位，所以嚴格計算完整筆數為 0。\n",
         encoding="utf-8",

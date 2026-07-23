@@ -33,10 +33,10 @@ const THEME_WORDS={
   nature:['自然','公園','花','櫻','海景','富士山'],night:['夜景','展望台','夜生活'],family:['小孩','親子','迪士尼','樂園']
 };
 const THEME_CATEGORIES={food:['美食市場','特色餐廳'],shopping:['購物血拼'],shrine:['神社寺廟','歷史文化'],anime:['動漫娛樂'],nature:['公園自然'],night:['展望夜景'],family:['主題樂園','動漫娛樂']};
-const FOOD_TERMS=['壽司','江戶前','燒肉','壽喜燒','涮涮鍋','火鍋','鍋物','居酒屋','拉麵','燒鳥','串燒','螃蟹','和牛','牛舌','天婦羅','天丼','豬排','鰻魚','蕎麥麵','文字燒','洋食','咖哩','海鮮','甜點','咖啡'];
+const FOOD_TERMS=['壽司','江戶前','燒肉','壽喜燒','涮涮鍋','火鍋','鍋物','居酒屋','拉麵','沾麵','擔擔麵','燒鳥','串燒','螃蟹','和牛','牛舌','天婦羅','天丼','豬排','鰻魚','蕎麥麵','文字燒','洋食','咖哩','海鮮','創意料理','法國料理','甜點','咖啡'];
 const NEARBY_ZONES=['chiba','kamakura','yokohama','hakone','fuji','nikko','kawagoe','karuizawa'];
-const CITY_ZONES=['asakusa','ueno','central','shibuya','shinjuku','minato','bay','ikebukuro','west'];
-const ZONE_KEYWORDS={chiba:['迪士尼','舞濱','千葉','成田'],kamakura:['鎌倉','江之島','江島'],yokohama:['橫濱'],hakone:['箱根'],fuji:['富士山','河口湖','忍野','御殿場'],nikko:['日光'],kawagoe:['川越'],karuizawa:['輕井澤'],asakusa:['淺草','晴空塔'],ueno:['上野','阿美橫','秋葉原'],central:['築地','銀座','東京站','皇居'],shibuya:['澀谷','原宿','明治神宮'],shinjuku:['新宿'],minato:['東京鐵塔','六本木','麻布台'],bay:['豐洲','台場'],ikebukuro:['池袋'],west:['吉祥寺','下北澤','豪德寺','中野']};
+const CITY_ZONES=['asakusa','ueno','central','shibuya','shinjuku','minato','bay','ikebukuro','west','east'];
+const ZONE_KEYWORDS={chiba:['迪士尼','舞濱','千葉','成田'],kamakura:['鎌倉','江之島','江島'],yokohama:['橫濱'],hakone:['箱根'],fuji:['富士山','河口湖','忍野','御殿場'],nikko:['日光'],kawagoe:['川越'],karuizawa:['輕井澤'],asakusa:['淺草','晴空塔'],ueno:['上野','阿美橫','秋葉原','湯島'],central:['築地','銀座','東京站','皇居','日本橋','八重洲'],shibuya:['澀谷','原宿','明治神宮','青山'],shinjuku:['新宿'],minato:['東京鐵塔','六本木','麻布台','麻布'],bay:['豐洲','台場','門前仲町'],ikebukuro:['池袋','大塚'],west:['吉祥寺','下北澤','豪德寺','中野','池上','戶越'],east:['柴又','帝釋天']};
 
 function includesAny(text,words){return words.some(w=>text.toLowerCase().includes(w.toLowerCase()))}
 function parseRequest(text){const negative={food:['不想吃','不要美食'],shopping:['不想購物','不要購物','不血拼','不買東西'],shrine:['不想逛神社','不要寺廟'],anime:['不看動漫','不喜歡動漫'],nature:['不想看自然'],night:['不看夜景'],family:['不要樂園']};const themes=Object.entries(THEME_WORDS).filter(([key,words])=>includesAny(text,words)&&!includesAny(text,negative[key]||[])).map(([key])=>key);if(!themes.length)themes.push('food','shopping','shrine');const mentionedZones=Object.entries(ZONE_KEYWORDS).filter(([,words])=>includesAny(text,words)).map(([zone])=>zone);const musts=ALL_PLACES.filter(p=>includesAny(text,[p.name,...p.name.split('・'),p.nameJa,p.nameEn])).map(p=>p.id);const foodTerms=FOOD_TERMS.filter(term=>includesAny(text,[term]));return{themes,mentionedZones,musts,foodTerms}}
