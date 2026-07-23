@@ -1,8 +1,8 @@
 {
   "rawCandidatesFound": 9443,
   "databaseRows": 1000,
-  "curatedRows": 107,
-  "appRows": 1107,
+  "curatedRows": 110,
+  "appRows": 1110,
   "definition": {
     "完整": "中英日名稱、真實簡介、正確分類、座標、來源、營業時間、停留、費用與旅客價值證據齊全",
     "半成品": "基本身份可追溯，但缺少至少一項排行程必要資訊",
@@ -15,7 +15,7 @@
   },
   "appTiersIncludingCurated": {
     "完整": 0,
-    "半成品": 374,
+    "半成品": 377,
     "無行程參考性": 733
   },
   "lowValueChainRows": 261,
