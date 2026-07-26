@@ -26,6 +26,7 @@
         <button class="nav-link active" data-view="planner">規劃旅程</button>
         <button class="nav-link" data-view="explore">探索東京</button>
         <button class="nav-link" data-view="map">寺社地圖</button>
+        <button class="nav-link" data-view="pilgrimage">巡禮專題</button>
         <button class="nav-link" data-view="trip">我的行程</button>
       </nav>
       <button class="profile-button" aria-label="會員設定">R</button>
@@ -109,13 +110,29 @@
         </div>
         <div class="quality-switch" id="qualitySelector" aria-label="資料品質篩選">
           <button class="active" data-quality="curated">完成度 100%</button>
-          <button data-quality="usable">全部 1,000 筆（至少 80%）</button>
-          <button data-quality="quarantine">低於 80%（目前 0）</button>
+          <button data-quality="usable">可用資料（至少 80%）</button>
+          <button data-quality="quarantine">低於 80%（隔離區）</button>
         </div>
         <div class="filter-bar" id="categoryFilters"></div>
         <div id="placesGrid" class="places-grid"></div>
         <button id="loadMoreButton" class="outline-button load-more">顯示更多景點</button>
-        <p class="osm-credit">一般同質連鎖、分類錯誤及缺乏來源的資料不計入這 1,000 筆。全部至少 80%，可參與初步規劃；80% 地點會標示需即時核對，100% 代表已逐筆核過永久核心欄位。票價、營業與預約仍須出發前確認。</p>
+        <p class="osm-credit">目前總目錄 1,000 筆，其中 959 筆達 80% 可用門檻、41 筆低於門檻並隔離，不會參與推薦。100% 代表已逐筆核過永久核心欄位；票價、營業與預約仍須出發前確認。</p>
+      </section>
+
+      <section id="pilgrimageView" class="view">
+        <div class="pilgrimage-hero">
+          <span class="eyebrow">GOSHUIN PILGRIMAGE GUIDE</span>
+          <h1>不只告訴你在哪裡，<br><em>也說清楚為什麼值得巡。</em></h1>
+          <p>先建立可追溯來源的東京與近郊巡禮專題。每條路線明確標示站數、歷史、季節與例外，不把「七福神」誤當成一定只有七站。</p>
+        </div>
+        <section class="guide-section">
+          <div class="section-heading"><div><span class="eyebrow">CURATED ROUTES</span><h2>巡禮系列</h2></div><small>第一批 4 條 · 35 個巡拜站</small></div>
+          <div id="pilgrimageSeriesGrid" class="pilgrimage-grid"></div>
+        </section>
+        <section class="guide-section featured-shrines-section">
+          <div class="section-heading"><div><span class="eyebrow">UNIQUE STORIES</span><h2>東京特色寺社</h2></div><small>每一間都交代特色與查證提醒</small></div>
+          <div id="featuredShrineGrid" class="featured-shrine-grid"></div>
+        </section>
       </section>
 
       <section id="tripView" class="view">
@@ -160,11 +177,24 @@
       <div class="detail-actions"><a id="modalSourceLink" target="_blank" rel="noopener">查看資料來源</a><button id="modalMapButton">在 APP 地圖查看</button><button id="modalSaveButton">加入行程候選</button></div>
     </article>
   </div>
+  <div id="pilgrimageModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="pilgrimageModalTitle">
+    <div class="modal-backdrop" data-close-pilgrimage></div>
+    <article class="place-detail-panel pilgrimage-detail-panel">
+      <button id="closePilgrimageModal" class="modal-close" aria-label="關閉巡禮介紹">×</button>
+      <span id="pilgrimageModalMeta" class="detail-tier"></span>
+      <h2 id="pilgrimageModalTitle"></h2>
+      <p id="pilgrimageModalHistory" class="detail-intro"></p>
+      <div id="pilgrimageModalNote" class="detail-warnings"></div>
+      <div id="pilgrimageStopList" class="pilgrimage-stop-list"></div>
+      <div class="detail-actions"><a id="pilgrimageSourceLink" target="_blank" rel="noopener">查看官方／權威來源</a></div>
+    </article>
+  </div>
   <script src="data.js"></script>
   <script src="places.final.js"></script>
   <script src="transport-data.js"></script>
+  <script src="goshuin-guide.js?v=4"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=4"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>

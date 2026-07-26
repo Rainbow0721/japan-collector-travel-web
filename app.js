@@ -8,6 +8,26 @@ const featured=['sensoji','tsukiji','shibuya-sky','ameyoko'].map(byId);
 const SHRINE_PLACES=ALL_PLACES.filter(place=>place.category==='神社寺廟'&&Number.isFinite(place.lat)&&Number.isFinite(place.lng));
 let shrineMap=null,mapMarkers=new Map(),userLocationMarker=null;
 
+function escapeGuideText(value=''){return String(value).replace(/[&<>"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[char]))}
+function renderPilgrimageGuides(){
+  const seriesGrid=$('#pilgrimageSeriesGrid'),shrineGrid=$('#featuredShrineGrid');
+  if(!seriesGrid||!shrineGrid||typeof PILGRIMAGE_SERIES==='undefined')return;
+  seriesGrid.innerHTML=PILGRIMAGE_SERIES.map(series=>`<button class="pilgrimage-card" data-series="${series.id}"><span class="pilgrimage-icon">${escapeGuideText(series.icon)}</span><small>${escapeGuideText(series.region)}</small><h3>${escapeGuideText(series.title)}</h3><p>${escapeGuideText(series.subtitle)}</p><div><span>${series.stops.length} 站</span><span>${escapeGuideText(series.duration)}</span></div></button>`).join('');
+  shrineGrid.innerHTML=FEATURED_SHRINES.map((shrine,index)=>`<article class="featured-shrine-card"><span>${String(index+1).padStart(2,'0')}</span><div><small>${escapeGuideText(shrine[2])} · ${escapeGuideText(shrine[3])}</small><h3>${escapeGuideText(shrine[0])}</h3><p class="detail-alias">${escapeGuideText(shrine[1])}</p><p>${escapeGuideText(shrine[4])}</p><a href="${shrine[5]}" target="_blank" rel="noopener">查閱來源 →</a></div></article>`).join('');
+  $$('[data-series]').forEach(button=>button.onclick=()=>openPilgrimageModal(button.dataset.series));
+}
+function openPilgrimageModal(id){
+  const series=PILGRIMAGE_SERIES.find(item=>item.id===id);if(!series)return;
+  $('#pilgrimageModalMeta').textContent=`${series.region} · ${series.season} · ${series.duration}`;
+  $('#pilgrimageModalTitle').textContent=series.title;
+  $('#pilgrimageModalHistory').textContent=series.history;
+  $('#pilgrimageModalNote').innerHTML=`<p>重要提醒：${escapeGuideText(series.note)}</p>`;
+  $('#pilgrimageStopList').innerHTML=series.stops.map((stop,index)=>`<article><b>${index+1}</b><div><small>${escapeGuideText(stop[2])}</small><h3>${escapeGuideText(stop[0])}</h3><p class="detail-alias">${escapeGuideText(stop[1])}</p><p>${escapeGuideText(stop[3])}</p><a href="${stop[4]}" target="_blank" rel="noopener">查看這一站來源</a></div></article>`).join('');
+  $('#pilgrimageSourceLink').href=series.sourceUrl;
+  $('#pilgrimageModal').classList.remove('hidden');document.body.style.overflow='hidden';
+}
+function closePilgrimageModal(){$('#pilgrimageModal').classList.add('hidden');document.body.style.overflow=''}
+
 function aliases(place){return [place.nameJa,place.nameEn].filter(Boolean).join(' · ')}
 function placeCard(place,featuredMode=false){const selected=state.selected.has(place.id),metric=`完成度 ${place.completionScore}%${place.recommendationEligible?' · 可排行程':' · 待動態核對'}`;return `<article class="place-card ${featuredMode?'featured':''}" data-id="${place.id}" tabindex="0" aria-label="查看 ${place.name} 詳細介紹"><div class="place-art art-${place.zone}"><span>${place.emoji}</span><button class="save-place ${selected?'saved':''}" aria-label="${selected?'移除':'加入'} ${place.name}">${selected?'✓':'＋'}</button><small>${place.area}</small></div><div class="place-info"><div class="place-meta"><span>${place.category}</span><b>${metric}</b></div><h3>${place.name}</h3><small class="place-alias">${aliases(place)}</small><p>${place.desc}</p><div class="tag-row">${place.tags.slice(0,3).map(t=>`<span>${t}</span>`).join('')}</div></div></article>`}
 function renderFeatured(){$('#featuredGrid').innerHTML=featured.map(p=>placeCard(p,true)).join('');bindPlaceCards()}
@@ -77,4 +97,7 @@ function fitAllShrines(){initShrineMap();const visible=mapFilteredPlaces().map(p
 $('#mapSearch').addEventListener('input',event=>{state.mapSearch=event.target.value;renderMapMarkers()});
 $('#fitMapButton').onclick=fitAllShrines;
 $('#locateMeButton').onclick=()=>{if(!navigator.geolocation){alert('此裝置不支援定位。');return}navigator.geolocation.getCurrentPosition(position=>{initShrineMap();const latlng=[position.coords.latitude,position.coords.longitude];if(userLocationMarker)userLocationMarker.remove();userLocationMarker=L.circleMarker(latlng,{radius:9,color:'#174c3d',fillColor:'#d8ef9c',fillOpacity:1}).addTo(shrineMap).bindPopup('你目前的位置').openPopup();shrineMap.setView(latlng,14)},()=>alert('無法取得位置，請在 iPhone 瀏覽器允許定位權限。'),{enableHighAccuracy:true,timeout:10000})};
-renderFeatured();renderFilters();renderPlaces();
+$('#closePilgrimageModal').onclick=closePilgrimageModal;
+$('[data-close-pilgrimage]').onclick=closePilgrimageModal;
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!$('#pilgrimageModal').classList.contains('hidden'))closePilgrimageModal()});
+renderFeatured();renderFilters();renderPlaces();renderPilgrimageGuides();
