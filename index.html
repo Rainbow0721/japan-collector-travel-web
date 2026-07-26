@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <div class="app-shell">
@@ -133,6 +133,11 @@
           <div class="section-heading"><div><span class="eyebrow">UNIQUE STORIES</span><h2>東京特色寺社</h2></div><small>每一間都交代特色與查證提醒</small></div>
           <div id="featuredShrineGrid" class="featured-shrine-grid"></div>
         </section>
+        <section class="guide-section research-catalog-section">
+          <div class="section-heading"><div><span class="eyebrow">RESEARCH PIPELINE</span><h2>主動盤點中的其他巡禮</h2></div><small>不是待你點名才加入</small></div>
+          <p class="catalog-note">以下已找到官方或區域觀光入口，將依「完整站點 → 每站最低資料欄位 → 授與時間核對」順序升級為正式專題。</p>
+          <div id="pilgrimageResearchGrid" class="research-grid"></div>
+        </section>
       </section>
 
       <section id="tripView" class="view">
@@ -192,9 +197,9 @@
   <script src="data.js"></script>
   <script src="places.final.js"></script>
   <script src="transport-data.js"></script>
-  <script src="goshuin-guide.js?v=4"></script>
+  <script src="goshuin-guide.js?v=5"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>
