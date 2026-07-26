@@ -25,6 +25,9 @@ python3 -m http.server 4173
 - 花費拆成餐食、交通、門票，個人購物、機票與住宿不混入
 - 依歷史文化、美食、購物、自然、夜景等分類探索
 - 收藏必去景點
+- APP 內寺社互動地圖：183 間神社寺院標記、名稱／地區搜尋、目前位置、地圖與詳細資料連動
+- 地圖使用 Leaflet 與 OpenStreetMap，不消耗付費 Google Maps API 額度
+- iPhone 響應式底部導覽與 PWA 基礎設定，可由 Safari 加到主畫面（正式使用仍需 HTTPS 公開部署）
 - 選擇 3–7 天、每日預算與旅行步調
 - 長者、兒童與嬰兒車同行設定
 - 依東京區域模板與 110 筆人工精選產生每日行程；可辨識壽司、燒鳥、壽喜燒、螃蟹、豬排、拉麵、沾麵、天婦羅、鰻魚、燒肉等具體料理需求
@@ -39,7 +42,8 @@ python3 -m http.server 4173
 - 一般同質連鎖與錯誤分類資料不再載入 APP；特色連鎖需逐筆說明分店差異才可保留。
 - 每個地點現在可以點開查看資料狀態、中文／日文／英文名稱、簡介或誠實的缺資料說明、費用、營業資訊與來源。
 - Google Place ID 索引不是完整景點內容；Google 名稱、評分、評論、地址與照片須依條款即時取得。
-- 「儲存行程」與「查看地圖」目前是介面示意。
+- 「儲存行程」目前是介面示意；寺社地圖已可操作。
+- 御朱印受理時間、最後受理、直書／書置與限定期間尚未完成官方逐筆核對，不能把境內開放時間當作授與時間。
 
 ## 資料檔案
 
@@ -53,6 +57,7 @@ python3 -m http.server 4173
 - `database/*-report.json`：資料筆數、覆蓋、失敗查詢與品質報告。
 - `database/quality-audit-report.json`：完整／半成品／無參考性與連鎖灌水稽核。
 - `research/v4-quality-and-product-benchmark.md`：旅行社、近郊、美食分類、旅遊工具與使用者評論研究。
+- `research/goshuin-competitive-audit-2026-07.md`：App Store、Google Play、御朱印網站、公開規模與產品差異盤點。
 - `scripts/audit_place_quality.py`：可重跑的產品級資料品質門檻。
 - `scripts/build_places_database.py`：OSM 分區、分類、快取與配額選取。
 - `scripts/enrich_wikidata_labels.py`：Wikidata 中文／英文名稱補充。

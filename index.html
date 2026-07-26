@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f7f3ed">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="旅伴">
   <title>旅伴｜東京 AI 私人地陪</title>
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <div class="app-shell">
@@ -20,6 +25,7 @@
       <nav>
         <button class="nav-link active" data-view="planner">規劃旅程</button>
         <button class="nav-link" data-view="explore">探索東京</button>
+        <button class="nav-link" data-view="map">寺社地圖</button>
         <button class="nav-link" data-view="trip">我的行程</button>
       </nav>
       <button class="profile-button" aria-label="會員設定">R</button>
@@ -73,6 +79,26 @@
           </div>
           <div id="featuredGrid" class="featured-grid"></div>
         </section>
+      </section>
+
+      <section id="mapView" class="view">
+        <div class="map-heading">
+          <div><span class="eyebrow">SHRINE & TEMPLE MAP</span><h1>東京寺社地圖</h1><p>目前收錄 <strong id="mapPlaceTotal">0</strong> 間神社與寺院。點選地圖標記即可查看繁中、日文、英文名稱與現有資料。</p></div>
+          <div class="map-status"><span class="status-dot"></span> 使用 OpenStreetMap，不呼叫付費地圖 API</div>
+        </div>
+        <div class="map-toolbar">
+          <div class="search-box">⌕ <input id="mapSearch" type="search" placeholder="搜尋寺社名稱或地區…"></div>
+          <button id="locateMeButton" class="outline-button">◎ 顯示我的位置</button>
+          <button id="fitMapButton" class="outline-button">顯示全部寺社</button>
+        </div>
+        <div class="map-layout">
+          <div id="shrineMap" class="shrine-map" aria-label="東京神社寺院互動地圖"></div>
+          <aside class="map-list-panel">
+            <div class="map-list-heading"><b id="mapResultCount">0 間寺社</b><span>點選名稱定位</span></div>
+            <div id="mapPlaceList" class="map-place-list"></div>
+          </aside>
+        </div>
+        <p class="map-disclaimer">寺社境內開放時間不等於御朱印授與時間。現階段地圖供探索使用；授與所、最後受理、直書／書置與限定期間仍須以寺社官方公告為準。</p>
       </section>
 
       <section id="exploreView" class="view">
@@ -131,12 +157,14 @@
       <p id="modalPlaceIntro" class="detail-intro"></p>
       <dl id="modalPlaceFacts" class="detail-facts"></dl>
       <div id="modalPlaceWarnings" class="detail-warnings"></div>
-      <div class="detail-actions"><a id="modalSourceLink" target="_blank" rel="noopener">查看資料來源</a><button id="modalSaveButton">加入行程候選</button></div>
+      <div class="detail-actions"><a id="modalSourceLink" target="_blank" rel="noopener">查看資料來源</a><button id="modalMapButton">在 APP 地圖查看</button><button id="modalSaveButton">加入行程候選</button></div>
     </article>
   </div>
   <script src="data.js"></script>
   <script src="places.final.js"></script>
   <script src="transport-data.js"></script>
-  <script src="app.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="app.js?v=2"></script>
+  <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>

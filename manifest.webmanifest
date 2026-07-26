@@ -1,0 +1,10 @@
+{
+  "name": "旅伴｜東京寺社與旅行規劃",
+  "short_name": "旅伴",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f3ed",
+  "theme_color": "#174c3d",
+  "description": "為台灣旅客設計的東京景點、寺社地圖與旅行規劃試作品"
+}
