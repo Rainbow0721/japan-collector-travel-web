@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <div class="app-shell">
@@ -47,10 +47,14 @@
           <form id="plannerForm" class="planner-card">
             <div class="step-label"><span>01</span> 描述這趟旅行</div>
             <textarea id="tripPrompt" rows="4" placeholder="例如：東京 5 天 4 夜，第一次去，帶 65 歲的媽媽，喜歡美食和日劇，不想太趕，想去淺草、澀谷和築地。">東京 5 天 4 夜，第一次去，帶媽媽，喜歡美食和購物，不想太累，必去淺草、澀谷和築地。</textarea>
-            <div class="quick-fields">
-              <label>旅遊天數<select id="days"><option value="3">3 天</option><option value="4">4 天</option><option value="5" selected>5 天</option><option value="6">6 天</option><option value="7">7 天</option></select></label>
+            <div class="quick-fields date-fields">
+              <label>出發日期<input id="tripStartDate" type="date" value="2026-12-01"></label>
+              <label>回程日期<input id="tripEndDate" type="date" value="2026-12-05"></label>
+              <label>每天開始<input id="dayStartTime" type="time" value="09:00"></label>
+              <label>每天結束<input id="dayEndTime" type="time" value="22:00"></label>
               <label>每日預算<select id="budget"><option value="6000">約 ¥6,000</option><option value="10000" selected>約 ¥10,000</option><option value="16000">約 ¥16,000</option><option value="25000">約 ¥25,000+</option></select></label>
             </div>
+            <div id="holidayNotice" class="holiday-notice">選擇日期後，會檢查日本國定假日、黃金週及連假人潮。</div>
             <div class="field-group">
               <span class="field-title">旅行步調</span>
               <div class="segmented" id="paceSelector">
@@ -141,6 +145,10 @@
       </section>
 
       <section id="tripView" class="view">
+        <section class="collection-space">
+          <div class="collection-heading"><div><span class="eyebrow">MY PILGRIMAGE BOOK</span><h2>我的參拜收藏冊</h2><p>照片與紀錄目前只保存在這台裝置；可按旅程、行政區或參拜順序整理。</p></div><div class="collection-sort"><button class="active" data-collection-sort="trip">按旅程</button><button data-collection-sort="area">按行政區</button><button data-collection-sort="date">按參拜順序</button></div></div>
+          <div id="collectionBook" class="collection-book"><p class="collection-empty">尚無參拜紀錄。到寺社詳情上傳御朱印或勾選已參拜，就會加入這裡。</p></div>
+        </section>
         <div id="emptyTrip" class="empty-state">
           <span class="empty-icon">旅</span><h2>還沒有行程</h2><p>先告訴我們想怎麼玩東京，AI 地陪會幫你安排。</p>
           <div id="candidateList" class="candidate-list"></div>
@@ -182,6 +190,7 @@
       <div id="modalPlaceWarnings" class="detail-warnings"></div>
       <div id="visitRecorder" class="visit-recorder hidden">
         <img id="goshuinPreview" class="goshuin-preview hidden" alt="御朱印照片預覽">
+        <div class="visit-meta-fields"><label>旅程名稱<input id="visitTripName" value="202603 東京之旅" placeholder="例如：202603 東京之旅"></label><label>參拜日期<input id="visitDate" type="date"></label></div>
         <label class="camera-button">📷 拍攝／選擇御朱印照片<input id="goshuinCamera" type="file" accept="image/*" capture="environment"></label>
         <button id="visitedButton" class="visited-button">✓ 標示為已參拜</button>
         <small>照片只儲存在這台裝置的瀏覽器，不會上傳伺服器。</small>
@@ -198,15 +207,15 @@
       <p id="pilgrimageModalHistory" class="detail-intro"></p>
       <div id="pilgrimageModalNote" class="detail-warnings"></div>
       <div id="pilgrimageStopList" class="pilgrimage-stop-list"></div>
-      <div class="detail-actions"><a id="pilgrimageSourceLink" target="_blank" rel="noopener">查看官方／權威來源</a></div>
+      <div class="detail-actions"><a id="pilgrimageSourceLink" target="_blank" rel="noopener">查看官方／權威來源</a><button id="addPilgrimageButton">整條加入行程候選</button></div>
     </article>
   </div>
   <script src="data.js"></script>
   <script src="places.final.js"></script>
   <script src="transport-data.js"></script>
-  <script src="goshuin-guide.js?v=6"></script>
+  <script src="goshuin-guide.js?v=7"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>
