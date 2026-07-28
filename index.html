@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
   <div class="app-shell">
@@ -73,6 +73,7 @@
               </div>
             </div>
             <button class="primary-button" type="submit"><span>幫我排好行程</span><b>→</b></button>
+            <div id="plannerValidationError" class="planner-validation-error hidden" role="alert"></div>
             <p class="form-note">試著分別輸入「美食購物」、「神社文化」或「想去鎌倉」看看不同結果</p>
           </form>
         </div>
@@ -241,8 +242,9 @@
   <script src="goshuin-guide.js?v=7"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="config.js?v=2"></script>
-  <script src="app.js?v=20"></script>
-  <script src="companion.js?v=2"></script>
+  <script src="itinerary-core.js?v=1"></script>
+  <script src="app.js?v=22"></script>
+  <script src="companion.js?v=3"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>

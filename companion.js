@@ -8,7 +8,7 @@ function memoryText(){const trips=companionMemory.trips||[];if(!trips.length)ret
 function understandingHtml(request){const days=dateRange($('#tripStartDate').value,$('#tripEndDate').value).length,party=[...state.party].map(x=>({adult:'一般成人',elderly:'長者',child:'兒童',stroller:'嬰兒車'}[x])).join('、'),religious=request.religiousMode==='temple_only'?'只安排寺廟，排除神社':request.religiousMode==='shrine_only'?'只安排神社，排除寺廟':'寺廟與神社皆可';return`<dl><div><dt>旅行日期</dt><dd>${$('#tripStartDate').value}～${$('#tripEndDate').value}（${days}天）</dd></div><div><dt>每天時間</dt><dd>${request.clock.start}～${request.clock.end}</dd></div><div><dt>偏好</dt><dd>${request.themes.map(x=>themeLabels[x]||x).join('、')||'由AI依經典行程補足'}</dd></div><div><dt>寺社條件</dt><dd>${religious}</dd></div><div><dt>同行者</dt><dd>${party||'一般成人'}</dd></div><div><dt>每日預算</dt><dd>約 ¥${Number($('#budget').value).toLocaleString()}</dd></div><div><dt>指定天數</dt><dd>美食 ${request.dayQuotas?.food||0} 天・樂園 ${request.dayQuotas?.amusement||0} 天・夜景 ${request.dayQuotas?.night||0} 天</dd></div><div><dt>旅程記憶</dt><dd>${memoryText()}（目前只存在這台裝置）</dd></div><div><dt>AI解析</dt><dd>${request.parserSource||'AI Travel Companion'}</dd></div></dl>`}
 async function startCompanionPlanning(){const overlay=$('#loadingOverlay');overlay.classList.remove('hidden');$('#loadingText').textContent='AI 正在整理你的旅行需求…';try{pendingUnderstanding=await smartParseRequest($('#tripPrompt').value);$('#aiUnderstanding').innerHTML=understandingHtml(pendingUnderstanding);$('#aiConfirmModal').classList.remove('hidden');document.body.style.overflow='hidden'}finally{overlay.classList.add('hidden')}}
 $('#editUnderstanding').onclick=()=>{$('#aiConfirmModal').classList.add('hidden');document.body.style.overflow=''};
-$('#confirmUnderstanding').onclick=async()=>{$('#aiConfirmModal').classList.add('hidden');document.body.style.overflow='';const overlay=$('#loadingOverlay'),steps=['整合你指定的景點與收藏目標…','依區域分組，避免跨區折返…','檢查寺務所／社務所與營業時間…','安排交通、用餐與休息緩衝…','完成每日節奏與可編輯草稿…'];overlay.classList.remove('hidden');let index=0;$('#loadingText').textContent=steps[0];const timer=setInterval(()=>{$('#loadingText').textContent=steps[Math.min(++index,steps.length-1)]},650),originalSmart=smartParseRequest;smartParseRequest=async()=>pendingUnderstanding;try{await generateItinerary()}finally{smartParseRequest=originalSmart;clearInterval(timer);overlay.classList.add('hidden');$('#aiChat').classList.remove('hidden');updateCompanionDashboard()}};
+$('#confirmUnderstanding').onclick=async()=>{$('#aiConfirmModal').classList.add('hidden');document.body.style.overflow='';const overlay=$('#loadingOverlay'),steps=['整合你指定的景點與收藏目標…','依區域分組，避免跨區折返…','檢查寺務所／社務所與營業時間…','安排交通、用餐與休息緩衝…','完成每日節奏與可編輯草稿…'];overlay.classList.remove('hidden');let index=0;$('#loadingText').textContent=steps[0];const timer=setInterval(()=>{$('#loadingText').textContent=steps[Math.min(++index,steps.length-1)]},650),originalSmart=smartParseRequest;smartParseRequest=async()=>pendingUnderstanding;try{const success=await generateItinerary();if(success){$('#aiChat').classList.remove('hidden');updateCompanionDashboard()}}finally{smartParseRequest=originalSmart;clearInterval(timer);overlay.classList.add('hidden')}};
 function stopKey(dayIndex,placeId){return`${state.tripDates[dayIndex]}::${placeId}`}
 function updateCompanionDashboard(){if(!state.itinerary.length)return;const day=state.itinerary[state.activeDay]||[],done=day.filter(p=>completedStops.has(stopKey(state.activeDay,p.id))).length,percent=day.length?Math.round(done/day.length*100):0;$('#todayCompletion').textContent=`${percent}%`;$('#companionGreeting').textContent=percent===100?'今天的旅程完成了，辛苦了！':new Date().getHours()<12?'早安，今天一起好好旅行。':'我還在，接下來也陪你走。';const steps=Number($('#todaySteps').value)||0;$('#todayAdvice').textContent=steps>=20000?'今天步數很高，建議先補水並休息20分鐘。':steps>=10000?'已走不少路，下一站前找地方坐一下吧。':`今天還有 ${Math.max(0,day.length-done)} 個地點，按自己的節奏前進。`;enhanceStopCards()}
 function enhanceStopCards(){$$('.editable-stop').forEach(card=>{const index=Number(card.dataset.stopIndex),place=state.itinerary[state.activeDay]?.[index];if(!place||card.querySelector('.complete-stop'))return;const button=document.createElement('button');button.className='complete-stop';const key=stopKey(state.activeDay,place.id);button.textContent=completedStops.has(key)?'✓ 已完成':'○ 標示完成';button.onclick=()=>{completedStops.has(key)?completedStops.delete(key):completedStops.add(key);saveCompleted();updateCompanionDashboard()};card.querySelector('.stop-edit-actions')?.append(button)})}
@@ -25,6 +25,45 @@ function makeDiary(){const day=state.itinerary[state.activeDay]||[],done=day.fil
 $('#makeDiary').onclick=makeDiary;$('#shareToday').onclick=async()=>{const text=makeDiary();if(navigator.share)await navigator.share({title:'我的日本旅行日記',text,url:location.href}).catch(()=>{});else{await navigator.clipboard.writeText(text);alert('旅行摘要已複製，可貼到 LINE、Threads 或 IG。')}};
 $('#toggleChat').onclick=()=>$('#aiChat').classList.toggle('open');$('#closeChat').onclick=()=>$('#aiChat').classList.remove('open');
 function chatMessage(text,role='ai'){const p=document.createElement('p');p.className=role==='user'?'user-message':'ai-message';p.textContent=text;$('#chatMessages').append(p);p.scrollIntoView({behavior:'smooth',block:'end'})}
-async function modifyTripFromChat(text){const day=state.itinerary[state.activeDay]||[];if(/刪除|移除/.test(text)){const target=day.find(p=>text.includes(displayName(p))||text.includes(p.nameJa||'__'));if(target){day.splice(day.indexOf(target),1);return`已從今天移除「${displayName(target)}」，其他站點已保留。`}}if(/不要太累|太累|放鬆|少一點/.test(text)){if(day.length>2){const removed=day.pop();return`已把今天最後一站「${displayName(removed)}」移除，讓行程提早結束。`}}const request=await smartParseRequest(text),wanted=request.themes||[],candidate=RECOMMENDATION_PLACES.filter(p=>!day.some(x=>x.id===p.id)&&allowedByRequest(p,request)).sort((a,b)=>scorePlace(b,request)-scorePlace(a,request)).find(p=>wanted.some(theme=>(THEME_CATEGORIES[theme]||[]).includes(p.category)));if(candidate){day.push(candidate);return`已把「${displayName(candidate)}」加入今天，並保留你原本的行程。`}return'我理解你的要求，但目前資料庫找不到足夠可信的地點可直接加入；我先保留原行程，避免亂推薦。'}
-$('#chatForm').onsubmit=async event=>{event.preventDefault();const input=$('#chatInput'),text=input.value.trim();if(!text)return;chatMessage(text,'user');input.value='';chatMessage('我正在理解並修改現有行程…');const waiting=$('#chatMessages').lastElementChild;try{const reply=await modifyTripFromChat(text);waiting.remove();persistTripDraft();renderTrip();chatMessage(reply)}catch{waiting.textContent='這次修改沒有成功，原行程未被破壞，請再說一次。'}};
+let pendingChatAction=null;
+function currentTravelDayNumber(){const today=todayLocal(),index=state.tripDates.indexOf(today);return index>=0?index+1:state.activeDay+1}
+function chatDayContext(text){return ItineraryCore.resolveDayReference(text,{tripDays:state.tripDates.length,dates:state.tripDates,currentTravelDayNumber:currentTravelDayNumber(),activeDayNumber:state.activeDay+1})}
+function itinerarySignature(){return JSON.stringify(state.itinerary.map(day=>(day||[]).map(place=>place.id)))}
+function dayState(dayIndex){const day=state.itinerary[dayIndex],validation=currentValidation(),errors=validation.errors.filter(error=>error.dayNumber===dayIndex+1);return{exists:Array.isArray(day),count:Array.isArray(day)?day.length:0,dayType:state.structuredItinerary?.days?.[dayIndex]?.dayType||'full',errors,rendered:dayIndex!==state.activeDay||$$('.editable-stop').length===(day?.length||0)}}
+function findMentionedPlace(text){return RECOMMENDATION_PLACES.find(place=>text.includes(displayName(place))||text.includes(place.nameJa||'__')||text.includes(place.nameEn||'__'))}
+function confirmPending(text){return pendingChatAction&&/^(?:好|好的|是|可以|現在|幫我|開始|確定)/.test(text)}
+function mutationFailure(reason='修改後的行程未通過完整性驗證'){return`這次修改失敗：${reason}；原行程已保留，我不會假裝已完成。`}
+async function handleChat(text){
+  let intent=ItineraryCore.classifyChatIntent(text),reference=chatDayContext(text);
+  if(confirmPending(text)){intent=pendingChatAction.intent;reference={resolved:true,dayIndex:pendingChatAction.dayIndex,dayNumber:pendingChatAction.dayIndex+1,source:'confirmation'};pendingChatAction=null}
+  if(intent==='QUESTION'){
+    if(!reference.resolved)return'我會先讀取行程再回答；請告訴我你是問 Day 幾，我不會擅自猜測或修改。';
+    const status=dayState(reference.dayIndex);
+    if(!status.exists||status.count===0){pendingChatAction={intent:'REGENERATE',dayIndex:reference.dayIndex};return`你說得對，Day ${reference.dayNumber} 目前是空的，這是行程生成失敗，不是正常結果。我可以只補排 Day ${reference.dayNumber}，並保留其他日期。要現在補排嗎？`}
+    return`Day ${reference.dayNumber} 目前有 ${status.count} 個活動，驗證${status.errors.length?`發現 ${status.errors.length} 個問題`:'通過'}；這是狀態說明，我沒有修改任何行程。`;
+  }
+  if(intent==='STATUS'){
+    const index=reference.resolved?reference.dayIndex:state.activeDay,status=dayState(index),names=(state.itinerary[index]||[]).map(displayName);
+    return`Day ${index+1} 目前有 ${status.count} 個活動${names.length?`：${names.join('、')}`:''}。驗證${status.errors.length?'未通過':'通過'}。`;
+  }
+  if(intent==='AMBIGUOUS')return'我無法確定你是要詢問，還是要修改行程。請明確說「幫我修改 Day X」或「為什麼 Day X…」，我不會擅自改動。';
+  if(!reference.resolved)return'我知道你想修改行程，但無法確定是哪一天。請指定 Day 幾、第幾天、今天或最後一天。';
+  const before=state.itinerary.map(day=>[...(day||[])]),beforeSignature=itinerarySignature(),dayIndex=reference.dayIndex;
+  try{
+    if(intent==='REGENERATE'){
+      const result=repairDayAtIndex(dayIndex,state.request);
+      if(!result.success)return mutationFailure();
+    }else{
+      const day=state.itinerary[dayIndex]||[],mentioned=findMentionedPlace(text);
+      if(/刪除|移除/.test(text)){const target=day.find(place=>text.includes(displayName(place))||text.includes(place.nameJa||'__'));if(!target)return mutationFailure('指定地點不在該日行程');day.splice(day.indexOf(target),1)}
+      else if(/不要太累|好累|太累|放鬆|少一點/.test(text)){if(day.length<=2)return mutationFailure('這天已經只剩最低合理活動數');day.pop()}
+      else if(mentioned){const result=repairDayAtIndex(dayIndex,state.request,mentioned);if(!result.success)return mutationFailure()}
+      else return'我知道你要修改，但目前找不到可驗證的地點或明確操作；原行程未改動。';
+      const validation=currentValidation();if(!validation.valid){state.itinerary=before;currentValidation();return mutationFailure()}
+    }
+    const after=itinerarySignature();if(after===beforeSignature){state.itinerary=before;currentValidation();return mutationFailure('資料寫入後沒有實際變更')}
+    persistTripDraft();renderTrip();const status=dayState(dayIndex),setting=daySetting(dayIndex);return`已完成 Day ${dayIndex+1} 的修改，共安排 ${status.count} 個行程，時間為 ${setting.start}～${setting.end}；其他日期未修改，且寫入後已重新通過完整性驗證。`;
+  }catch(error){state.itinerary=before;currentValidation();return mutationFailure(error.message)}
+}
+$('#chatForm').onsubmit=async event=>{event.preventDefault();const input=$('#chatInput'),text=input.value.trim();if(!text)return;chatMessage(text,'user');input.value='';chatMessage('我正在讀取現有行程與判斷你的意圖…');const waiting=$('#chatMessages').lastElementChild;try{const before=itinerarySignature(),reply=await handleChat(text);waiting.remove();chatMessage(reply);if(ItineraryCore.classifyChatIntent(text)==='QUESTION'&&itinerarySignature()!==before)throw new Error('詢問不應修改行程')}catch(error){waiting.textContent=`這次操作失敗：${error.message}；原行程未被破壞。`}};
 if(state.itinerary.length){$('#aiChat').classList.remove('hidden');updateCompanionDashboard()}
