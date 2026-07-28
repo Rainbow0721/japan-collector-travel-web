@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
   <div class="app-shell">
@@ -48,8 +48,8 @@
             <div class="step-label"><span>01</span> 描述這趟旅行</div>
             <textarea id="tripPrompt" rows="4" placeholder="例如：東京 5 天 4 夜，第一次去，帶 65 歲的媽媽，喜歡美食和日劇，不想太趕，想去淺草、澀谷和築地。">東京 5 天 4 夜，第一次去，帶媽媽，喜歡美食和購物，不想太累，必去淺草、澀谷和築地。</textarea>
             <div class="quick-fields date-fields">
-              <label>出發日期<input id="tripStartDate" type="date" value="2026-12-01"></label>
-              <label>回程日期<input id="tripEndDate" type="date" value="2026-12-05"></label>
+              <label>出發日期<input id="tripStartDate" type="date"></label>
+              <label>回程日期<input id="tripEndDate" type="date"></label>
               <label>每天開始<input id="dayStartTime" type="time" value="09:00"></label>
               <label>每天結束<input id="dayEndTime" type="time" value="22:00"></label>
               <label>每日預算<select id="budget"><option value="6000">約 ¥6,000</option><option value="10000" selected>約 ¥10,000</option><option value="16000">約 ¥16,000</option><option value="25000">約 ¥25,000+</option></select></label>
@@ -95,6 +95,12 @@
           <div class="search-box">⌕ <input id="mapSearch" type="search" placeholder="搜尋寺社名稱或地區…"></div>
           <button id="locateMeButton" class="outline-button">◎ 顯示我的位置</button>
           <button id="fitMapButton" class="outline-button">顯示全部寺社</button>
+        </div>
+        <div id="mapVisitFilters" class="map-visit-filters" aria-label="參拜狀態篩選">
+          <button class="active" data-map-filter="all">全部</button>
+          <button data-map-filter="visited">✓ 已參拜</button>
+          <button data-map-filter="unvisited">尚未參拜</button>
+          <button data-map-filter="trip">本次行程</button>
         </div>
         <div class="map-layout">
           <div id="shrineMap" class="shrine-map" aria-label="東京神社寺院互動地圖"></div>
@@ -157,7 +163,7 @@
         <div id="tripResult" class="trip-result hidden">
           <div class="trip-header">
             <div><span class="eyebrow">YOUR TOKYO JOURNEY</span><h1>東京 <span id="resultDays">5</span> 日慢旅</h1><p id="resultSummary"></p></div>
-            <div class="trip-actions"><button class="outline-button" id="regenerateButton">重新安排</button><button class="primary-button compact">儲存行程</button></div>
+            <div class="trip-actions"><button class="outline-button" id="regenerateButton">重新安排</button><button id="saveTripButton" class="primary-button compact">儲存行程</button></div>
           </div>
           <div class="trip-layout">
             <aside class="trip-sidebar">
@@ -167,6 +173,13 @@
             </aside>
             <div class="day-content">
               <div class="day-overview"><div><span id="dayArea">東京</span><h2 id="dayTitle">第一天</h2></div><div class="weather-pill">☀ 24°C · 適合步行</div></div>
+              <div class="day-editor-toolbar">
+                <label>本日出發<input id="activeDayStart" type="time"></label>
+                <label>本日結束<input id="activeDayEnd" type="time"></label>
+                <label class="trip-add-field">加入景點<select id="tripAddPlace"></select></label>
+                <button id="tripAddPlaceButton" class="outline-button">＋ 加入本日</button>
+              </div>
+              <p class="edit-hint">可拖曳卡片調整順序；iPhone 也可使用 ↑ ↓。抵達時間與筆記會儲存在這台裝置。</p>
               <div id="timeline" class="timeline"></div>
             </div>
           </div>
@@ -215,7 +228,7 @@
   <script src="transport-data.js"></script>
   <script src="goshuin-guide.js?v=7"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="app.js?v=8"></script>
+  <script src="app.js?v=17"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>
