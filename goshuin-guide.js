@@ -64,6 +64,14 @@ const PILGRIMAGE_SERIES=[
   }
 ];
 
+PILGRIMAGE_SERIES.push(
+  {id:'shinjuku-yamanote',title:'新宿山之手七福神',subtitle:'從新宿御苑、若松河田走到神樂坂的7寺社',icon:'新',region:'新宿・神樂坂',season:'全年可巡；正月授與規則另行公告',duration:'徒步＋地鐵建議約4～5小時',sourceUrl:'https://kanko-shinjuku.jp/pamph/-/shichifuku.html',history:'新宿觀光振興協會提供日英雙語路線及各寺社授與資訊。路線由太宗寺一路連到神樂坂善國寺，能同時看到宿場町、寺町與現代新宿。',note:'厳嶋神社在非正月指定期間，御朱印可能須至西向天神社領取；每年應重查官方表格。',stops:[
+    ['太宗寺','太宗寺','新宿二丁目・布袋尊','江戶六地藏之一坐落於此；結合內藤新宿的宿場歷史，是西端起點。','https://kanko-shinjuku.jp/spot/-/article_356.html'],['稻荷鬼王神社','稲荷鬼王神社','歌舞伎町・惠比壽神','全國唯一以鬼王為名的神社，也是這條巡禮唯一的惠比壽站。','https://www.kiou-jinja.or.jp/'],['永福寺','永福寺','新宿七丁目・福祿壽','位於住宅街的曹洞宗寺院，與鄰近抜弁天、法善寺應一起步行安排。','https://kanko-shinjuku.jp/pamph/-/shichifuku.html'],['抜弁天厳嶋神社','厳嶋神社（抜弁天）','余丁町・弁財天','源義家傳說與「穿越境內」的抜弁天名稱相關，境內小但歷史辨識度高。','https://www.tokyo-jinjacho.or.jp/shinjuku/5445/'],['法善寺','法善寺','新宿六丁目・壽老人','日蓮宗寺院，七福神授與品及受理方式應依新宿官方年度表格。','https://kanko-shinjuku.jp/pamph/-/shichifuku.html'],['經王寺','経王寺','原町・大黑天','寺內大黑天像與江戶火災傳承相關，須留意寺院參拜禮儀。','https://kanko-shinjuku.jp/pamph/-/shichifuku.html'],['善國寺','善國寺','神樂坂・毘沙門天','神樂坂代表寺院，毘沙門天信仰與街區祭典緊密相連，適合作為東端終點。','https://www.kagurazaka-bishamonten.com/']]},
+  {id:'nihonbashi-shichifukujin',title:'日本橋七福神',subtitle:'日本橋人形町周邊、實際8社的短距離巡禮',icon:'橋',region:'人形町・小傳馬町',season:'正月集中授與',duration:'純步行約2～3小時；人潮日需更久',sourceUrl:'https://www.nihonbashi-shichifukujin.gr.jp/',history:'以神社構成且距離集中，是東京都心很受歡迎的七福神路線。因惠比壽神有兩處，實際巡拜8社，不能只依「七」誤刪一站。',note:'正月會實施人潮與授與限制；小網神社、水天宮等熱門站需預留排隊。',stops:[['小網神社','小網神社','福祿壽・弁財天','強運厄除與錢洗信仰熱門，境內極小。','https://www.koamijinja.or.jp/'],['茶之木神社','茶ノ木神社','布袋尊','曾鎮守大名屋敷，以防災傳承著名。','https://www.nihonbashi-shichifukujin.gr.jp/'],['水天宮','水天宮','弁財天','以安產、子授祈願聞名，現代社殿設施相對友善。','https://www.suitengu.or.jp/'],['松島神社','松島神社','大國神','大樓內的都市型神社，入口容易錯過。','https://www.nihonbashi-shichifukujin.gr.jp/'],['末廣神社','末廣神社','毘沙門天','與舊吉原地區的鎮守歷史相關。','https://suehirojinja.or.jp/'],['笠間稻荷神社東京別社','笠間稲荷神社東京別社','壽老神','茨城笠間稻荷的東京別社，商業繁盛信仰鮮明。','https://www.kasama.or.jp/'],['椙森神社','椙森神社','惠比壽神','江戶三森之一，與富籤、商業信仰相關。','https://www.nihonbashi-shichifukujin.gr.jp/'],['寶田惠比壽神社','寳田恵比寿神社','惠比壽神','べったら市聞名，平時授與狀況需事前確認。','https://www.nihonbashi-shichifukujin.gr.jp/']]},
+  {id:'yanaka-shichifukujin',title:'谷中七福神',subtitle:'江戶最古老級七福神，田端走到上野共7寺院',icon:'谷',region:'田端・谷中・上野',season:'1月1日至10日',duration:'官方步行段合計約1.5小時；參拜建議半日至一日',sourceUrl:'https://t-navi.city.taito.lg.jp/spot/1082',history:'據台東區官方資料，巡禮始於寶曆年間（1751～1764），被視為江戶最古老的七福神巡禮之一。全線都是寺院，穿越谷中寺町與上野公園。',note:'開帳與御朱印受理為正月限定，非活動期不能假設可取得七福神專用御朱印。',stops:[['東覺寺','東覚寺','田端・福祿壽','赤紙仁王信仰知名，是官方建議的田端端起點。','https://t-navi.city.taito.lg.jp/spot/1082'],['青雲寺','青雲寺','西日暮里・惠比壽','寺町內的小型寺院，與修性院距離很近。','https://t-navi.city.taito.lg.jp/spot/1082'],['修性院','修性院','西日暮里・布袋尊','以布袋尊圖像與谷中花見寺傳承受到注意。','https://t-navi.city.taito.lg.jp/spot/1082'],['長安寺','長安寺','谷中・壽老人','谷中寺町一站，受理期與入口依正月公告。','https://t-navi.city.taito.lg.jp/spot/1082'],['天王寺','天王寺','谷中・毘沙門天','谷中靈園旁古寺，與昔日谷中感應寺歷史相關。','https://t-navi.city.taito.lg.jp/spot/1082'],['護國院','護国院','上野・大黑天','位於上野公園北側，供奉大黑天。','https://t-navi.city.taito.lg.jp/spot/1082'],['不忍池辯天堂','不忍池辯天堂','上野・弁財天','位於不忍池中央，是接近上野站的巡禮終點。','https://www.kaneiji.jp/information-locations-list']]},
+  {id:'sumidagawa-shichifukujin',title:'隅田川七福神',subtitle:'向島文人創設、6處供奉七福神',icon:'隅',region:'向島・東向島・鐘淵',season:'正月巡禮',duration:'建議半日至一日',sourceUrl:'https://www.city.sumida.lg.jp/faq/sisetu_info/siryou/946.html',history:'江戶文化年間，由向島百花園園主佐原鞠塢及往來文人共同創設，現列為墨田區無形文化財。三圍神社同祀惠比壽與大國神，因此7神分布在6處。',note:'向島百花園是收費庭園且有開園時間；七福神授與以正月公告為準。',stops:[['三圍神社','三囲神社','惠比壽・大國神','三井家信仰與向島歷史著名，一站供奉兩位福神。','https://www.city.sumida.lg.jp/faq/sisetu_info/siryou/946.html'],['弘福寺','弘福寺','布袋尊','黃檗宗寺院，中式建築風格鮮明。','https://www.city.sumida.lg.jp/faq/sisetu_info/siryou/946.html'],['長命寺','長命寺','弁財天','與將軍家長命水傳說及長命寺櫻餅地區文化相連。','https://www.city.sumida.lg.jp/faq/sisetu_info/siryou/946.html'],['向島百花園','向島百花園','福祿壽','巡禮發祥地，屬都立文化財庭園而非寺社。','https://www.tokyo-park.or.jp/park/mukojima-hyakkaen/'],['白鬚神社','白鬚神社','壽老神','向島地區總鎮守之一。','https://www.city.sumida.lg.jp/faq/sisetu_info/siryou/946.html'],['多聞寺','多聞寺','毘沙門天','位於北端，茅葺山門與狸塚傳說具有特色。','https://www.city.sumida.lg.jp/faq/sisetu_info/siryou/946.html']]}
+);
+
 const FEATURED_SHRINES=[
   ['高木神社','高木神社','押上','飯糰與結緣','主祭神高皇產靈神的「むすひ」與日文飯糰「おむすび」形成諧音特色。每月15日神社印改為飯糰印，也曾推出《擅長捉弄人的高木同學》合作御朱印帳。','https://takagi-jinjya.com/'],
   ['高圓寺冰川神社・氣象神社','高円寺氷川神社・気象神社','高圓寺','日本唯一氣象神社','氣象神社原為舊陸軍氣象部內神社，戰後遷座至高圓寺冰川神社。官方稱其為日本唯一氣象神社，受到天氣祈願與氣象預報士考生信仰。','https://www.koenji-hikawa.com/kisho_jinja/'],
@@ -95,10 +103,6 @@ const SHRINE_FACTS={
 };
 
 const PILGRIMAGE_RESEARCH_CATALOG=[
-  ['新宿山之手七福神','新宿區','7處','全年可巡；正月授與方式另行公告','https://kanko-shinjuku.jp/pamph/-/shichifuku.html'],
-  ['日本橋七福神','中央區日本橋','神社型七福神巡禮','正月限定活動規則逐年更新','https://www.nihonbashi-shichifukujin.gr.jp/'],
-  ['谷中七福神','田端・谷中・上野','7寺院','1月1日至10日；被稱為江戶最古老七福神之一','https://t-navi.city.taito.lg.jp/spot/1082'],
-  ['隅田川七福神','向島・東向島','6處供奉七福神','正月；東京都墨田區無形文化財','https://www.city.sumida.lg.jp/faq/sisetu_info/siryou/946.html'],
   ['下谷七福神','三之輪・入谷・上野','7處','正月為主','https://www.city.taito.lg.jp/event/kanko/shitihukuzin.html'],
   ['東海七福神','品川宿沿線','7處','正月為主；適合京急／舊東海道動線','https://shinagawa-kanko.or.jp/'],
   ['元祖山手七福神','目黑・白金','寺院巡禮','正月為主；可順向或逆向參拜','https://www.gotokyo.org/'],

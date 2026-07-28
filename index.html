@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <div class="app-shell">
@@ -126,7 +126,7 @@
           <p>先建立可追溯來源的東京與近郊巡禮專題。每條路線明確標示站數、歷史、季節與例外，不把「七福神」誤當成一定只有七站。</p>
         </div>
         <section class="guide-section">
-          <div class="section-heading"><div><span class="eyebrow">CURATED ROUTES</span><h2>巡禮系列</h2></div><small>第一批 4 條 · 35 個巡拜站</small></div>
+          <div class="section-heading"><div><span class="eyebrow">CURATED ROUTES</span><h2>巡禮系列</h2></div><small>已完成 8 條 · 63 個巡拜站</small></div>
           <div id="pilgrimageSeriesGrid" class="pilgrimage-grid"></div>
         </section>
         <section class="guide-section featured-shrines-section">
@@ -143,6 +143,7 @@
       <section id="tripView" class="view">
         <div id="emptyTrip" class="empty-state">
           <span class="empty-icon">旅</span><h2>還沒有行程</h2><p>先告訴我們想怎麼玩東京，AI 地陪會幫你安排。</p>
+          <div id="candidateList" class="candidate-list"></div>
           <button class="primary-button compact" data-view="planner">開始規劃</button>
         </div>
         <div id="tripResult" class="trip-result hidden">
@@ -179,7 +180,13 @@
       <p id="modalPlaceIntro" class="detail-intro"></p>
       <dl id="modalPlaceFacts" class="detail-facts"></dl>
       <div id="modalPlaceWarnings" class="detail-warnings"></div>
-      <div class="detail-actions"><a id="modalSourceLink" target="_blank" rel="noopener">查看資料來源</a><button id="modalMapButton">在 APP 地圖查看</button><button id="modalSaveButton">加入行程候選</button></div>
+      <div id="visitRecorder" class="visit-recorder hidden">
+        <img id="goshuinPreview" class="goshuin-preview hidden" alt="御朱印照片預覽">
+        <label class="camera-button">📷 拍攝／選擇御朱印照片<input id="goshuinCamera" type="file" accept="image/*" capture="environment"></label>
+        <button id="visitedButton" class="visited-button">✓ 標示為已參拜</button>
+        <small>照片只儲存在這台裝置的瀏覽器，不會上傳伺服器。</small>
+      </div>
+      <div class="detail-actions"><a id="modalSourceLink" target="_blank" rel="noopener">查看資料來源</a><button id="modalMapButton">在地圖查看</button><button id="modalSaveButton">加入行程候選</button></div>
     </article>
   </div>
   <div id="pilgrimageModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="pilgrimageModalTitle">
@@ -199,7 +206,7 @@
   <script src="transport-data.js"></script>
   <script src="goshuin-guide.js?v=5"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>
