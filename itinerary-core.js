@@ -20,7 +20,8 @@
       if(!DAY_TYPES.has(day.dayType))errors.push(validationError('INVALID_DAY_TYPE',expected,`Day ${expected} requires full, arrival, or departure dayType`));
       if(typeof day.startTime!=='string'||typeof day.endTime!=='string')errors.push(validationError('INVALID_DAY_TIME',expected,`Day ${expected} requires startTime and endTime`));
       if(!Array.isArray(day.items)||day.items.length===0){errors.push(validationError('EMPTY_DAY',expected,`Day ${expected} has no valid itinerary items`));continue}
-      if(day.dayType==='full'&&day.items.length<2)errors.push(validationError('UNDERFILLED_FULL_DAY',expected,`Day ${expected} is a full travel day with fewer than 2 activities`));
+      const isFullDayAnchor=day.items.length===1&&Number(day.items[0]?.estimatedDuration)>=480;
+      if(day.dayType==='full'&&day.items.length<2&&!isFullDayAnchor)errors.push(validationError('UNDERFILLED_FULL_DAY',expected,`Day ${expected} is a full travel day with fewer than 2 activities`));
       day.items.forEach((item,itemIndex)=>{
         if(!item||typeof item!=='object')errors.push(validationError('INVALID_ITEM',expected,`Day ${expected} item ${itemIndex+1} is invalid`));
         else if(!item.placeId||!item.category||!Number.isFinite(item.estimatedDuration)||!item.openingHoursStatus||item.travelFromPrevious==null)errors.push(validationError('INVALID_ITEM_SCHEMA',expected,`Day ${expected} item ${itemIndex+1} is missing required fields`));
@@ -58,5 +59,21 @@
     if(dayNumber<1||dayNumber>tripDays)return{resolved:false,dayIndex:null,dayNumber,source,error:'DAY_OUT_OF_RANGE'};
     return{resolved:true,dayIndex:dayNumber-1,dayNumber,source,error:null};
   }
-  return{validateItinerary,classifyChatIntent,resolveDayReference};
+  function createConversationState(){return{activeIntent:null,pendingAction:null,missingSlots:[],selectedDay:null,selectedItem:null,lastAssistantQuestion:null,lastUserComplaint:null}}
+  function classifyChatDecision(text,context={},conversation=createConversationState()){
+    const value=String(text||'').trim(),day=resolveDayReference(value,context),selectedDay=day.resolved?day.dayNumber:conversation.selectedDay;
+    const result={primaryIntent:null,secondaryIntent:null,confidence:.9,sentiment:'NEUTRAL',targetDay:selectedDay||null,targetItem:null,modificationType:null,category:null,pace:null,preferences:[],missingSlots:[],shouldModifyNow:false,shouldAskClarification:false,clarificationQuestion:null};
+    const angry=/幹你|他媽|靠北|垃圾|爛行程|爛安排|什麼鬼|亂排/.test(value),hasProblem=/(?:day\s*\d|第.+天).*(?:沒|空|錯|根本)|(?:沒行程|沒有行程)/i.test(value);
+    if(angry){result.sentiment='ANGRY';result.primaryIntent=hasProblem?'COMPLAINT':'EXPRESS_FRUSTRATION';result.secondaryIntent=hasProblem?'ASK_QUESTION':null;result.confidence=.98;if(hasProblem){result.shouldAskClarification=false}else{result.shouldAskClarification=true;result.clarificationQuestion='看來我這次真的排得很差。你最不滿意哪一天或哪個安排？我先幫你修。'}return result}
+    if(!value||/^[\sㄅ-ㄩ˙ˊˇˋ]+$/.test(value)){result.primaryIntent='NONSENSE';result.confidence=.98;result.shouldAskClarification=true;result.clarificationQuestion='我沒看懂這段內容。你可以直接說「第三天輕鬆一點」、「增加購物」，或告訴我哪個景點不想去。';return result}
+    if(/我愛你|聊聊天|你是誰/.test(value)){result.primaryIntent='CASUAL_CHAT';result.shouldAskClarification=false;return result}
+    if(/為什麼|為何|怎麼會|怎麼沒有|根本沒排/.test(value)){result.primaryIntent='ASK_QUESTION';result.confidence=.96;return result}
+    const modify=/修改行程|改行程|幫我改|幫我調|調一下|重弄|重新安排|不要這個|增加|新增|刪掉|移除|換一個|對調|移晚|太累|輕鬆|晚點出門|想逛街|買東西|大買特買|不要排神社|不想一直/.test(value)||conversation.activeIntent==='MODIFY_ITINERARY';
+    if(modify){result.primaryIntent='MODIFY_ITINERARY';result.confidence=.97;if(/增加|新增|多一點|想逛街|買東西|大買特買/.test(value))result.modificationType='ADD_CATEGORY';if(/購物|逛街|買東西|大買特買/.test(value)){result.category='SHOPPING';result.modificationType=result.modificationType||'SHOPPING_FOCUS'}if(/刪掉|移除|不要這個/.test(value))result.modificationType='REMOVE_ITEM';if(/輕鬆|太累|走不動|晚點出門/.test(value)){result.modificationType='CHANGE_PACE';result.pace='RELAXED'}if(/重新安排|重弄/.test(value))result.modificationType='REPLAN_DAY';if(/不要排神社|不想一直看神社/.test(value))result.preferences.push('AVOID_SHRINE');if(!result.targetDay)result.missingSlots.push('targetDay');if(!result.modificationType)result.missingSlots.push('modificationType');result.shouldModifyNow=result.missingSlots.length===0;result.shouldAskClarification=!result.shouldModifyNow;if(result.missingSlots.includes('targetDay'))result.clarificationQuestion=result.modificationType==='REMOVE_ITEM'?'你想刪掉目前選取的景點，還是哪一天裡的某個景點？':result.modificationType?'想加在哪一天？也可以由我選擇最順路、最不影響原行程的一天。':'可以。你想改某一天，還是整趟行程？';else if(result.missingSlots.includes('modificationType'))result.clarificationQuestion=`第 ${result.targetDay} 天想怎麼改？可以調輕鬆、增加購物、換景點或重新安排。`;return result}
+    if(day.resolved){result.primaryIntent='AMBIGUOUS';result.targetDay=day.dayNumber;result.shouldAskClarification=true;result.clarificationQuestion=`你想查看第 ${day.dayNumber} 天，還是修改這一天？`;return result}
+    if(/這什麼|不合理|不喜歡|有問題/.test(value)){result.primaryIntent='COMPLAINT';result.shouldAskClarification=true;result.clarificationQuestion='是行程太趕、景點不喜歡、交通太遠，還是哪一天特別有問題？';return result}
+    result.primaryIntent='AMBIGUOUS';result.shouldAskClarification=true;result.clarificationQuestion='你是想查看目前行程，還是調整其中一部分？';return result;
+  }
+  function advanceConversation(state,decision){const next={...createConversationState(),...state};next.activeIntent=decision.primaryIntent==='MODIFY_ITINERARY'?'MODIFY_ITINERARY':decision.shouldModifyNow?null:next.activeIntent;next.pendingAction=decision.modificationType||next.pendingAction;next.missingSlots=[...decision.missingSlots];next.selectedDay=decision.targetDay||next.selectedDay;next.selectedItem=decision.targetItem||next.selectedItem;next.lastAssistantQuestion=decision.clarificationQuestion||null;if(['COMPLAINT','EXPRESS_FRUSTRATION'].includes(decision.primaryIntent))next.lastUserComplaint=true;return next}
+  return{validateItinerary,classifyChatIntent,classifyChatDecision,createConversationState,advanceConversation,resolveDayReference};
 });
