@@ -31,11 +31,17 @@
   function classifyChatIntent(text){
     const value=String(text||'').trim();
     if(!value)return'AMBIGUOUS';
-    if(/^(為什麼|爲什麼|怎麼會|怎麼是|怎麼沒有|為何)|[？?]$/.test(value))return'QUESTION';
+    if(/這什麼爛|亂排|很爛|不合理|搞什麼/.test(value))return'COMPLAINT';
+    if(/^(為什麼|爲什麼|怎麼會|怎麼是|怎麼沒有|為何)/.test(value))return'EXPLANATION';
+    if(/[？?]$/.test(value))return'QUESTION';
     if(/(?:現在|目前).*(?:哪些|幾個|有什麼|進度)|(?:Day|第).*(?:有哪些|幾個|現在)|行程.*(?:狀態|進度)/i.test(value))return'STATUS';
-    if(/整(?:份|趟).*(?:重排|重新)|重新(?:生成|安排|排)(?:整|全)/.test(value))return'REGENERATE';
-    if(/重新(?:生成|安排|排)|補排|補上/.test(value))return'REGENERATE';
-    if(/加入|新增|刪除|移除|改成|調整|換成|不要太累|好累|太累|放鬆|增加|減少/.test(value))return'MODIFY';
+    if(/整(?:份|趟).*(?:重排|重新)|重新(?:生成|安排|排)(?:整|全)/.test(value))return'REPLAN_TRIP';
+    if(/重新(?:生成|安排|排)|補排|補上/.test(value))return'REPLAN_DAY';
+    if(/刪除|移除/.test(value))return'REMOVE_ITEM';
+    if(/換成|取代|替換/.test(value))return'REPLACE_ITEM';
+    if(/移到|改到|調到|順序/.test(value))return'MOVE_ITEM';
+    if(/加入|新增|增加/.test(value))return'ADD_ITEM';
+    if(/不要太累|好累|太累|放鬆|減少|睡到中午|下午再出門/.test(value))return'CHANGE_PACE';
     return'AMBIGUOUS';
   }
   function resolveDayReference(text,context={}){
