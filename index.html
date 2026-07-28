@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
   <div class="app-shell">
@@ -27,7 +27,7 @@
         <button class="nav-link" data-view="explore">探索東京</button>
         <button class="nav-link" data-view="map">寺社地圖</button>
         <button class="nav-link" data-view="pilgrimage">巡禮專題</button>
-        <button class="nav-link" data-view="trip">我的行程</button>
+        <button class="nav-link" data-view="trip">旅程・收藏</button>
       </nav>
       <button class="profile-button" aria-label="會員設定">R</button>
     </header>
@@ -165,6 +165,13 @@
             <div><span class="eyebrow">YOUR TOKYO JOURNEY</span><h1>東京 <span id="resultDays">5</span> 日慢旅</h1><p id="resultSummary"></p></div>
             <div class="trip-actions"><button class="outline-button" id="regenerateButton">重新安排</button><button id="saveTripButton" class="primary-button compact">儲存行程</button></div>
           </div>
+          <section id="companionDashboard" class="companion-dashboard">
+            <div><small>AI TRAVEL COMPANION</small><h2 id="companionGreeting">早安，今天一起好好旅行。</h2><p id="todayAdvice">我會陪你查看進度、體力與下一站。</p></div>
+            <div class="companion-stats"><button id="completionCard"><b id="todayCompletion">0%</b><span>今日完成率</span></button><label><b><input id="todaySteps" type="number" min="0" step="100" value="0"> 步</b><span>今日步數（網頁手動）</span></label><button id="weatherCard"><b id="todayWeather">東京天氣</b><span>點擊更新</span></button></div>
+            <p class="native-bridge-note">步數目前由網頁手動輸入；轉為 iOS／Android App 後將接 HealthKit／Health Connect，不會假裝已讀取健康資料。開發期天氣資料：<a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>。</p>
+            <div class="companion-actions"><button id="showDayRoute">查看今日動線</button><button id="startTodayTrip">開始今天旅程</button><button id="replanToday">依今日狀況重排</button><button id="makeDiary">生成今日旅行日記</button><button id="shareToday">分享今日成果</button></div>
+            <article id="travelDiary" class="travel-diary hidden"></article>
+          </section>
           <div class="trip-layout">
             <aside class="trip-sidebar">
               <div class="summary-card"><span>整趟基本旅費</span><strong id="totalCost">¥0</strong><small>餐食＋交通＋門票；不含住宿、機票、購物</small></div>
@@ -191,6 +198,11 @@
   <div id="loadingOverlay" class="loading-overlay hidden" aria-live="polite">
     <div class="loader-mark">旅</div><h2>正在安排最順的東京動線</h2><p id="loadingText">理解你的旅行偏好…</p><div class="loading-line"><span></span></div>
   </div>
+  <div id="aiConfirmModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="aiConfirmTitle">
+    <div class="modal-backdrop"></div><article class="place-detail-panel ai-confirm-panel"><span class="detail-tier">AI 已理解你的需求</span><h2 id="aiConfirmTitle">我理解的是...</h2><div id="aiUnderstanding" class="ai-understanding"></div><p class="ai-privacy-note">這是可理解的規劃摘要，不會顯示模型內部推理。</p><div class="detail-actions"><button id="editUnderstanding" class="secondary-action">回去修改</button><button id="confirmUnderstanding">確認，開始規劃</button></div></article>
+  </div>
+  <div id="dayRouteModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="dayRouteTitle"><div class="modal-backdrop" data-close-route></div><article class="place-detail-panel route-panel"><button id="closeDayRoute" class="modal-close">×</button><span class="detail-tier">TODAY ROUTE</span><h2 id="dayRouteTitle">今日動線</h2><p class="route-estimate-note">目前折線與交通時間為行程預覽估算；按「開始今天旅程」會交給 Apple Maps／Google Maps 取得即時路線。</p><div id="dayRouteMap" class="day-route-map"></div><div id="dayRouteLegs" class="day-route-legs"></div></article></div>
+  <aside id="aiChat" class="ai-chat hidden" aria-label="AI 旅行夥伴聊天室"><button id="toggleChat" class="ai-chat-toggle">旅</button><div class="ai-chat-panel"><header><div><b>AI 旅行夥伴</b><small>直接告訴我怎麼修改</small></div><button id="closeChat">×</button></header><div id="chatMessages" class="chat-messages"><p class="ai-message">行程完成後我還會留在這裡。你可以說「今天不要太累」、「增加購物」或「刪除某景點」。</p></div><form id="chatForm"><input id="chatInput" placeholder="例如：今天想吃燒肉"><button>送出</button></form></div></aside>
   <div id="placeModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalPlaceName">
     <div class="modal-backdrop" data-close-modal></div>
     <article class="place-detail-panel">
@@ -229,7 +241,8 @@
   <script src="goshuin-guide.js?v=7"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="config.js?v=2"></script>
-  <script src="app.js?v=19"></script>
+  <script src="app.js?v=20"></script>
+  <script src="companion.js?v=2"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>
