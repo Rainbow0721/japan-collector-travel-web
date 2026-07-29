@@ -259,6 +259,7 @@ async function generateItineraryV2(){
   state.dayEnd=result.policy.latestEndTime;
   state.structuredItinerary=result.itinerary;
   state.itineraryValidation=result.validation;
+  state.preferences=Array.isArray(requirements.interests)?requirements.interests:[];
   clearPlannerValidationError();
   persistCollections();persistTripDraft();state.activeDay=0;renderTrip();
   return true;
