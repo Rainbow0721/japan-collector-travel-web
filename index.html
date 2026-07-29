@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
   <div class="app-shell">
@@ -73,6 +73,11 @@
               </div>
             </div>
             <button class="primary-button" type="submit"><span>幫我排好行程</span><b>→</b></button>
+            <section id="companionResponse" class="companion-response hidden" aria-live="polite" aria-atomic="true">
+              <small id="companionResponseLabel">AI 旅行夥伴</small>
+              <p id="companionResponseText"></p>
+              <div id="companionResponseQuestions" class="companion-response-questions"></div>
+            </section>
             <div id="plannerValidationError" class="planner-validation-error hidden" role="alert"></div>
             <p class="form-note">試著分別輸入「美食購物」、「神社文化」或「想去鎌倉」看看不同結果</p>
           </form>
@@ -244,12 +249,13 @@
   <script src="config.js?v=2"></script>
   <script src="travel-quality.js?v=7"></script>
   <script src="planning-policy.js?v=2"></script>
+  <script src="input-routing.js?v=1"></script>
   <script src="requirement-pipeline.js?v=2"></script>
   <script src="planner-engine.js?v=2"></script>
   <script src="itinerary-core.js?v=4"></script>
   <script src="trip-requirements-state.js?v=2"></script>
   <script src="app.js?v=33"></script>
-  <script src="companion.js?v=11"></script>
+  <script src="companion.js?v=12"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>
