@@ -115,9 +115,10 @@ async function smartParseRequest(text){
     aiParser:async payload=>{
       if(!base)throw new Error('AI_GATEWAY_NOT_CONFIGURED');
       let lastError;
-      for(let attempt=1;attempt<=2;attempt++){
+      for(let attempt=1;attempt<=1;attempt++){
         const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
         try{
+          const frontendStarted=performance.now();
           const response=await fetch(`${base}/api/plan/requirements`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...payload,placeCatalog}),signal:controller.signal});
           if(!response.ok){
             const detail=await response.text().catch(()=> '');
@@ -125,7 +126,7 @@ async function smartParseRequest(text){
             error.retryable=response.status===429||response.status>=500;
             throw error;
           }
-          return response.json();
+          const data=await response.json();data.meta={...(data.meta||{}),frontendRequestMs:Math.round(performance.now()-frontendStarted),frontendTimeoutMs:25000};return data;
         }catch(error){
           lastError=error;
           const retryable=error?.name==='AbortError'||error?.retryable!==false;
