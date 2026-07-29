@@ -113,12 +113,25 @@ async function smartParseRequest(text){
     allowFallback:false,
     aiParser:async payload=>{
       if(!base)throw new Error('AI_GATEWAY_NOT_CONFIGURED');
-      const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
-      try{
-        const response=await fetch(`${base}/api/plan/requirements`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});
-        if(!response.ok)throw new Error(`HTTP ${response.status}`);
-        return response.json();
-      }finally{clearTimeout(timer)}
+      let lastError;
+      for(let attempt=1;attempt<=2;attempt++){
+        const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
+        try{
+          const response=await fetch(`${base}/api/plan/requirements`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});
+          if(!response.ok){
+            const detail=await response.text().catch(()=> '');
+            const error=new Error(`HTTP ${response.status}${detail?`: ${detail.slice(0,180)}`:''}`);
+            error.retryable=response.status===429||response.status>=500;
+            throw error;
+          }
+          return response.json();
+        }catch(error){
+          lastError=error;
+          const retryable=error?.name==='AbortError'||error?.retryable!==false;
+          if(attempt===2||!retryable)break;
+        }finally{clearTimeout(timer)}
+      }
+      throw new Error(lastError?.name==='AbortError'?'AI_REQUEST_TIMEOUT':(lastError?.message||'AI_REQUEST_FAILED'));
     },
     // 舊 parser 僅保留給明確啟用的離線 fallback；正式規劃不會走到這裡。
     fallbackParser:async()=>parseRequest(text)
