@@ -107,6 +107,7 @@ function allowedByRequest(place,request){if(request.religiousMode==='temple_only
 async function smartParseRequest(text){
   const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');
   const form=TripRequirementsState.plain(state.normalizedTripRequirements);
+  const placeCatalog=RECOMMENDATION_PLACES.slice().sort((a,b)=>Number(b.popularity||0)-Number(a.popularity||0)).slice(0,220).map(place=>({id:place.id,name:place.name,nameJa:place.nameJa||'',nameEn:place.nameEn||'',aliases:(place.aliases||[]).slice(0,6),category:place.category,zone:place.zone}));
   const result=await RequirementPipeline.parse({
     text,
     form,
@@ -117,7 +118,7 @@ async function smartParseRequest(text){
       for(let attempt=1;attempt<=2;attempt++){
         const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
         try{
-          const response=await fetch(`${base}/api/plan/requirements`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});
+          const response=await fetch(`${base}/api/plan/requirements`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...payload,placeCatalog}),signal:controller.signal});
           if(!response.ok){
             const detail=await response.text().catch(()=> '');
             const error=new Error(`HTTP ${response.status}${detail?`: ${detail.slice(0,180)}`:''}`);
@@ -144,7 +145,7 @@ async function smartParseRequest(text){
     travelRequirements:requirements,
     aiRequirements:requirements,
     aiMeta:result.meta,
-    parserSource:`AI 需求理解：${result.meta?.provider||'cloudflare-workers-ai'} / ${result.meta?.model||'model 未回傳'}`,
+    parserSource:'AI 需求理解完成',
     themes:requirements.interests||[],
     excludedThemes:requirements.avoidances||[],
     mentionedZones:[],
@@ -197,7 +198,7 @@ function repairDayAtIndex(dayIndex,request=state.request,preferredPlace=null){
   if(!validation.valid){state.itinerary=original;currentValidation();return{success:false,error:'VALIDATION_FAILED',validation}}
   return{success:true,dayIndex,day:replacement,validation};
 }
-function showPlannerValidationError(validation){const box=$('#plannerValidationError'),days=[...new Set(validation.errors.filter(error=>error.dayNumber).map(error=>`Day ${error.dayNumber}`))];box.innerHTML=`<b>${days.join('、')||'行程'} 尚未成功產生</b><p>${validation.errors.map(error=>escapeGuideText(error.message)).join('；')}</p><button type="button" id="retryMissingDays">重新生成缺失日期</button><button type="button" id="reportPlannerProblem">回報問題</button>`;box.classList.remove('hidden');$('#retryMissingDays').onclick=()=>generateItinerary();$('#reportPlannerProblem').onclick=()=>{navigator.clipboard?.writeText(JSON.stringify(validation,null,2));box.querySelector('p').textContent='錯誤資料已複製，可貼給開發者；系統沒有把空白日偽裝成完成。'}}
+function showPlannerValidationError(validation){const box=$('#plannerValidationError'),errors=validation.errors||[],days=[...new Set(errors.filter(error=>error.dayNumber).map(error=>`第 ${error.dayNumber} 天`))],messages={DAY_COUNT_MISMATCH:'旅行天數沒有完整產生',EMPTY_DAY:'這一天還沒有可用行程',THIN_FULL_DAY:'這一天的內容不足以成為完整行程',DAILY_ACTIVITY_CAP:'這一天安排得太滿',MAIN_ATTRACTION_CAP:'主要景點過多',LATE_END:'結束時間超出設定',WALKING_CAP:'預估步行量過高',CLOSED_PLACE:'有地點在抵達時未營業',CATEGORY_REPETITION:'同類型地點過度集中',RELIGIOUS_RATIO:'寺社比例超出你的偏好',AI_REQUIREMENT_PARSER_UNAVAILABLE:'AI 需求理解目前忙碌，無法可靠規劃',AI_PLANNER_UNAVAILABLE:'AI 規劃服務目前忙碌，無法保證行程品質'};const readable=errors.map(error=>messages[error.code]||(/^REQUIREMENT_/.test(error.code||'')?'有一項必去需求尚未確認':'這次規劃尚未通過完整性檢查'));box.innerHTML=`<b>${days.join('、')||'行程'}尚未成功產生</b><p>${[...new Set(readable)].map(escapeGuideText).join('；')}。你的需求與表單仍會保留。</p><button type="button" id="retryMissingDays">再試一次</button><button type="button" id="reportPlannerProblem">回報問題</button>`;box.classList.remove('hidden');$('#retryMissingDays').onclick=()=>generateItinerary();$('#reportPlannerProblem').onclick=()=>{box.querySelector('p').textContent='謝謝你的回報。請保留目前畫面，稍後可將截圖提供給開發者；你的需求沒有被清除。'}}
 function clearPlannerValidationError(){$('#plannerValidationError')?.classList.add('hidden')}
 function applyTravelRequirements(request){const requirements=request.travelRequirements;if(!requirements)return;for(const constraint of requirements.dayConstraints||[]){const indexes=constraint.dayNumber==='EVERY'?state.tripDates.map((_,index)=>index):[constraint.dayNumber==='LAST'?state.tripDates.length-1:Number(constraint.dayNumber)-1];for(const dayIndex of indexes){if(dayIndex<0||dayIndex>=state.tripDates.length)continue;if(constraint.type==='EARLIEST_START')state.daySettings[state.tripDates[dayIndex]]={...daySetting(dayIndex),start:constraint.value};if(constraint.type==='LATEST_END')state.daySettings[state.tripDates[dayIndex]]={...daySetting(dayIndex),end:constraint.value};if(constraint.type==='PRIMARY_INTEREST'&&constraint.value==='購物'){const preferred=RECOMMENDATION_PLACES.filter(place=>place.category==='購物血拼').sort((a,b)=>scorePlace(b,{...request,themes:['shopping']})-scorePlace(a,{...request,themes:['shopping']}))[0];if(preferred)repairDayAtIndex(dayIndex,{...request,themes:['shopping']},preferred)}}}}
 function applyRequirementTargetsToRequest(request){for(const constraint of request.travelRequirements?.dayConstraints||[]){if(constraint.type!=='REQUIRED_DESTINATION')continue;const place=ALL_PLACES.find(item=>`${item.name}${item.nameJa||''}${item.nameEn||''}`.includes(constraint.value));if(place)request.musts=[...new Set([...(request.musts||[]),place.id])]}return request}
@@ -235,7 +236,8 @@ async function generateItineraryV2(){
     showPlannerValidationError({errors:[{code:'AI_REQUIREMENT_PARSER_UNAVAILABLE',message:'AI 需求理解目前無法使用；系統不會靜默改用關鍵字規則產生正式行程。請稍後重試。'}]});
     return false;
   }
-  const requirements=request.travelRequirements;
+  const normalized=TripRequirementsState.plain(state.normalizedTripRequirements),requirements={...request.travelRequirements,pace:normalized.pace||request.travelRequirements.pace,budget:normalized.budget||request.travelRequirements.budget,dailyStartTime:normalized.startTime||'09:00',dailyEndTime:normalized.endTime||'22:00'};
+  request.travelRequirements=requirements;
   state.tripDates=dates;
   state.request=request;
   const result=PlannerEngine.run({requirements,places:RECOMMENDATION_PLACES,dates});
