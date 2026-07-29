@@ -30,11 +30,6 @@ async function startCompanionPlanning(){
       return;
     }
     const requirements=pendingUnderstanding.travelRequirements;
-    const destinations=requirements.destination||[];
-    if(destinations.length&&!destinations.some(value=>String(value).includes('東京'))){
-      setCompanionResponse({stateName:'COMPLETED',intent:'UNSUPPORTED_OR_IMPOSSIBLE',text:`目前試作版先專注東京，還不能可靠規劃「${destinations.join('、')}」。如果你願意，我可以先從東京行程開始。`});
-      return;
-    }
     const constraints=requirements.dayConstraints||[],everyStart=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='EARLIEST_START'),everyEnd=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='LATEST_END');
     const senior=Boolean(requirements.mobilityProfile?.seniorPresent||(requirements.travelers?.seniors||[]).length);
     const children=(requirements.travelers?.children||[]).length>0;
