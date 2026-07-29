@@ -1,0 +1,6 @@
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.PlanningPolicy=api})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  const BASE=Object.freeze({minDailyActivities:2,maxDailyActivities:7,maxMainAttractions:5,latestEndTime:'22:00',earliestStartTime:'08:00',maxWalkingKm:12,maxReligiousRatio:.5,maxConsecutiveCategory:2,restIntervalMinutes:150,bufferMinutes:20});
+  const SENIOR=Object.freeze({...BASE,minDailyActivities:2,maxDailyActivities:5,maxMainAttractions:3,latestEndTime:'20:30',earliestStartTime:'09:00',maxWalkingKm:5,maxReligiousRatio:.3,maxConsecutiveCategory:2,restIntervalMinutes:105,bufferMinutes:30});
+  function resolve(requirements={}){const senior=Boolean(requirements.mobilityProfile?.seniorPresent||requirements.specialNeeds?.includes('SENIOR_FRIENDLY')||(requirements.travelers?.seniors||[]).length),religiousPrimary=Boolean(requirements.religiousSitePreference?.primaryInterest||requirements.collectionGoals?.length);return Object.freeze({...senior?SENIOR:BASE,maxReligiousRatio:religiousPrimary?1:(senior?SENIOR.maxReligiousRatio:BASE.maxReligiousRatio),profile:senior?'SENIOR':'STANDARD',religiousPrimary})}
+  return{BASE,SENIOR,resolve};
+});
