@@ -165,7 +165,7 @@
         <div id="tripResult" class="trip-result hidden">
           <div class="trip-header">
             <div><span class="eyebrow">YOUR TOKYO JOURNEY</span><h1>東京 <span id="resultDays">5</span> 日慢旅</h1><p id="resultSummary"></p></div>
-            <div class="trip-actions"><button class="outline-button" id="regenerateButton">重新安排</button><button id="saveTripButton" class="primary-button compact">儲存行程</button></div>
+            <div class="trip-actions"><button class="outline-button" id="regenerateButton">不符合，重新調整</button><button id="saveTripButton" class="primary-button compact">＋ 加到我的行程</button></div>
           </div>
           <section id="companionDashboard" class="companion-dashboard">
             <div><small>AI TRAVEL COMPANION</small><h2 id="companionGreeting">早安，今天一起好好旅行。</h2><p id="todayAdvice">我會陪你查看進度、體力與下一站。</p></div>
@@ -199,9 +199,6 @@
 
   <div id="loadingOverlay" class="loading-overlay hidden" aria-live="polite">
     <div class="loader-mark">旅</div><h2>正在安排最順的東京動線</h2><p id="loadingText">理解你的旅行偏好…</p><div class="loading-line"><span></span></div>
-  </div>
-  <div id="aiConfirmModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="aiConfirmTitle">
-    <div class="modal-backdrop"></div><article class="place-detail-panel ai-confirm-panel"><span class="detail-tier">AI 已理解你的需求</span><h2 id="aiConfirmTitle">我理解的是...</h2><div id="aiUnderstanding" class="ai-understanding"></div><p class="ai-privacy-note">這是可理解的規劃摘要，不會顯示模型內部推理。</p><div class="detail-actions"><button id="editUnderstanding" class="secondary-action">回去修改</button><button id="confirmUnderstanding">確認，開始規劃</button></div></article>
   </div>
   <div id="dayRouteModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="dayRouteTitle"><div class="modal-backdrop" data-close-route></div><article class="place-detail-panel route-panel"><button id="closeDayRoute" class="modal-close">×</button><span class="detail-tier">TODAY ROUTE</span><h2 id="dayRouteTitle">今日動線</h2><p class="route-estimate-note">目前折線與交通時間為行程預覽估算；按「開始今天旅程」會交給 Apple Maps／Google Maps 取得即時路線。</p><div id="dayRouteMap" class="day-route-map"></div><div id="dayRouteLegs" class="day-route-legs"></div></article></div>
   <aside id="aiChat" class="ai-chat hidden" aria-label="AI 旅行夥伴聊天室"><button id="toggleChat" class="ai-chat-toggle">旅</button><div class="ai-chat-panel"><header><div><b>AI 旅行夥伴</b><small>直接告訴我怎麼修改</small></div><button id="closeChat">×</button></header><div id="chatMessages" class="chat-messages"><p class="ai-message">行程完成後我還會留在這裡。你可以說「今天不要太累」、「增加購物」或「刪除某景點」。</p></div><form id="chatForm"><input id="chatInput" placeholder="例如：今天想吃燒肉"><button>送出</button></form></div></aside>
@@ -254,8 +251,8 @@
   <script src="entity-resolver.js?v=1"></script>
   <script src="asakusa-p0.js?v=4"></script>
   <script src="popular-entity-registry.js?v=2"></script>
-  <script src="app.js?v=44"></script>
-  <script src="companion.js?v=24"></script>
+  <script src="app.js?v=45"></script>
+  <script src="companion.js?v=25"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=54').catch(()=>{}));</script>
 </body>
 </html>
