@@ -4,7 +4,7 @@ if(typeof AsakusaP0!=='undefined'){
   const sensoji=ALL_PLACES.find(place=>place.id==='sensoji');if(sensoji)Object.assign(sensoji,{name:'淺草寺',nameJa:'浅草寺',nameEn:'Senso-ji',duration:75,officialUrl:'https://www.senso-ji.jp/',openingHours:'本堂 06:00–17:00（10月至3月 06:30 開堂）；御朱印 08:00–16:30',sourceCheckedAt:AsakusaP0.CHECKED_AT,completionScore:100,dataTier:'P0 已核對',curated:true,recommendationEligible:true,requiresLiveCheck:true});
   const nakamise=ALL_PLACES.find(place=>place.id==='nakamise');if(nakamise)Object.assign(nakamise,{officialUrl:'https://www.senso-ji.jp/guide/guide02.html',sourceCheckedAt:AsakusaP0.CHECKED_AT,completionScore:100,dataTier:'P0 已核對',curated:true,recommendationEligible:true,requiresLiveCheck:true});
 }
-if(typeof TRAVEL_COLLECTIONS!=='undefined')for(const collection of TRAVEL_COLLECTIONS)for(const place of collection.places){const existing=ALL_PLACES.find(item=>item.id===place.id);if(existing)Object.assign(existing,{collectionId:collection.id,collectionRole:place.deity,recommendationEligible:true});else ALL_PLACES.push(TravelCollectionRegistry.placeRecord(place,collection))}
+if(typeof TRAVEL_COLLECTIONS!=='undefined')for(const collection of TRAVEL_COLLECTIONS)for(const place of collection.places){const existing=ALL_PLACES.find(item=>item.id===place.id);if(existing)Object.assign(existing,{collectionId:collection.id,collectionRole:place.deity,collectionVisitMinutes:place.collectionVisitMinutes||25,recommendationEligible:true});else ALL_PLACES.push(TravelCollectionRegistry.placeRecord(place,collection))}
 if(!ALL_PLACES.some(place=>place.id==='tokyo-daijingu'))ALL_PLACES.push({id:'tokyo-daijingu',name:'東京大神宮',nameJa:'東京大神宮',nameEn:'Tokyo Daijingu',area:'飯田橋',zone:'central',category:'神社寺廟',emoji:'⛩',duration:60,admission:0,cost:0,popularity:94,tags:['御朱印','結緣','東京之伊勢'],desc:'明治時代作為伊勢神宮遙拜殿創建，以結緣信仰與神前結婚式傳統聞名。御朱印通常受理至17:00，活動日以官方公告為準。',lat:35.69995,lng:139.74602,officialUrl:'https://www.tokyodaijingu.or.jp/',sourceUrl:'https://www.tokyodaijingu.or.jp/',completionScore:100,dataTier:'完成度 100%',curated:true,recommendationEligible:true,requiresLiveCheck:true});
 const CURATED_PLACES=ALL_PLACES.filter(place=>place.completionScore===100);
 const RECOMMENDATION_PLACES=ALL_PLACES.filter(place=>place.recommendationEligible);
@@ -235,7 +235,7 @@ async function generateItinerary(){
 async function applyAiItineraryCandidateV2(request,dates){
   const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');if(!base)return{ok:false,error:'AI_GATEWAY_NOT_CONFIGURED',attempts:0};
   const pool=[...new Map(state.itinerary.flat().concat(RECOMMENDATION_PLACES.filter(place=>(request.musts||[]).includes(place.id)||state.selected.has(place.id))).map(place=>[place.id,place])).values()].slice(0,100);
-  const candidates=pool.map(place=>({id:place.id,name:displayName(place),category:place.category,zone:place.zone,duration:place.duration,openingHours:place.openingHours||'',tags:(place.tags||[]).slice(0,8),collectionId:place.collectionId||null,collectionRole:place.collectionRole||null}));
+  const candidates=pool.map(place=>({id:place.id,name:displayName(place),category:place.category,zone:place.zone,duration:place.collectionVisitMinutes||place.duration,openingHours:place.openingHours||'',tags:(place.tags||[]).slice(0,8),collectionId:place.collectionId||null,collectionRole:place.collectionRole||null}));
   const collectionRequirements=(request.resolvedCollections||[]).map(collection=>({id:collection.id,name:collection.name,scope:collection.scope,requiredPlaceIds:collection.places.map(place=>place.id)}));
   const payload={requirements:request.aiRequirements||request.travelRequirements||{},dates,startTime:state.dayStart,endTime:state.dayEnd,candidates,relationships:typeof AsakusaP0!=='undefined'?AsakusaP0.RELATIONSHIPS:[],collectionRequirements,useStrongModel:true};
   let lastError;
@@ -243,7 +243,7 @@ async function applyAiItineraryCandidateV2(request,dates){
     const response=await fetch(`${base}/api/plan/generate`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});if(!response.ok)throw new Error(`HTTP ${response.status}`);
     const result=await response.json(),candidate=result.itineraryCandidate;if(!candidate||candidate.tripDays!==dates.length||candidate.days?.length!==dates.length)throw new Error('AI_DAY_COUNT_MISMATCH');
     const ordered=candidate.days.slice().sort((a,b)=>a.dayNumber-b.dayNumber);if(ordered.some((day,index)=>day.dayNumber!==index+1))throw new Error('AI_NON_SEQUENTIAL_DAYS');
-    const mapped=ordered.map(day=>(day.placeIds||[]).map(id=>byId(id)).filter(Boolean));if(mapped.some(day=>day.length<2))throw new Error('AI_EMPTY_OR_THIN_DAY');
+    const mapped=ordered.map(day=>(day.placeIds||[]).map(id=>byId(id)).filter(Boolean).map(place=>place.collectionId?{...place,duration:place.collectionVisitMinutes||place.duration}:place));if(mapped.some(day=>day.length<2))throw new Error('AI_EMPTY_OR_THIN_DAY');
     const mustIds=[...new Set([...(request.musts||[]),...collectionRequirements.flatMap(item=>item.requiredPlaceIds)])],selectedIds=new Set(mapped.flat().map(place=>place.id));if(mustIds.some(id=>!selectedIds.has(id)))throw new Error('AI_MISSING_MUST_OR_COLLECTION');
     state.itinerary=mapped;request.aiPlanMeta={...result.meta,attempts:attempt};return{ok:true,attempts:attempt};
   }catch(error){lastError=error}
