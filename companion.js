@@ -14,8 +14,6 @@ function appendPlannerMessage(text,role='ai'){const box=$('#plannerConversation'
 function setCompanionResponse({stateName='COMPLETED',intent='GENERAL_CHAT',text='',questions=[]}){const box=$('#companionResponse');box.dataset.state=stateName;$('#companionResponseLabel').textContent=stateName==='UNDERSTANDING'?'正在理解…':stateName==='ANSWERING'?'正在回答…':stateName==='PLANNING'?'準備規劃…':InputRouting.publicLabel(intent);$('#companionResponseText').textContent=text;$('#companionResponseQuestions').innerHTML=(questions||[]).map(question=>`<span>${escapeGuideText(question)}</span>`).join('');box.classList.remove('hidden')}
 function setPlannerButtonBusy(busy){const button=$('#plannerForm .primary-button');button.disabled=busy;button.querySelector('span').textContent=busy?'請稍等…':'送出'}
 async function routeCompanionInput(message){
-    if(typeof AsakusaP0!=='undefined'&&AsakusaP0.isOneDayPlanning(message))return{intent:'TRIP_PLANNING',response:'已辨識為淺草一日遊；這項 P0 可直接使用本機知識庫規劃。',shouldPlan:true,questions:[],safetyLevel:'SAFE',reasonCode:'P0_LOCAL_KNOWLEDGE'};
-  const localClarification=InputRouting.clarifyMissingDestination(message);if(localClarification)return localClarification;
   const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');if(!base)throw new Error('AI_GATEWAY_NOT_CONFIGURED');
   const payload={message,formState:requirementsFormSnapshot(),context:{surface:'PLANNER_HOME',hasExistingItinerary:Boolean(state.itinerary.length),supportedDestination:'東京',language:'zh-TW'}},controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
   try{const response=await fetch(`${base}/api/input/route`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});if(!response.ok)throw new Error(`HTTP_${response.status}`);const result=await response.json(),validation=InputRouting.validate(result.route);if(!validation.valid)throw new Error(`INVALID_ROUTE_${validation.errors.join('_')}`);return validation.value}finally{clearTimeout(timer)}
@@ -28,14 +26,14 @@ async function startCompanionPlanning(){
     if(!route.shouldPlan){pendingPlannerContext=route.questions?.length?raw:'';$('#tripPrompt').placeholder=route.questions?.[0]||'繼續告訴我你的需求';$('#tripPrompt').focus();return}
     pendingPlannerContext='';$('#tripPrompt').placeholder='例如：幫我排淺草一日遊，帶媽媽，不要太累';
     setCompanionResponse({stateName:'PLANNING',intent:route.intent,text:'我會先整理你的需求，再讓你確認後開始規劃。'});
-    const overlay=$('#loadingOverlay');overlay.classList.remove('hidden');$('#loadingText').textContent=typeof AsakusaP0!=='undefined'&&AsakusaP0.isOneDayPlanning(raw)?'正在讀取淺草 P0 知識庫…':'AI 正在整理你的旅行需求…';
+    const overlay=$('#loadingOverlay');overlay.classList.remove('hidden');$('#loadingText').textContent='AI 正在結合旅遊知識庫理解你的需求…';
     pendingUnderstanding=await smartParseRequest(raw);
     if(pendingUnderstanding.aiUnavailable){
       setCompanionResponse({stateName:'UNAVAILABLE',intent:'SYSTEM_ERROR',text:'旅行需求整理服務暫時沒有回應，請稍後再試一次。你的文字、日期與其他設定都已保留。'});
       return;
     }
     state.request=pendingUnderstanding;
-    if(pendingUnderstanding.parserMode==='LOCAL_KNOWLEDGE'&&pendingUnderstanding.travelRequirements?.tripDays===1){$('#tripEndDate').value=$('#tripStartDate').value;updateHolidayNotice()}
+    if(pendingUnderstanding.travelRequirements?.tripDays===1){$('#tripEndDate').value=$('#tripStartDate').value;updateHolidayNotice()}
     const requirements=pendingUnderstanding.travelRequirements;
     const constraints=requirements.dayConstraints||[],everyStart=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='EARLIEST_START'),everyEnd=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='LATEST_END');
     const senior=Boolean(requirements.mobilityProfile?.seniorPresent||(requirements.travelers?.seniors||[]).length);
@@ -47,7 +45,7 @@ async function startCompanionPlanning(){
     pendingUnderstanding.normalizedTripRequirements=unified;pendingUnderstanding.clock={start:unified.startTime,end:unified.endTime};
     state.pace={LEISURELY:'leisurely',BALANCED:'balanced',INTENSIVE:'intensive'}[unified.pace]||state.pace;
     state.party=new Set(unified.party?.length?unified.party:['adult']);
-    $('#aiUnderstanding').innerHTML=understandingHtml(pendingUnderstanding);$('#aiConfirmModal .detail-tier').textContent=pendingUnderstanding.parserMode==='LOCAL_KNOWLEDGE'?'P0 知識庫已理解你的需求':'AI 已理解你的需求';bindConflictControls();$('#aiConfirmModal').classList.remove('hidden');document.body.style.overflow='hidden';setCompanionResponse({stateName:'NEEDS_CONFIRMATION',intent:'TRIP_PLANNING',text:'我整理好了，請確認需求摘要；確認後才會開始排行程。'});
+    $('#aiUnderstanding').innerHTML=understandingHtml(pendingUnderstanding);$('#aiConfirmModal .detail-tier').textContent='AI 已結合 P0 知識庫理解你的需求';bindConflictControls();$('#aiConfirmModal').classList.remove('hidden');document.body.style.overflow='hidden';setCompanionResponse({stateName:'NEEDS_CONFIRMATION',intent:'TRIP_PLANNING',text:'我整理好了，請確認需求摘要；確認後會由 AI 安排行程。'});
   }catch(error){setCompanionResponse({stateName:'UNAVAILABLE',intent:'SYSTEM_ERROR',text:'AI 旅行夥伴目前忙碌，暫時無法可靠理解這段內容。請稍後再試；你的文字、日期與其他設定都已保留。'});state.lastRouteError=String(error.message||error)}finally{$('#loadingOverlay').classList.add('hidden');setPlannerButtonBusy(false)}
 }
 $('#editUnderstanding').onclick=()=>{$('#aiConfirmModal').classList.add('hidden');document.body.style.overflow=''};

@@ -104,10 +104,9 @@ const NEARBY_ZONES=['chiba','kamakura','yokohama','hakone','fuji','nikko','kawag
 const CITY_ZONES=['asakusa','ueno','central','shibuya','shinjuku','minato','bay','ikebukuro','west','east'];
 function allowedByRequest(place,request){if(request.religiousMode==='temple_only')return place.category==='神社寺廟'&&placeKind(place)==='temple';if(request.religiousMode==='shrine_only')return place.category==='神社寺廟'&&placeKind(place)==='shrine';return true}
 async function smartParseRequest(text){
-  const local=typeof AsakusaP0!=='undefined'?AsakusaP0.parse(text,TripRequirementsState.plain(state.normalizedTripRequirements)):null;
-  if(local)return local;
   const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');
   const form=TripRequirementsState.plain(state.normalizedTripRequirements);
+  const knowledgeMatches=typeof AsakusaP0!=='undefined'?AsakusaP0.resolveKnowledge(text):[];
   const placeCatalog=RECOMMENDATION_PLACES.slice().sort((a,b)=>Number(b.popularity||0)-Number(a.popularity||0)).slice(0,220).map(place=>({id:place.id,name:place.name,nameJa:place.nameJa||'',nameEn:place.nameEn||'',aliases:(place.aliases||[]).slice(0,6),category:place.category,zone:place.zone}));
   const result=await RequirementPipeline.parse({
     text,
@@ -120,7 +119,7 @@ async function smartParseRequest(text){
         const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
         try{
           const frontendStarted=performance.now();
-          const response=await fetch(`${base}/api/plan/requirements`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...payload,placeCatalog}),signal:controller.signal});
+          const response=await fetch(`${base}/api/plan/requirements`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...payload,placeCatalog,knowledgeMatches}),signal:controller.signal});
           if(!response.ok){
             const detail=await response.text().catch(()=> '');
             const error=new Error(`HTTP ${response.status}${detail?`: ${detail.slice(0,180)}`:''}`);
@@ -145,11 +144,12 @@ async function smartParseRequest(text){
     travelRequirements:requirements,
     aiRequirements:requirements,
     aiMeta:result.meta,
-    parserSource:'AI 需求理解完成',
+    knowledgeMatches,
+    parserSource:`AI 需求理解完成${knowledgeMatches.length?'；已使用 P0 景點知識庫':''}`,
     themes:requirements.interests||[],
     excludedThemes:requirements.avoidances||[],
     mentionedZones:[],
-    musts:[],
+    musts:[...new Set(knowledgeMatches.filter(item=>item.status==='RESOLVED').map(item=>item.entityId))],
     foodTerms:requirements.foodPreferences||[],
     clock:{start:form.startTime||'09:00',end:form.endTime||'22:00'},
     unsupported:requirements.warnings||[],
@@ -157,7 +157,7 @@ async function smartParseRequest(text){
     dayQuotas:{food:0,amusement:0,night:0}
   };
 }
-async function applyAiItineraryCandidate(request,dates){const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');if(!base)return{ok:false,error:'AI_GATEWAY_NOT_CONFIGURED',attempts:0};const pool=[...new Map(state.itinerary.flat().concat(RECOMMENDATION_PLACES.filter(place=>request.musts.includes(place.id)||state.selected.has(place.id))).map(place=>[place.id,place])).values()].slice(0,100),candidates=pool.map(place=>({id:place.id,name:displayName(place),category:place.category,zone:place.zone,duration:place.duration,openingHours:place.openingHours||'',tags:(place.tags||[]).slice(0,8)})),payload={requirements:request.aiRequirements||request.travelRequirements||{},dates,startTime:state.dayStart,endTime:state.dayEnd,candidates};let lastError;for(let attempt=1;attempt<=2;attempt++){try{const response=await fetch(`${base}/api/plan/generate`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});if(!response.ok)throw new Error(`HTTP ${response.status}`);const result=await response.json(),candidate=result.itineraryCandidate;if(!candidate||candidate.tripDays!==dates.length||candidate.days?.length!==dates.length)throw new Error('AI_DAY_COUNT_MISMATCH');const ordered=candidate.days.slice().sort((a,b)=>a.dayNumber-b.dayNumber);if(ordered.some((day,index)=>day.dayNumber!==index+1))throw new Error('AI_NON_SEQUENTIAL_DAYS');const mapped=ordered.map(day=>(day.placeIds||[]).map(id=>byId(id)).filter(Boolean));if(mapped.some(day=>day.length<2))throw new Error('AI_EMPTY_OR_THIN_DAY');state.itinerary=mapped;request.aiPlanMeta={...result.meta,attempts:attempt};request.parserSource=`${request.parserSource}；AI 候選行程：${result.meta?.model||'model 未回傳'}`;return{ok:true,attempts:attempt}}catch(error){lastError=error}}request.aiPlanMeta={attempts:2,error:lastError?.message||'UNKNOWN'};return{ok:false,error:lastError?.message||'UNKNOWN',attempts:2}}
+async function applyAiItineraryCandidate(request,dates){const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');if(!base)return{ok:false,error:'AI_GATEWAY_NOT_CONFIGURED',attempts:0};const pool=[...new Map(state.itinerary.flat().concat(RECOMMENDATION_PLACES.filter(place=>request.musts.includes(place.id)||state.selected.has(place.id))).map(place=>[place.id,place])).values()].slice(0,100),candidates=pool.map(place=>({id:place.id,name:displayName(place),category:place.category,zone:place.zone,duration:place.duration,openingHours:place.openingHours||'',tags:(place.tags||[]).slice(0,8)})),payload={requirements:request.aiRequirements||request.travelRequirements||{},dates,startTime:state.dayStart,endTime:state.dayEnd,candidates,useStrongModel:true};let lastError;for(let attempt=1;attempt<=2;attempt++){try{const response=await fetch(`${base}/api/plan/generate`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});if(!response.ok)throw new Error(`HTTP ${response.status}`);const result=await response.json(),candidate=result.itineraryCandidate;if(!candidate||candidate.tripDays!==dates.length||candidate.days?.length!==dates.length)throw new Error('AI_DAY_COUNT_MISMATCH');const ordered=candidate.days.slice().sort((a,b)=>a.dayNumber-b.dayNumber);if(ordered.some((day,index)=>day.dayNumber!==index+1))throw new Error('AI_NON_SEQUENTIAL_DAYS');const mapped=ordered.map(day=>(day.placeIds||[]).map(id=>byId(id)).filter(Boolean));if(mapped.some(day=>day.length<2))throw new Error('AI_EMPTY_OR_THIN_DAY');state.itinerary=mapped;request.aiPlanMeta={...result.meta,attempts:attempt};request.parserSource=`${request.parserSource}；AI 候選行程：${result.meta?.model||'model 未回傳'}`;return{ok:true,attempts:attempt}}catch(error){lastError=error}}request.aiPlanMeta={attempts:2,error:lastError?.message||'UNKNOWN'};return{ok:false,error:lastError?.message||'UNKNOWN',attempts:2}}
 function scorePlace(place,request){if(place.category==='神社寺廟'&&!isVerifiedShrinePlace(place))return-10000;let score=place.popularity;for(const theme of request.themes)if((THEME_CATEGORIES[theme]||[]).includes(place.category)||place.tags.some(t=>THEME_WORDS[theme]?.some(w=>t.includes(w))))score+=220;for(const theme of request.excludedThemes)if((THEME_CATEGORIES[theme]||[]).includes(place.category))score-=1000;const foodText=`${place.name} ${place.nameJa} ${place.cuisine||''} ${place.tags.join(' ')}`;if(request.foodTerms.some(term=>foodText.includes(term)))score+=300;if(request.musts.includes(place.id))score+=2000;if(state.selected.has(place.id))score+=1200;if((state.party.has('elderly')||state.party.has('stroller'))&&['整日','階梯'].some(t=>place.tags.includes(t)))score-=180;return score}
 function rankZones(zones,request){return zones.map(zone=>{const ps=RECOMMENDATION_PLACES.filter(p=>p.zone===zone).sort((a,b)=>scorePlace(b,request)-scorePlace(a,request));return{zone,score:(request.mentionedZones.includes(zone)?500:0)+(ps.slice(0,3).reduce((s,p)=>s+scorePlace(p,request),0)/3||0)}}).sort((a,b)=>b.score-a.score).map(x=>x.zone)}
 const JAPAN_HOLIDAYS={'2026-01-01':'元日','2026-01-12':'成人之日','2026-02-11':'建國紀念日','2026-02-23':'天皇誕生日','2026-03-20':'春分日','2026-04-29':'昭和之日','2026-05-03':'憲法紀念日','2026-05-04':'綠之日','2026-05-05':'兒童節','2026-05-06':'補假','2026-07-20':'海之日','2026-08-11':'山之日','2026-09-21':'敬老之日','2026-09-22':'國民休日','2026-09-23':'秋分日','2026-10-12':'運動之日','2026-11-03':'文化之日','2026-11-23':'勤勞感謝日','2027-01-01':'元日','2027-01-11':'成人之日','2027-02-11':'建國紀念日','2027-02-23':'天皇誕生日','2027-03-21':'春分日','2027-03-22':'補假','2027-04-29':'昭和之日','2027-05-03':'憲法紀念日','2027-05-04':'綠之日','2027-05-05':'兒童節','2027-07-19':'海之日','2027-08-11':'山之日','2027-09-20':'敬老之日','2027-09-23':'秋分日','2027-10-11':'運動之日','2027-11-03':'文化之日','2027-11-23':'勤勞感謝日'};
@@ -232,33 +232,26 @@ async function generateItinerary(){
 async function generateItineraryV2(){
   const dates=updateHolidayNotice(),request=state.request||await smartParseRequest($('#tripPrompt').value);
   if(!dates.length){$('#holidayNotice').textContent='⚠ 回程日期不可早於出發日期，且目前一次最多規劃31天。';return false}
-  if(request.aiUnavailable||!['AI','LOCAL_KNOWLEDGE'].includes(request.parserMode)){
+  if(request.aiUnavailable||request.parserMode!=='AI'){
     showPlannerValidationError({errors:[{code:'AI_REQUIREMENT_PARSER_UNAVAILABLE',message:'AI 需求理解目前無法使用；系統不會靜默改用關鍵字規則產生正式行程。請稍後重試。'}]});
     return false;
   }
   const normalized=TripRequirementsState.plain(state.normalizedTripRequirements),party=normalized.party||[],senior=party.includes('elderly'),child=party.includes('child'),requirements={...request.travelRequirements,pace:normalized.pace||request.travelRequirements.pace,budget:normalized.budget||request.travelRequirements.budget,dailyStartTime:normalized.startTime||'09:00',dailyEndTime:normalized.endTime||'22:00',travelers:{...(request.travelRequirements.travelers||{}),adults:senior?[]:(request.travelRequirements.travelers?.adults||[1]),seniors:senior?[1]:(request.travelRequirements.travelers?.seniors||[]),children:child?[1]:(request.travelRequirements.travelers?.children||[]),mobilityNeeds:senior?['少走路']:(request.travelRequirements.travelers?.mobilityNeeds||[])},mobilityProfile:{...(request.travelRequirements.mobilityProfile||{}),seniorPresent:senior||Boolean(request.travelRequirements.mobilityProfile?.seniorPresent)}};
   request.travelRequirements=requirements;
+  request.aiRequirements=requirements;
   state.tripDates=dates;
   state.request=request;
-  const result=request.parserMode==='LOCAL_KNOWLEDGE'&&dates.length===1?AsakusaP0.plan({requirements,places:RECOMMENDATION_PLACES,dates,flags:request.localFlags}):PlannerEngine.run({requirements,places:RECOMMENDATION_PLACES,dates});
-  state.plannerEngineResult=result;
-  state.requirementTraceability=result.traceability;
-  state.seniorTravelValidation={valid:!result.validation.errors.some(error=>String(error.code).includes('SENIOR')),errors:result.validation.errors};
-  if(!result.ok){
-    const traceErrors=result.traceability.filter(item=>item.priority==='MUST'&&item.status!=='SATISFIED').map(item=>({code:`REQUIREMENT_${item.status}`,message:`${item.value}：${item.evidence.join('、')}`}));
-    showPlannerValidationError({errors:[...result.validation.errors.map(error=>({...error,message:error.message||error.code})),...traceErrors]});
-    state.itinerary=[];
-    return false;
-  }
-  state.daySettings={};
-  state.itinerary=result.itinerary.days.map(day=>{
-    state.daySettings[day.date]={start:day.startTime,end:day.endTime};
-    return day.items.map(item=>byId(item.placeId)).filter(Boolean);
-  });
-  state.dayStart=result.itinerary.days[0]?.startTime||'09:00';
-  state.dayEnd=result.policy.latestEndTime;
-  state.structuredItinerary=result.itinerary;
-  state.itineraryValidation=result.validation;
+  const destinations=(requirements.destination||[]).join(' '),isAsakusa=/淺草|浅草|asakusa/i.test(destinations)||request.knowledgeMatches?.some(item=>['asakusa','sensoji','kaminarimon','nakamise','asakusa-shrine'].includes(item.entityId));
+  if(!isAsakusa||dates.length!==1){showPlannerValidationError({errors:[{code:'OUTSIDE_P0_SCOPE',message:'目前可正式驗證的是「淺草一日 AI」；其他地區仍在後續階段。'}]});return false}
+  state.dayStart=normalized.startTime||'09:00';state.dayEnd=normalized.endTime||'19:00';state.daySettings={[dates[0]]:{start:state.dayStart,end:state.dayEnd}};
+  state.itinerary=[RECOMMENDATION_PLACES.filter(place=>place.zone==='asakusa'&&place.recommendationEligible!==false).sort((a,b)=>Number(b.popularity||0)-Number(a.popularity||0)).slice(0,12)];
+  const aiCandidate=await applyAiItineraryCandidate(request,dates);
+  if(!aiCandidate.ok){showPlannerValidationError({errors:[{code:'AI_PLANNER_UNAVAILABLE',message:'AI 行程規劃暫時沒有完成；需求已保留，系統不會用固定模板冒充 AI 結果。'}]});state.itinerary=[];return false}
+  normalizeItineraryToSchedule();
+  const validation=currentValidation();state.itineraryValidation=validation;
+  if(!validation.valid){showPlannerValidationError(validation);state.itinerary=[];return false}
+  state.requirementTraceability=TravelQuality.buildTraceability(requirements,state.structuredItinerary);
+  state.plannerEngineResult={ok:true,mode:'AI',meta:request.aiPlanMeta};
   state.preferences=Array.isArray(requirements.interests)?requirements.interests:[];
   clearPlannerValidationError();
   persistCollections();persistTripDraft();state.activeDay=0;renderTrip();
