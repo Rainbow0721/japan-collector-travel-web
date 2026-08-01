@@ -242,7 +242,7 @@ async function applyAiItineraryCandidateV2(request,dates,knowledgePool){
   let lastError;
   for(let attempt=1;attempt<=1;attempt++)try{
     const response=await fetch(`${base}/api/plan/generate`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});if(!response.ok)throw new Error(`HTTP ${response.status}`);
-    const result=await response.json(),candidate=result.itineraryCandidate;if(!candidate||candidate.tripDays!==dates.length||candidate.days?.length!==dates.length)throw new Error('AI_DAY_COUNT_MISMATCH');
+    const result=await response.json(),candidate=result.itineraryCandidate;if((!candidate?.days?.length)&&result.conflicts?.length){request.aiPlanConflict=String(result.conflicts[0]).slice(0,240);throw new Error('AI_REPORTED_CONFLICT')}if(!candidate||candidate.tripDays!==dates.length||candidate.days?.length!==dates.length)throw new Error('AI_DAY_COUNT_MISMATCH');
     const ordered=candidate.days.slice().sort((a,b)=>a.dayNumber-b.dayNumber);if(ordered.some((day,index)=>day.dayNumber!==index+1))throw new Error('AI_NON_SEQUENTIAL_DAYS');
     const mapped=ordered.map(day=>(day.placeIds||[]).map(id=>byId(id)).filter(Boolean).map(place=>place.collectionId?{...place,duration:place.collectionVisitMinutes||place.duration}:place));if(mapped.some(day=>day.length<2))throw new Error('AI_EMPTY_OR_THIN_DAY');
     const mustIds=[...new Set([...(request.musts||[]),...collectionRequirements.flatMap(item=>item.requiredPlaceIds)])],selectedIds=new Set(mapped.flat().map(place=>place.id));if(mustIds.some(id=>!selectedIds.has(id)))throw new Error('AI_MISSING_MUST_OR_COLLECTION');if(mealRequirements.length&&!mapped.flat().some(matchesFood))throw new Error('AI_MISSING_REQUIRED_MEAL');
