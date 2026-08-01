@@ -1,4 +1,5 @@
 let pendingUnderstanding=null,pendingPlannerContext='',dayRouteMap=null,dayRouteLayer=null;
+window.addEventListener('tabi:new-requirement-session',()=>{pendingUnderstanding=null;pendingPlannerContext='';$('#aiConfirmModal').classList.add('hidden');$('#tripPrompt').placeholder='例如：幫我排淺草一日遊，帶媽媽，不要太累';document.body.style.overflow=''});
 const completedStops=new Set(JSON.parse(localStorage.getItem('tabi-completed-stops')||'[]'));
 const companionMemory=JSON.parse(localStorage.getItem('tabi-companion-memory')||'{"trips":[]}');
 const themeLabels={food:'美食',shopping:'購物',shrine:'寺社／御朱印',anime:'動漫',nature:'自然',night:'夜景',family:'親子／樂園',classic:'經典景點'};
@@ -38,7 +39,7 @@ async function startCompanionPlanning(){
     const constraints=requirements.dayConstraints||[],everyStart=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='EARLIEST_START'),everyEnd=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='LATEST_END');
     const senior=Boolean(requirements.mobilityProfile?.seniorPresent||(requirements.travelers?.seniors||[]).length);
     const children=(requirements.travelers?.children||[]).length>0;
-    const extracted={pace:requirements.pace,startTime:everyStart?.value||pendingUnderstanding.clock?.start,endTime:everyEnd?.value||pendingUnderstanding.clock?.end,party:[...(senior?['elderly']:[]),...(children?['child']:[])]};
+    const extracted={tripDays:aiTripDays||null,pace:requirements.pace,startTime:everyStart?.value||pendingUnderstanding.clock?.start,endTime:everyEnd?.value||pendingUnderstanding.clock?.end,party:[...(senior?['elderly']:[]),...(children?['child']:[])]};
     state.normalizedTripRequirements=TripRequirementsState.merge({base:state.normalizedTripRequirements,rawText:raw,extracted,form:requirementsFormSnapshot(),manualFields:[...state.manualRequirementFields]});
     syncFormFromRequirements();saveNormalizedRequirements();
     const unified=TripRequirementsState.plain(state.normalizedTripRequirements);

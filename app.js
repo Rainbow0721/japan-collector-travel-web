@@ -302,6 +302,7 @@ $('#newRequirementSession').onclick=()=>{
   $$('#paceSelector button').forEach(button=>button.classList.toggle('selected',button.dataset.value==='balanced'));$$('#partySelector button').forEach(button=>button.classList.toggle('selected',button.dataset.value==='adult'));
   $('#plannerConversation').innerHTML='<p class="planner-message ai-message">新需求已開始。請直接告訴我這次想怎麼玩；我不會帶入上一次的條件。</p>';
   $('#companionResponse').classList.add('hidden');$('#plannerValidationError').classList.add('hidden');$('#tripResult').classList.add('hidden');$('#emptyTrip').classList.remove('hidden');$('#plannerDetails').open=false;updateHolidayNotice();switchView('planner');$('#tripPrompt').focus();
+  window.dispatchEvent(new CustomEvent('tabi:new-requirement-session'));
 };
 $('#tripStartDate').addEventListener('change',()=>{updateHolidayNotice();updateRequirementFromForm('dates')});$('#tripEndDate').addEventListener('change',()=>{updateHolidayNotice();updateRequirementFromForm('dates')});$('#dayStartTime').addEventListener('change',()=>updateRequirementFromForm('startTime'));$('#dayEndTime').addEventListener('change',()=>updateRequirementFromForm('endTime'));$('#budget').addEventListener('change',()=>updateRequirementFromForm('budget'));
 $('#activeDayStart').addEventListener('change',event=>{const date=state.tripDates[state.activeDay];state.daySettings[date]={...daySetting(),start:event.target.value};persistCollections();persistTripDraft();renderDay()});
