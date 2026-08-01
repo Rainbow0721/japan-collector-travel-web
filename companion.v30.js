@@ -39,15 +39,16 @@ async function printItineraryDraft(requestStarted){
 async function routeCompanionInput(message){
   const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');if(!base)throw new Error('AI_GATEWAY_NOT_CONFIGURED');
   const knowledgeMatches=[...(typeof AsakusaP0!=='undefined'?AsakusaP0.resolveKnowledge(message):[]),...(typeof PopularEntityRegistry!=='undefined'?PopularEntityRegistry.resolveKnowledge(message):[])].filter((item,index,list)=>list.findIndex(other=>other.status===item.status&&other.entityId===item.entityId&&JSON.stringify(other.candidates||[])===JSON.stringify(item.candidates||[]))===index);
-  const payload={message,formState:{},knowledgeMatches,context:{surface:'PLANNER_HOME',hasExistingItinerary:Boolean(state.itinerary.length),supportedStage:'P0_ASAKUSA_ONE_DAY',language:'zh-TW'}},controller=new AbortController(),started=performance.now(),timer=setTimeout(()=>controller.abort(),7200);
+  const payload={message,formState:{},knowledgeMatches,context:{surface:'PLANNER_HOME',hasExistingItinerary:Boolean(state.itinerary.length),supportedStage:'P0_ASAKUSA_ONE_DAY',language:'zh-TW'}},controller=new AbortController(),started=performance.now(),timer=setTimeout(()=>controller.abort(),10000);
   try{const response=await fetch(`${base}/api/input/route`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});if(!response.ok)throw new Error(`HTTP_${response.status}`);const result=await response.json(),validation=InputRouting.validate(result.route);if(!validation.valid)throw new Error(`INVALID_ROUTE_${validation.errors.join('_')}`);return{...validation.value,latencyMs:Math.round(performance.now()-started),aiMeta:result.meta||null}}finally{clearTimeout(timer)}
 }
+function expectedInputPlaceholder(expectedInput){return({CITY:'請告訴我想去的城市',AREA_OR_CITY:'請告訴我想去的城市或地區',ENTITY_CHOICE:'請選擇你指的地點',SAFETY_DETAIL:'請補充這項安全需求',FIXED_EVENT_LOCATION:'請補充固定活動的地點',TRIP_ACTION:'例如：現在幫我排完整行程',TRAVEL_DETAIL:'繼續補充你的需求'})[expectedInput]||'繼續告訴我你的需求'}
 async function startCompanionPlanning(){
   const answer=$('#tripPrompt').value.trim();if(!answer){const box=$('#plannerValidationError');box.innerHTML='<b>請先告訴我你的旅行需求</b><p>例如：幫我排淺草一日遊，帶媽媽，不要太累。</p>';box.classList.remove('hidden');$('#tripPrompt').focus();return}const requestStarted=performance.now(),raw=pendingPlannerContext?`${pendingPlannerContext}\n補充回答：${answer}`:answer;appendPlannerMessage(answer,'user');$('#tripPrompt').value='';clearPlannerValidationError();setPlannerButtonBusy(true);setCompanionResponse({stateName:'UNDERSTANDING',intent:'GENERAL_CHAT',text:'我先理解你的需求。'});
   try{
-    const route=await routeCompanionInput(raw);state.lastInputRoute=route;setCompanionResponse({stateName:InputRouting.uiStateFor(route.intent),intent:route.intent,text:route.response,questions:route.questions,latencyMs:route.latencyMs});
-    appendPlannerMessage([...new Set([route.response,...(route.questions||[])].map(value=>String(value||'').trim()).filter(Boolean))].join(' '),'ai',route.latencyMs);
-    if(!route.shouldPlan){pendingPlannerContext=route.questions?.length?raw:'';$('#tripPrompt').placeholder=route.questions?.[0]||'繼續告訴我你的需求';$('#tripPrompt').focus();return}
+    const route=await routeCompanionInput(raw);state.lastInputRoute=route;setCompanionResponse({stateName:InputRouting.uiStateFor(route.intent),intent:route.intent,text:route.response,questions:[],latencyMs:route.latencyMs});
+    if(route.response)appendPlannerMessage(route.response,'ai',route.latencyMs);
+    if(!route.shouldPlan){pendingPlannerContext=route.action==='ASK'||route.retainedHardConstraints?.length?raw:'';$('#tripPrompt').placeholder=expectedInputPlaceholder(route.expectedInput);$('#tripPrompt').focus();return}
     pendingPlannerContext='';$('#tripPrompt').placeholder='例如：幫我排淺草一日遊，帶媽媽，不要太累';
     setCompanionResponse({stateName:'PLANNING',intent:route.intent,text:'我會直接排出可編輯行程；只有真正歧義或安全衝突才會追問。'});
     const understandingStatus=appendPlannerStatus('AI 正在結合旅遊知識庫理解你的需求…');
@@ -72,7 +73,7 @@ async function startCompanionPlanning(){
     state.pace={LEISURELY:'leisurely',BALANCED:'balanced',INTENSIVE:'intensive'}[unified.pace]||state.pace;
     state.party=new Set(unified.party?.length?unified.party:['adult']);
     const unresolved=TripRequirementsState.unresolved(state.normalizedTripRequirements),questions=pendingUnderstanding.travelRequirements?.clarifications||[];
-    if(unresolved.length||questions.length){setCompanionResponse({stateName:'NEEDS_CONFIRMATION',intent:'NEEDS_CLARIFICATION',text:unresolved.length?'你的文字與手動設定有必須先解決的衝突。':'這個需求有關鍵資訊不足，補充後我就直接排。',questions:unresolved.map(item=>`請確認 ${item.field}：${item.textValue} 或 ${item.formValue}`).concat(questions).slice(0,3)});return}
+    if(unresolved.length||questions.length){const followups=unresolved.map(item=>`請確認 ${item.field}：${item.textValue} 或 ${item.formValue}`).concat(questions).slice(0,1),summary=unresolved.length?'你的文字與目前設定有必須先解決的衝突。':'這個需求有一項關鍵資訊需要先確認。',latencyMs=performance.now()-requestStarted,text=[summary,...followups].join(' ');appendPlannerMessage(text,'ai',latencyMs);setCompanionResponse({stateName:'NEEDS_CONFIRMATION',intent:'NEEDS_CLARIFICATION',text:summary,questions:followups,latencyMs});pendingPlannerContext=raw;$('#tripPrompt').placeholder=followups[0]||'請補充這項資訊';$('#tripPrompt').focus();return}
     await printItineraryDraft(requestStarted);
   }catch(error){const latencyMs=performance.now()-requestStarted,text='AI 旅行夥伴這次沒有完成回覆。你的文字已保留，可以直接重新送出。';appendPlannerMessage(text,'ai',latencyMs);setCompanionResponse({stateName:'UNAVAILABLE',intent:'SYSTEM_ERROR',text,latencyMs});state.lastRouteError=String(error.message||error)}finally{$('#loadingOverlay').classList.add('hidden');setPlannerButtonBusy(false)}
 }

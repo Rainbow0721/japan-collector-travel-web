@@ -12,17 +12,19 @@
     SYSTEM_ERROR:{minSentences:1,maxSentences:3}
   });
   function normalize(result){
-    if(!result||typeof result!=='object')return{intent:'SYSTEM_ERROR',response:'目前暫時無法理解你的訊息，請稍後再試一次。你的日期與其他設定都已保留。',shouldPlan:false,questions:[],safetyLevel:'UNKNOWN'};
-    const intent=INTENTS.includes(result.intent)?result.intent:'SYSTEM_ERROR',policy=RESPONSE_POLICY[intent]||{},questions=Array.isArray(result.questions)?[...new Set(result.questions.filter(Boolean))].slice(0,policy.maxQuestions||1):[];
-    return{intent,response:String(result.response||'').trim(),shouldPlan:intent==='TRIP_PLANNING'&&result.shouldPlan===true,questions,safetyLevel:String(result.safetyLevel||'SAFE'),reasonCode:String(result.reasonCode||'')};
+    if(!result||typeof result!=='object')return{action:'SYSTEM_ERROR',intent:'SYSTEM_ERROR',displayText:'目前暫時無法理解你的訊息，請稍後再試一次。你的日期與其他設定都已保留。',response:'目前暫時無法理解你的訊息，請稍後再試一次。你的日期與其他設定都已保留。',expectedInput:'',shouldPlan:false,questions:[],safetyLevel:'UNKNOWN'};
+    const intent=INTENTS.includes(result.intent)?result.intent:'SYSTEM_ERROR',displayText=String(result.displayText||'').trim(),expectedInput=String(result.expectedInput||'').trim();
+    return{action:String(result.action||'SYSTEM_ERROR'),intent,displayText,response:displayText,expectedInput,shouldPlan:intent==='TRIP_PLANNING'&&result.shouldPlan===true,questions:[],safetyLevel:String(result.safetyLevel||'SAFE'),reasonCode:String(result.reasonCode||''),planningAction:String(result.planningAction||'NONE'),planningActionEvidence:String(result.planningActionEvidence||''),retainedHardConstraints:Array.isArray(result.retainedHardConstraints)?result.retainedHardConstraints.filter(Boolean):[]};
   }
   function validate(result){
     const value=normalize(result),errors=[];
     if(!INTENTS.includes(value.intent))errors.push('INVALID_INTENT');
-    if(value.intent!=='TRIP_PLANNING'&&!value.response)errors.push('EMPTY_RESPONSE');
+    if(value.intent!=='TRIP_PLANNING'&&!value.displayText)errors.push('EMPTY_DISPLAY_TEXT');
     if(value.intent!=='TRIP_PLANNING'&&value.shouldPlan)errors.push('NON_PLANNING_ROUTE_CANNOT_PLAN');
     if(value.intent==='TRIP_PLANNING'&&!value.shouldPlan)errors.push('PLANNING_ROUTE_MUST_PLAN');
-    if(value.intent==='NEEDS_CLARIFICATION'&&!value.questions.length)errors.push('CLARIFICATION_WITHOUT_QUESTION');
+    if(value.action==='ASK'&&!value.expectedInput)errors.push('ASK_WITHOUT_EXPECTED_INPUT');
+    if(['PLAN','MODIFY'].includes(value.action)&&!value.shouldPlan)errors.push('PLANNING_ACTION_CANNOT_SKIP_PLANNER');
+    if(value.shouldPlan&&(value.displayText||value.expectedInput))errors.push('PLANNING_ACTION_MUST_NOT_RENDER_DUPLICATE_TEXT');
     return{valid:errors.length===0,errors,value};
   }
   function uiStateFor(intent){if(intent==='TRIP_PLANNING')return UI_STATES.PLANNING;if(intent==='NEEDS_CLARIFICATION')return UI_STATES.NEEDS_CONFIRMATION;if(intent==='SYSTEM_ERROR')return UI_STATES.UNAVAILABLE;return UI_STATES.COMPLETED}
