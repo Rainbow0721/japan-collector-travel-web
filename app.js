@@ -115,7 +115,7 @@ async function smartParseRequest(text){
     aiParser:async payload=>{
       if(!base)throw new Error('AI_GATEWAY_NOT_CONFIGURED');
       let lastError;
-      for(let attempt=1;attempt<=1;attempt++){
+      for(let attempt=1;attempt<=2;attempt++){
         const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
         try{
           const frontendStarted=performance.now();

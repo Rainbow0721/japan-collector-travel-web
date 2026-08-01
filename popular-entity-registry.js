@@ -1,5 +1,7 @@
 (function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./entity-resolver'));else root.PopularEntityRegistry=factory(root.EntityResolver)})(typeof globalThis!=='undefined'?globalThis:this,function(EntityResolver){
   const ENTRIES=[
+    {entityId:'tokyo',entityType:'PREFECTURE',exactAliases:['東京','東京都','tokyo'],resolution:'AREA_INTENT'},
+    {entityId:'japan',entityType:'COUNTRY',exactAliases:['日本','japan'],resolution:'AREA_INTENT'},
     {entityId:'zojoji',entityType:'PLACE',exactAliases:['增上寺','zojoji'],fuzzyQueries:['東京鐵塔旁邊那座寺','東京鐵塔旁的寺','有德川將軍墓的寺','德川將軍墓的寺'],resolution:'RESOLVED'},
     {entityId:'kaminarimon',entityType:'LANDMARK',exactAliases:['雷門','kaminarimon'],fuzzyQueries:['那個很大的紅燈籠','東京那個大紅燈籠'],resolution:'RESOLVED'},
     {entityId:'shibuya',entityType:'PLACE',exactAliases:['忠犬八公','八公像','hachiko'],fuzzyQueries:['可以看到忠犬八公的地方'],resolution:'RESOLVED'},
