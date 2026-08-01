@@ -1,4 +1,9 @@
 const ALL_PLACES=FINAL_PLACES;
+if(typeof AsakusaP0!=='undefined'){
+  for(const place of AsakusaP0.PLACES)if(!ALL_PLACES.some(item=>item.id===place.id))ALL_PLACES.push(place);
+  const sensoji=ALL_PLACES.find(place=>place.id==='sensoji');if(sensoji)Object.assign(sensoji,{name:'淺草寺',nameJa:'浅草寺',nameEn:'Senso-ji',duration:75,officialUrl:'https://www.senso-ji.jp/',openingHours:'本堂 06:00–17:00（10月至3月 06:30 開堂）；御朱印 08:00–16:30',sourceCheckedAt:AsakusaP0.CHECKED_AT,completionScore:100,dataTier:'P0 已核對',curated:true,recommendationEligible:true,requiresLiveCheck:true});
+  const nakamise=ALL_PLACES.find(place=>place.id==='nakamise');if(nakamise)Object.assign(nakamise,{officialUrl:'https://www.senso-ji.jp/guide/guide02.html',sourceCheckedAt:AsakusaP0.CHECKED_AT,completionScore:100,dataTier:'P0 已核對',curated:true,recommendationEligible:true,requiresLiveCheck:true});
+}
 if(!ALL_PLACES.some(place=>place.id==='tokyo-daijingu'))ALL_PLACES.push({id:'tokyo-daijingu',name:'東京大神宮',nameJa:'東京大神宮',nameEn:'Tokyo Daijingu',area:'飯田橋',zone:'central',category:'神社寺廟',emoji:'⛩',duration:60,admission:0,cost:0,popularity:94,tags:['御朱印','結緣','東京之伊勢'],desc:'明治時代作為伊勢神宮遙拜殿創建，以結緣信仰與神前結婚式傳統聞名。御朱印通常受理至17:00，活動日以官方公告為準。',lat:35.69995,lng:139.74602,officialUrl:'https://www.tokyodaijingu.or.jp/',sourceUrl:'https://www.tokyodaijingu.or.jp/',completionScore:100,dataTier:'完成度 100%',curated:true,recommendationEligible:true,requiresLiveCheck:true});
 const CURATED_PLACES=ALL_PLACES.filter(place=>place.completionScore===100);
 const RECOMMENDATION_PLACES=ALL_PLACES.filter(place=>place.recommendationEligible);
@@ -61,7 +66,7 @@ function togglePilgrimageSeries(id){const series=PILGRIMAGE_SERIES.find(item=>it
 
 function aliases(place){return [place.nameJa,place.nameEn].filter(Boolean).join(' · ')}
 function placeCard(place,featuredMode=false){const selected=state.selected.has(place.id),metric=`完成度 ${place.completionScore}%${place.recommendationEligible?' · 可排行程':' · 待動態核對'}`;return `<article class="place-card ${featuredMode?'featured':''}" data-id="${place.id}" tabindex="0" aria-label="查看 ${place.name} 詳細介紹"><div class="place-art art-${place.zone}"><span>${place.emoji}</span><button class="save-place ${selected?'saved':''}" aria-label="${selected?'移除':'加入'} ${place.name}">${selected?'✓':'＋'}</button><small>${place.area}</small></div><div class="place-info"><div class="place-meta"><span>${place.category}</span><b>${metric}</b></div><h3>${place.name}</h3><small class="place-alias">${aliases(place)}</small><p>${place.desc}</p><div class="tag-row">${place.tags.slice(0,3).map(t=>`<span>${t}</span>`).join('')}</div></div></article>`}
-function renderFeatured(){$('#featuredGrid').innerHTML=featured.map(p=>placeCard(p,true)).join('');bindPlaceCards()}
+function renderFeatured(){const grid=$('#featuredGrid');if(!grid)return;grid.innerHTML=featured.map(p=>placeCard(p,true)).join('');bindPlaceCards()}
 function renderFilters(){const cats=['全部',...new Set(ALL_PLACES.map(p=>p.category))];$('#categoryFilters').innerHTML=cats.map((c,i)=>`<button class="filter-chip ${i===0?'active':''}" data-category="${c}">${c}</button>`).join('');$$('.filter-chip').forEach(b=>b.onclick=()=>{$$('.filter-chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');state.category=b.dataset.category;state.visiblePlaces=60;renderPlaces()})}
 function passesQuality(place){if(state.dataQuality==='curated')return place.completionScore===100;if(state.dataQuality==='usable')return place.completionScore>=80;return place.completionScore<80}
 function filteredPlaces(){const q=state.search.trim().toLowerCase();return ALL_PLACES.filter(p=>passesQuality(p)&&(state.category==='全部'||p.category===state.category)&&(!q||`${p.name} ${p.nameJa} ${p.nameEn} ${p.area} ${p.category} ${p.cuisine||''} ${p.tags.join(' ')}`.toLowerCase().includes(q))).sort((a,b)=>(Number(b.curated)-Number(a.curated))||(b.popularity-a.popularity))}
@@ -95,16 +100,12 @@ const THEME_WORDS={
   nature:['自然','公園','花','櫻','海景','富士山'],night:['夜景','展望台','夜生活','酒吧','夜店','泡泡浴'],family:['小孩','親子','迪士尼','樂園'],classic:['第一次','初訪','經典','地標','必去']
 };
 const THEME_CATEGORIES={food:['美食市場','特色餐廳'],shopping:['購物血拼'],shrine:['神社寺廟','歷史文化'],anime:['動漫娛樂'],nature:['公園自然'],night:['展望夜景'],family:['主題樂園','動漫娛樂'],classic:['城市地標','神社寺廟','歷史文化','展望夜景']};
-const FOOD_TERMS=['壽司','迴轉壽司','北海道海鮮','江戶前','燒肉','壽喜燒','涮涮鍋','火鍋','鍋物','居酒屋','拉麵','沾麵','擔擔麵','燒鳥','串燒','螃蟹','帝王蟹','河豚','和牛','牛舌','天婦羅','天丼','豬排','鰻魚','蕎麥麵','文字燒','洋食','咖哩','海鮮','創意料理','法國料理','甜點','咖啡'];
 const NEARBY_ZONES=['chiba','kamakura','yokohama','hakone','fuji','nikko','kawagoe','karuizawa'];
 const CITY_ZONES=['asakusa','ueno','central','shibuya','shinjuku','minato','bay','ikebukuro','west','east'];
-const ZONE_KEYWORDS={chiba:['迪士尼','舞濱','千葉','成田'],kamakura:['鎌倉','江之島','江島'],yokohama:['橫濱'],hakone:['箱根'],fuji:['富士山','河口湖','忍野','御殿場'],nikko:['日光'],kawagoe:['川越'],karuizawa:['輕井澤'],asakusa:['淺草','晴空塔'],ueno:['上野','阿美橫','秋葉原','湯島'],central:['築地','銀座','東京站','皇居','日本橋','八重洲'],shibuya:['澀谷','原宿','明治神宮','青山'],shinjuku:['新宿'],minato:['東京鐵塔','六本木','麻布台','麻布'],bay:['豐洲','台場','門前仲町'],ikebukuro:['池袋','大塚'],west:['吉祥寺','下北澤','豪德寺','中野','池上','戶越'],east:['柴又','帝釋天']};
-
-function includesAny(text,words){return words.some(w=>text.toLowerCase().includes(w.toLowerCase()))}
-function parseClockFromText(text){let start=$('#dayStartTime').value||'09:00',end=$('#dayEndTime').value||'22:00';if(/睡到中午|中午才出門|下午才出門/.test(text))start='12:00';const startMatch=text.match(/(?:早上|上午|中午|下午|晚上)?\s*(\d{1,2})(?:[:：](\d{2}))?\s*點?(?:開始|出門|起床)/);if(startMatch){let hour=Number(startMatch[1]);if(/下午|晚上/.test(startMatch[0])&&hour<12)hour+=12;start=`${String(hour).padStart(2,'0')}:${startMatch[2]||'00'}`}if(/半夜|凌晨才回|玩到半夜/.test(text))end='00:30';const endMatch=text.match(/(?:晚上|半夜|凌晨)?\s*(\d{1,2})(?:[:：](\d{2}))?\s*點?(?:回飯店|結束|收工)/);if(endMatch){let hour=Number(endMatch[1]);if(/晚上/.test(endMatch[0])&&hour<12)hour+=12;end=`${String(hour).padStart(2,'0')}:${endMatch[2]||'00'}`}return{start,end}}
-function parseRequest(text){const negative={food:['不想吃','不要美食','不想一直吃','不要一直吃','不以美食為主'],shopping:['不想購物','不要購物','不血拼','不買東西'],shrine:['不想逛寺社','不要寺社','神社寺廟都不要'],anime:['不看動漫','不喜歡動漫'],nature:['不想看自然'],night:['不看夜景','不要夜生活'],family:['不要樂園']};const themes=Object.entries(THEME_WORDS).filter(([key,words])=>includesAny(text,words)&&!includesAny(text,negative[key]||[])).map(([key])=>key);if(!themes.length)themes.push('food','shopping','shrine');const excludedThemes=Object.entries(negative).filter(([,words])=>includesAny(text,words)).map(([key])=>key),mentionedZones=Object.entries(ZONE_KEYWORDS).filter(([,words])=>includesAny(text,words)).map(([zone])=>zone),musts=ALL_PLACES.filter(p=>includesAny(text,[p.name,...p.name.split('・'),p.nameJa,p.nameEn])).map(p=>p.id),foodTerms=FOOD_TERMS.filter(term=>includesAny(text,[term])),clock=parseClockFromText(text),unsupported=[];if(/泡泡浴|風俗|成人娛樂/.test(text))unsupported.push('成人娛樂店目前沒有經人工驗證的安全資料，僅改以夜間活動偏好處理，不會捏造店家');const templeOnly=/只(?:想|要)?去寺廟|只排寺廟|寺廟限定|佛寺限定|只(?:想|要)?去寺院/.test(text),shrineOnly=/只(?:想|要)?去神社|只排神社|神社限定/.test(text),numberMap={一:1,二:2,三:3,四:4,五:5,六:6,七:7,八:8,九:9,十:10},foodDayMatch=text.match(/(?:要吃|吃)([一二三四五六七八九十\d]+)天/);return{themes,excludedThemes,mentionedZones,musts,foodTerms,clock,unsupported,singleMeal:/一頓|一餐|只吃一(?:間|家)/.test(text),religiousMode:templeOnly?'temple_only':shrineOnly?'shrine_only':'both',dayQuotas:{food:foodDayMatch?(Number(foodDayMatch[1])||numberMap[foodDayMatch[1]]||0):0,amusement:/一天(?:去|玩)?(?:遊樂園|樂園|迪士尼)/.test(text)?1:0,night:/一天(?:晚上)?(?:看|去)?夜景/.test(text)?1:0}}}
 function allowedByRequest(place,request){if(request.religiousMode==='temple_only')return place.category==='神社寺廟'&&placeKind(place)==='temple';if(request.religiousMode==='shrine_only')return place.category==='神社寺廟'&&placeKind(place)==='shrine';return true}
 async function smartParseRequest(text){
+  const local=typeof AsakusaP0!=='undefined'?AsakusaP0.parse(text,TripRequirementsState.plain(state.normalizedTripRequirements)):null;
+  if(local)return local;
   const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');
   const form=TripRequirementsState.plain(state.normalizedTripRequirements);
   const placeCatalog=RECOMMENDATION_PLACES.slice().sort((a,b)=>Number(b.popularity||0)-Number(a.popularity||0)).slice(0,220).map(place=>({id:place.id,name:place.name,nameJa:place.nameJa||'',nameEn:place.nameEn||'',aliases:(place.aliases||[]).slice(0,6),category:place.category,zone:place.zone}));
@@ -134,9 +135,7 @@ async function smartParseRequest(text){
         }finally{clearTimeout(timer)}
       }
       throw new Error(lastError?.name==='AbortError'?'AI_REQUEST_TIMEOUT':(lastError?.message||'AI_REQUEST_FAILED'));
-    },
-    // 舊 parser 僅保留給明確啟用的離線 fallback；正式規劃不會走到這裡。
-    fallbackParser:async()=>parseRequest(text)
+    }
   });
   if(!result.ok)return{aiUnavailable:true,parserMode:result.mode,parserErrors:result.errors,parserSource:`AI unavailable (${result.mode})`};
   const requirements=result.requirements;
@@ -233,15 +232,15 @@ async function generateItinerary(){
 async function generateItineraryV2(){
   const dates=updateHolidayNotice(),request=state.request||await smartParseRequest($('#tripPrompt').value);
   if(!dates.length){$('#holidayNotice').textContent='⚠ 回程日期不可早於出發日期，且目前一次最多規劃31天。';return false}
-  if(request.aiUnavailable||request.parserMode!=='AI'){
+  if(request.aiUnavailable||!['AI','LOCAL_KNOWLEDGE'].includes(request.parserMode)){
     showPlannerValidationError({errors:[{code:'AI_REQUIREMENT_PARSER_UNAVAILABLE',message:'AI 需求理解目前無法使用；系統不會靜默改用關鍵字規則產生正式行程。請稍後重試。'}]});
     return false;
   }
-  const normalized=TripRequirementsState.plain(state.normalizedTripRequirements),requirements={...request.travelRequirements,pace:normalized.pace||request.travelRequirements.pace,budget:normalized.budget||request.travelRequirements.budget,dailyStartTime:normalized.startTime||'09:00',dailyEndTime:normalized.endTime||'22:00'};
+  const normalized=TripRequirementsState.plain(state.normalizedTripRequirements),party=normalized.party||[],senior=party.includes('elderly'),child=party.includes('child'),requirements={...request.travelRequirements,pace:normalized.pace||request.travelRequirements.pace,budget:normalized.budget||request.travelRequirements.budget,dailyStartTime:normalized.startTime||'09:00',dailyEndTime:normalized.endTime||'22:00',travelers:{...(request.travelRequirements.travelers||{}),adults:senior?[]:(request.travelRequirements.travelers?.adults||[1]),seniors:senior?[1]:(request.travelRequirements.travelers?.seniors||[]),children:child?[1]:(request.travelRequirements.travelers?.children||[]),mobilityNeeds:senior?['少走路']:(request.travelRequirements.travelers?.mobilityNeeds||[])},mobilityProfile:{...(request.travelRequirements.mobilityProfile||{}),seniorPresent:senior||Boolean(request.travelRequirements.mobilityProfile?.seniorPresent)}};
   request.travelRequirements=requirements;
   state.tripDates=dates;
   state.request=request;
-  const result=PlannerEngine.run({requirements,places:RECOMMENDATION_PLACES,dates});
+  const result=request.parserMode==='LOCAL_KNOWLEDGE'&&dates.length===1?AsakusaP0.plan({requirements,places:RECOMMENDATION_PLACES,dates,flags:request.localFlags}):PlannerEngine.run({requirements,places:RECOMMENDATION_PLACES,dates});
   state.plannerEngineResult=result;
   state.requirementTraceability=result.traceability;
   state.seniorTravelValidation={valid:!result.validation.errors.some(error=>String(error.code).includes('SENIOR')),errors:result.validation.errors};
@@ -273,7 +272,7 @@ generateItinerary=generateItineraryV2;
 function timeAdd(time,min){let[h,m]=time.split(':').map(Number),total=h*60+m+min;return`${String(Math.floor(total/60)).padStart(2,'0')}:${String(total%60).padStart(2,'0')}`}
 function clockMinutes(time){const[h,m]=time.split(':').map(Number);return h*60+m}
 function serviceDeadline(place){if(place.category!=='神社寺廟')return 24*60;const fact=SHRINE_FACTS[place.nameJa]||SHRINE_FACTS[place.name]||{},matches=(fact.hours||place.openingHours||'').matchAll(/(\d{1,2}):?(\d{2})/g),times=[...matches].map(match=>Number(match[1])*60+Number(match[2]));return times.length?Math.max(...times):17*60}
-function serviceTimeKnown(place){const fact=SHRINE_FACTS[place.nameJa]||SHRINE_FACTS[place.name];return Boolean(fact&&/\d{1,2}:?\d{2}/.test(fact.hours||''))}
+function serviceTimeKnown(place){const fact=SHRINE_FACTS[place.nameJa]||SHRINE_FACTS[place.name]||{};return /\d{1,2}:?\d{2}/.test(fact.hours||place.openingHours||'')}
 function distance(a,b){if(!a||!b)return 0;const r=6371,dLat=(b.lat-a.lat)*Math.PI/180,dLon=(b.lng-a.lng)*Math.PI/180,x=Math.sin(dLat/2)**2+Math.cos(a.lat*Math.PI/180)*Math.cos(b.lat*Math.PI/180)*Math.sin(dLon/2)**2;return r*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x))}
 function mealBudget(){const budget=Number($('#budget').value);return budget<=6000?2500:budget<=10000?4000:budget<=16000?6000:8000}
 function dayMetrics(day){let walk=0,transitMinutes=0,localFare=0;day.forEach((p,i)=>{if(i){const leg=estimateTransportLeg(day[i-1],p);walk+=leg.mode==='步行'?leg.km:Math.min(leg.km,.45);transitMinutes+=leg.minutes;localFare+=leg.fare}});const admission=day.reduce((s,p)=>s+(p.admission||0),0),nearTransit=Math.max(0,...day.map(p=>p.transit||0)),transport=nearTransit||localFare,meals=mealBudget();return{walk:walk+day.length*.35,transitMinutes,admission,transport,meals,cost:admission+transport+meals,transportBasis:nearTransit?'近郊人工參考值':'東京 Metro IC 票價級距估算'}}

@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
   <div class="app-shell">
@@ -34,36 +34,39 @@
 
     <main>
       <section id="plannerView" class="view active">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow">TOKYO · AI PRIVATE GUIDE</span>
-            <h1>一句話，排好你的<br><em>東京每一天。</em></h1>
-            <p>告訴我們想去哪裡、和誰旅行，交通、時間、預算與備案都幫你排好。</p>
-            <div class="trust-row">
-              <span>✓ 動線最佳化</span><span>✓ 同行者照護</span><span>✓ 隨時可調整</span>
-            </div>
+        <div class="chat-first-home">
+          <div class="chat-first-intro">
+            <span class="eyebrow">AI TRAVEL COMPANION</span>
+            <h1>想怎麼玩日本？<br><em>直接告訴我。</em></h1>
+            <p>一句話就可以開始。資訊不夠時，我只會追問真正影響行程的問題。</p>
           </div>
 
-          <form id="plannerForm" class="planner-card">
-            <div class="step-label"><span>01</span> 描述這趟旅行</div>
-            <textarea id="tripPrompt" rows="4" placeholder="例如：東京 5 天 4 夜，第一次去，帶 65 歲的媽媽，喜歡美食和日劇，不想太趕，想去淺草、澀谷和築地。">東京 5 天 4 夜，第一次去，帶媽媽，喜歡美食和購物，不想太累，必去淺草、澀谷和築地。</textarea>
-            <div class="quick-fields date-fields">
+          <form id="plannerForm" class="planner-card chat-planner-card">
+            <div id="plannerConversation" class="planner-conversation" aria-live="polite">
+              <p class="planner-message ai-message">你好，我是你的日本 AI 旅伴。你可以說「幫我排淺草一日遊，帶媽媽，不要太累」；其餘資料我會在需要時再問。</p>
+            </div>
+            <label class="chat-prompt-label" for="tripPrompt">你的訊息</label>
+            <textarea id="tripPrompt" rows="3" placeholder="例如：幫我排淺草一日遊，帶媽媽，不要太累"></textarea>
+            <button class="primary-button" type="submit"><span>送出</span><b>→</b></button>
+            <details id="plannerDetails" class="planner-details">
+              <summary>需要時再調整日期、時間、預算與同行者</summary>
+              <div class="quick-fields date-fields">
               <label>出發日期<input id="tripStartDate" type="date"></label>
               <label>回程日期<input id="tripEndDate" type="date"></label>
               <label>每天開始<input id="dayStartTime" type="time" value="09:00"></label>
               <label>每天結束<input id="dayEndTime" type="time" value="22:00"></label>
               <label>每日預算<select id="budget"><option value="6000">約 ¥6,000</option><option value="10000" selected>約 ¥10,000</option><option value="16000">約 ¥16,000</option><option value="25000">約 ¥25,000+</option></select></label>
-            </div>
-            <div id="holidayNotice" class="holiday-notice">選擇日期後，會檢查日本國定假日、黃金週及連假人潮。</div>
-            <div class="field-group">
+              </div>
+              <div id="holidayNotice" class="holiday-notice">選擇日期後，會檢查日本國定假日、黃金週及連假人潮。</div>
+              <div class="field-group">
               <span class="field-title">旅行步調</span>
               <div class="segmented" id="paceSelector">
                 <button type="button" data-value="leisurely">悠閒</button>
                 <button type="button" class="selected" data-value="balanced">均衡</button>
                 <button type="button" data-value="intensive">充實</button>
               </div>
-            </div>
-            <div class="field-group">
+              </div>
+              <div class="field-group">
               <span class="field-title">同行成員</span>
               <div class="chip-row" id="partySelector">
                 <button type="button" class="chip selected" data-value="adult">一般成人</button>
@@ -71,25 +74,17 @@
                 <button type="button" class="chip" data-value="child">有小孩</button>
                 <button type="button" class="chip" data-value="stroller">嬰兒車</button>
               </div>
-            </div>
-            <button class="primary-button" type="submit"><span>幫我排好行程</span><b>→</b></button>
+              </div>
+            </details>
             <section id="companionResponse" class="companion-response hidden" aria-live="polite" aria-atomic="true">
               <small id="companionResponseLabel">AI 旅行夥伴</small>
               <p id="companionResponseText"></p>
               <div id="companionResponseQuestions" class="companion-response-questions"></div>
             </section>
             <div id="plannerValidationError" class="planner-validation-error hidden" role="alert"></div>
-            <p class="form-note">試著分別輸入「美食購物」、「神社文化」或「想去鎌倉」看看不同結果</p>
+            <p class="form-note">不想選設定也沒關係；我會先採安全預設，只有必要時才追問。</p>
           </form>
         </div>
-
-        <section class="popular-section">
-          <div class="section-heading">
-            <div><span class="eyebrow">POPULAR NOW</span><h2>第一次東京，從這些開始</h2></div>
-            <button class="text-button" data-view="explore">查看精選地點 →</button>
-          </div>
-          <div id="featuredGrid" class="featured-grid"></div>
-        </section>
       </section>
 
       <section id="mapView" class="view">
@@ -254,8 +249,11 @@
   <script src="planner-engine.js?v=5"></script>
   <script src="itinerary-core.js?v=4"></script>
   <script src="trip-requirements-state.js?v=2"></script>
-  <script src="app.js?v=35"></script>
-  <script src="companion.js?v=15"></script>
+  <script src="travel-graph.js?v=1"></script>
+  <script src="entity-resolver.js?v=1"></script>
+  <script src="asakusa-p0.js?v=2"></script>
+  <script src="app.js?v=37"></script>
+  <script src="companion.js?v=17"></script>
   <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>

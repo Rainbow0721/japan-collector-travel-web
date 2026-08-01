@@ -29,6 +29,22 @@
     }
     return{valid:errors.length===0,errors};
   }
+  function validateSeniorTravel(plan,options={}){
+    const errors=[],days=plan?.days||[],religiousPrimary=Boolean(options.religiousPrimary);
+    for(const day of days){
+      const items=day?.items||[],n=day?.dayNumber||null;
+      if(items.length>5)errors.push(validationError('SENIOR_DAILY_ACTIVITY_CAP',n,`Day ${n} has ${items.length} activities; senior cap is 5`));
+      const main=items.filter(item=>!/(餐廳|美食|休息|咖啡)/.test(`${item.category||''}${item.name||''}`));
+      if(main.length>3)errors.push(validationError('SENIOR_MAIN_PLACE_CAP',n,`Day ${n} has ${main.length} main places; senior cap is 3`));
+      if(day?.endTime&&day.endTime>'20:30'&&day.endTime<'23:59')errors.push(validationError('SENIOR_LATE_END',n,`Day ${n} ends at ${day.endTime}; default senior limit is 20:30`));
+      let run=0,maxRun=0;for(const item of items){if(item.category==='神社寺廟'){run++;maxRun=Math.max(maxRun,run)}else run=0}
+      if(!religiousPrimary&&maxRun>=3)errors.push(validationError('RELIGIOUS_CATEGORY_REPETITION',n,`Day ${n} has ${maxRun} consecutive religious sites`));
+      const walk=Number(options.dailyWalkingKm?.[n-1]);if(Number.isFinite(walk)&&walk>5)errors.push(validationError('SENIOR_WALKING_CAP',n,`Day ${n} walking ${walk.toFixed(1)} km exceeds 5 km`));
+    }
+    const all=days.flatMap(day=>day?.items||[]),religious=all.filter(item=>item.category==='神社寺廟').length,ratio=all.length?religious/all.length:0;
+    if(!religiousPrimary&&ratio>.3)errors.push(validationError('RELIGIOUS_CATEGORY_RATIO',null,`Religious-site ratio ${(ratio*100).toFixed(1)}% exceeds 30%`));
+    return{valid:errors.length===0,errors,metrics:{dayActivityCounts:days.map(day=>day?.items?.length||0),religiousCount:religious,totalActivities:all.length,religiousRatio:ratio}};
+  }
   function classifyChatIntent(text){
     const value=String(text||'').trim();
     if(!value)return'AMBIGUOUS';
@@ -75,5 +91,5 @@
     result.primaryIntent='AMBIGUOUS';result.shouldAskClarification=true;result.clarificationQuestion='你是想查看目前行程，還是調整其中一部分？';return result;
   }
   function advanceConversation(state,decision){const next={...createConversationState(),...state};next.activeIntent=decision.primaryIntent==='MODIFY_ITINERARY'?'MODIFY_ITINERARY':decision.shouldModifyNow?null:next.activeIntent;next.pendingAction=decision.modificationType||next.pendingAction;next.missingSlots=[...decision.missingSlots];next.selectedDay=decision.targetDay||next.selectedDay;next.selectedItem=decision.targetItem||next.selectedItem;next.lastAssistantQuestion=decision.clarificationQuestion||null;if(['COMPLAINT','EXPRESS_FRUSTRATION'].includes(decision.primaryIntent))next.lastUserComplaint=true;return next}
-  return{validateItinerary,classifyChatIntent,classifyChatDecision,createConversationState,advanceConversation,resolveDayReference};
+  return{validateItinerary,validateSeniorTravel,classifyChatIntent,classifyChatDecision,createConversationState,advanceConversation,resolveDayReference};
 });
