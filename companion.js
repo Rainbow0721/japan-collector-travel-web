@@ -15,6 +15,7 @@ function setCompanionResponse({stateName='COMPLETED',intent='GENERAL_CHAT',text=
 function setPlannerButtonBusy(busy){const button=$('#plannerForm .primary-button');button.disabled=busy;button.querySelector('span').textContent=busy?'請稍等…':'送出'}
 async function routeCompanionInput(message){
     if(typeof AsakusaP0!=='undefined'&&AsakusaP0.isOneDayPlanning(message))return{intent:'TRIP_PLANNING',response:'已辨識為淺草一日遊；這項 P0 可直接使用本機知識庫規劃。',shouldPlan:true,questions:[],safetyLevel:'SAFE',reasonCode:'P0_LOCAL_KNOWLEDGE'};
+  const localClarification=InputRouting.clarifyMissingDestination(message);if(localClarification)return localClarification;
   const base=String(window.TABI_CONFIG?.smartApiBaseUrl||'').replace(/\/$/,'');if(!base)throw new Error('AI_GATEWAY_NOT_CONFIGURED');
   const payload={message,formState:requirementsFormSnapshot(),context:{surface:'PLANNER_HOME',hasExistingItinerary:Boolean(state.itinerary.length),supportedDestination:'東京',language:'zh-TW'}},controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
   try{const response=await fetch(`${base}/api/input/route`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});if(!response.ok)throw new Error(`HTTP_${response.status}`);const result=await response.json(),validation=InputRouting.validate(result.route);if(!validation.valid)throw new Error(`INVALID_ROUTE_${validation.errors.join('_')}`);return validation.value}finally{clearTimeout(timer)}
