@@ -6,14 +6,14 @@
     GENERAL_CHAT:{minSentences:1,maxSentences:3},
     TRAVEL_QUESTION:{minSentences:1,maxSentences:4},
     TRAVEL_RECOMMENDATION:{minSentences:1,maxSentences:4},
-    NEEDS_CLARIFICATION:{minSentences:1,maxSentences:3,maxQuestions:3},
+    NEEDS_CLARIFICATION:{minSentences:1,maxSentences:3,maxQuestions:1},
     UNSUPPORTED_OR_IMPOSSIBLE:{minSentences:1,maxSentences:3},
     SAFETY_RESPONSE:{minSentences:1,maxSentences:5},
     SYSTEM_ERROR:{minSentences:1,maxSentences:3}
   });
   function normalize(result){
     if(!result||typeof result!=='object')return{intent:'SYSTEM_ERROR',response:'目前暫時無法理解你的訊息，請稍後再試一次。你的日期與其他設定都已保留。',shouldPlan:false,questions:[],safetyLevel:'UNKNOWN'};
-    const intent=INTENTS.includes(result.intent)?result.intent:'SYSTEM_ERROR',policy=RESPONSE_POLICY[intent]||{},questions=Array.isArray(result.questions)?result.questions.filter(Boolean).slice(0,policy.maxQuestions||3):[];
+    const intent=INTENTS.includes(result.intent)?result.intent:'SYSTEM_ERROR',policy=RESPONSE_POLICY[intent]||{},questions=Array.isArray(result.questions)?[...new Set(result.questions.filter(Boolean))].slice(0,policy.maxQuestions||1):[];
     return{intent,response:String(result.response||'').trim(),shouldPlan:intent==='TRIP_PLANNING'&&result.shouldPlan===true,questions,safetyLevel:String(result.safetyLevel||'SAFE'),reasonCode:String(result.reasonCode||'')};
   }
   function validate(result){

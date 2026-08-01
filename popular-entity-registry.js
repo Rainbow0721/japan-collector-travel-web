@@ -2,8 +2,8 @@
   const ENTRIES=[
     {entityId:'tokyo',entityType:'PREFECTURE',exactAliases:['東京','東京都','tokyo'],resolution:'AREA_INTENT'},
     {entityId:'japan',entityType:'COUNTRY',exactAliases:['日本','japan'],resolution:'AREA_INTENT'},
-    {entityId:'zojoji',entityType:'PLACE',exactAliases:['增上寺','zojoji'],fuzzyQueries:['東京鐵塔旁邊那座寺','東京鐵塔旁的寺','有德川將軍墓的寺','德川將軍墓的寺'],resolution:'RESOLVED'},
-    {entityId:'kaminarimon',entityType:'LANDMARK',exactAliases:['雷門','kaminarimon'],fuzzyQueries:['那個很大的紅燈籠','東京那個大紅燈籠'],resolution:'RESOLVED'},
+    {entityId:'zojoji',entityType:'PLACE',canonicalLabel:'增上寺',exactAliases:['增上寺','zojoji'],fuzzyQueries:['東京鐵塔旁邊那座寺','東京鐵塔旁的寺','有德川將軍墓的寺','德川將軍墓的寺'],resolution:'RESOLVED'},
+    {entityId:'kaminarimon',entityType:'LANDMARK',canonicalLabel:'雷門',exactAliases:['雷門','kaminarimon'],fuzzyQueries:['那個很大的紅燈籠','東京那個大紅燈籠'],resolution:'RESOLVED'},
     {entityId:'shibuya',entityType:'PLACE',exactAliases:['忠犬八公','八公像','hachiko'],fuzzyQueries:['可以看到忠犬八公的地方'],resolution:'RESOLVED'},
     {entityId:'nittele-giant-clock',entityType:'PLACE',exactAliases:['宮崎駿大鐘','日視大時計'],fuzzyQueries:['宮崎駿那個鐘','宮崎駿的鐘'],resolution:'RESOLVED'},
     {entityId:'diver-city-unicorn-gundam',entityType:'PLACE',exactAliases:['獨角獸鋼彈','台場鋼彈'],fuzzyQueries:['東京那個很大的鋼彈'],resolution:'RESOLVED'},
