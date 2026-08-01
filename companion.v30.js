@@ -47,7 +47,8 @@ async function startCompanionPlanning(){
     pendingUnderstanding=await smartParseRequest(raw);
     understandingStatus.remove();
     if(pendingUnderstanding.aiUnavailable){
-      setCompanionResponse({stateName:'UNAVAILABLE',intent:'SYSTEM_ERROR',text:'旅行需求整理服務暫時沒有回應，請稍後再試一次。你的文字、日期與其他設定都已保留。'});
+      const latencyMs=performance.now()-requestStarted,text='旅行需求理解暫時沒有完成。你的文字已保留，可以直接重新送出。';
+      appendPlannerMessage(text,'ai',latencyMs);setCompanionResponse({stateName:'UNAVAILABLE',intent:'SYSTEM_ERROR',text,latencyMs});
       return;
     }
     state.request=pendingUnderstanding;
@@ -66,7 +67,7 @@ async function startCompanionPlanning(){
     const unresolved=TripRequirementsState.unresolved(state.normalizedTripRequirements),questions=pendingUnderstanding.travelRequirements?.clarifications||[];
     if(unresolved.length||questions.length){setCompanionResponse({stateName:'NEEDS_CONFIRMATION',intent:'NEEDS_CLARIFICATION',text:unresolved.length?'你的文字與手動設定有必須先解決的衝突。':'這個需求有關鍵資訊不足，補充後我就直接排。',questions:unresolved.map(item=>`請確認 ${item.field}：${item.textValue} 或 ${item.formValue}`).concat(questions).slice(0,3)});return}
     await printItineraryDraft(requestStarted);
-  }catch(error){setCompanionResponse({stateName:'UNAVAILABLE',intent:'SYSTEM_ERROR',text:'AI 旅行夥伴目前忙碌，暫時無法可靠理解這段內容。請稍後再試；你的文字、日期與其他設定都已保留。'});state.lastRouteError=String(error.message||error)}finally{$('#loadingOverlay').classList.add('hidden');setPlannerButtonBusy(false)}
+  }catch(error){const latencyMs=performance.now()-requestStarted,text='AI 旅行夥伴這次沒有完成回覆。你的文字已保留，可以直接重新送出。';appendPlannerMessage(text,'ai',latencyMs);setCompanionResponse({stateName:'UNAVAILABLE',intent:'SYSTEM_ERROR',text,latencyMs});state.lastRouteError=String(error.message||error)}finally{$('#loadingOverlay').classList.add('hidden');setPlannerButtonBusy(false)}
 }
 function stopKey(dayIndex,placeId){return`${state.tripDates[dayIndex]}::${placeId}`}
 function updateCompanionDashboard(){if(!state.itinerary.length)return;const day=state.itinerary[state.activeDay]||[],done=day.filter(p=>completedStops.has(stopKey(state.activeDay,p.id))).length,percent=day.length?Math.round(done/day.length*100):0;$('#todayCompletion').textContent=`${percent}%`;$('#companionGreeting').textContent=percent===100?'今天的旅程完成了，辛苦了！':new Date().getHours()<12?'早安，今天一起好好旅行。':'我還在，接下來也陪你走。';const steps=Number($('#todaySteps').value)||0;$('#todayAdvice').textContent=steps>=20000?'今天步數很高，建議先補水並休息20分鐘。':steps>=10000?'已走不少路，下一站前找地方坐一下吧。':`今天還有 ${Math.max(0,day.length-done)} 個地點，按自己的節奏前進。`;enhanceStopCards()}
