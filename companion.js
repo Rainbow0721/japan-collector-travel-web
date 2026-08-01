@@ -33,7 +33,7 @@ async function startCompanionPlanning(){
       return;
     }
     state.request=pendingUnderstanding;
-    const aiTripDays=Number(pendingUnderstanding.travelRequirements?.tripDays);if(Number.isInteger(aiTripDays)&&aiTripDays>=1&&aiTripDays<=31){const start=new Date(`${$('#tripStartDate').value}T00:00:00`);start.setDate(start.getDate()+aiTripDays-1);$('#tripEndDate').value=start.toISOString().slice(0,10);updateHolidayNotice()}
+    const aiTripDays=Number(pendingUnderstanding.travelRequirements?.tripDays);if(Number.isInteger(aiTripDays)&&aiTripDays>=1&&aiTripDays<=31){const start=new Date(`${$('#tripStartDate').value}T12:00:00Z`);start.setUTCDate(start.getUTCDate()+aiTripDays-1);$('#tripEndDate').value=start.toISOString().slice(0,10);updateHolidayNotice()}
     const requirements=pendingUnderstanding.travelRequirements;
     const constraints=requirements.dayConstraints||[],everyStart=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='EARLIEST_START'),everyEnd=constraints.find(item=>item.dayNumber==='EVERY'&&item.type==='LATEST_END');
     const senior=Boolean(requirements.mobilityProfile?.seniorPresent||(requirements.travelers?.seniors||[]).length);
