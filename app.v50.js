@@ -117,7 +117,7 @@ async function smartParseRequest(text){
     aiParser:async payload=>{
       if(!base)throw new Error('AI_GATEWAY_NOT_CONFIGURED');
       let lastError;
-      for(let attempt=1;attempt<=2;attempt++){
+      for(let attempt=1;attempt<=1;attempt++){
         const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
         try{
           const frontendStarted=performance.now();
@@ -132,7 +132,7 @@ async function smartParseRequest(text){
         }catch(error){
           lastError=error;
           const retryable=error?.name==='AbortError'||error?.retryable!==false;
-          if(attempt===2||!retryable)break;
+          if(attempt===1||!retryable)break;
         }finally{clearTimeout(timer)}
       }
       throw new Error(lastError?.name==='AbortError'?'AI_REQUEST_TIMEOUT':(lastError?.message||'AI_REQUEST_FAILED'));
@@ -240,7 +240,7 @@ async function applyAiItineraryCandidateV2(request,dates,knowledgePool){
   const collectionRequirements=(request.resolvedCollections||[]).map(collection=>({id:collection.id,name:collection.name,scope:collection.scope,requiredPlaceIds:collection.places.map(place=>place.id)}));
   const mealRequirements=foodPreferences.length?[{meal:'LUNCH',preferences:foodPreferences,required:true,durationMinutes:45}]:[],payload={requirements:request.aiRequirements||request.travelRequirements||{},dates,startTime:state.dayStart,endTime:state.dayEnd,candidates,relationships:typeof AsakusaP0!=='undefined'?AsakusaP0.RELATIONSHIPS:[],collectionRequirements,mealRequirements,useStrongModel:false};
   let lastError;
-  for(let attempt=1;attempt<=2;attempt++)try{
+  for(let attempt=1;attempt<=1;attempt++)try{
     const response=await fetch(`${base}/api/plan/generate`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});if(!response.ok)throw new Error(`HTTP ${response.status}`);
     const result=await response.json(),candidate=result.itineraryCandidate;if(!candidate||candidate.tripDays!==dates.length||candidate.days?.length!==dates.length)throw new Error('AI_DAY_COUNT_MISMATCH');
     const ordered=candidate.days.slice().sort((a,b)=>a.dayNumber-b.dayNumber);if(ordered.some((day,index)=>day.dayNumber!==index+1))throw new Error('AI_NON_SEQUENTIAL_DAYS');
@@ -248,7 +248,7 @@ async function applyAiItineraryCandidateV2(request,dates,knowledgePool){
     const mustIds=[...new Set([...(request.musts||[]),...collectionRequirements.flatMap(item=>item.requiredPlaceIds)])],selectedIds=new Set(mapped.flat().map(place=>place.id));if(mustIds.some(id=>!selectedIds.has(id)))throw new Error('AI_MISSING_MUST_OR_COLLECTION');if(mealRequirements.length&&!mapped.flat().some(matchesFood))throw new Error('AI_MISSING_REQUIRED_MEAL');
     state.itinerary=mapped;request.aiPlanMeta={...result.meta,attempts:attempt};return{ok:true,attempts:attempt};
   }catch(error){lastError=error}
-  request.aiPlanMeta={attempts:2,error:lastError?.message||'UNKNOWN'};return{ok:false,error:lastError?.message||'UNKNOWN',attempts:2};
+  request.aiPlanMeta={attempts:1,error:lastError?.message||'UNKNOWN'};return{ok:false,error:lastError?.message||'UNKNOWN',attempts:1};
 }
 
 async function generateItineraryV2(){
