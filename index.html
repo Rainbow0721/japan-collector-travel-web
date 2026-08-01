@@ -35,7 +35,7 @@
     <main>
       <section id="plannerView" class="view active">
         <div class="chat-first-home">
-          <div class="chat-first-intro">
+          <div class="chat-first-intro" aria-hidden="true">
             <span class="eyebrow">AI TRAVEL COMPANION</span>
             <h1>想怎麼玩日本？<br><em>直接告訴我。</em></h1>
             <p>一句話就可以開始。資訊不夠時，我只會追問真正影響行程的問題。</p>
@@ -48,9 +48,9 @@
             <label class="chat-prompt-label" for="tripPrompt">你的訊息</label>
             <textarea id="tripPrompt" rows="3" placeholder="例如：幫我排淺草一日遊，帶媽媽，不要太累"></textarea>
             <button class="primary-button" type="submit"><span>送出</span><b>→</b></button>
-            <button class="new-session-button" id="newRequirementSession" type="button">＋ 開始新需求</button>
-            <details id="plannerDetails" class="planner-details">
-              <summary>需要時再調整日期、時間、預算與同行者</summary>
+            <div class="planner-internal-defaults" aria-hidden="true">
+            <button id="newRequirementSession" type="button" tabindex="-1">開始新需求</button>
+            <div id="plannerDetails">
               <div class="quick-fields date-fields">
               <label>出發日期<input id="tripStartDate" type="date"></label>
               <label>回程日期<input id="tripEndDate" type="date"></label>
@@ -76,15 +76,15 @@
                 <button type="button" class="chip" data-value="stroller">嬰兒車</button>
               </div>
               </div>
-            </details>
-            <section id="companionResponse" class="companion-response hidden" aria-live="polite" aria-atomic="true">
+            </div>
+            <section id="companionResponse" class="companion-response hidden" aria-hidden="true">
               <small id="companionResponseLabel">AI 旅行夥伴</small>
               <small id="companionResponseLatency" class="response-latency"></small>
               <p id="companionResponseText"></p>
               <div id="companionResponseQuestions" class="companion-response-questions"></div>
             </section>
             <div id="plannerValidationError" class="planner-validation-error hidden" role="alert"></div>
-            <p class="form-note">不想選設定也沒關係；我會先採安全預設，只有必要時才追問。</p>
+            </div>
           </form>
         </div>
       </section>
@@ -254,7 +254,7 @@
   <script src="asakusa-p0.js?v=4"></script>
   <script src="popular-entity-registry.js?v=2"></script>
   <script src="app.v49.js"></script>
-  <script src="companion.v29.js"></script>
-  <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=61').catch(()=>{}));</script>
+  <script src="companion.v30.js"></script>
+  <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=62').catch(()=>{}));</script>
 </body>
 </html>
