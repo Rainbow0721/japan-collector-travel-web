@@ -43,11 +43,11 @@
 
           <form id="plannerForm" class="planner-card chat-planner-card">
             <div id="plannerConversation" class="planner-conversation" aria-live="polite">
-              <p class="planner-message ai-message">你好，我是你的日本 AI 旅伴。你可以說「幫我排淺草一日遊，帶媽媽，不要太累」；其餘資料我會在需要時再問。</p>
+              <p class="planner-message ai-message">AI 旅遊服務目前已依產品老闆指示全面暫停。此頁不會呼叫任何 AI API；恢復時間另行通知。</p>
             </div>
             <label class="chat-prompt-label" for="tripPrompt">你的訊息</label>
-            <textarea id="tripPrompt" rows="3" placeholder="例如：幫我排淺草一日遊，帶媽媽，不要太累"></textarea>
-            <button class="primary-button" type="submit"><span>送出</span><b>→</b></button>
+            <textarea id="tripPrompt" rows="3" placeholder="AI 功能已由產品負責人暫停" disabled></textarea>
+            <button class="primary-button" type="submit" disabled aria-disabled="true"><span>AI 已暫停</span><b>→</b></button>
             <div class="planner-internal-defaults" aria-hidden="true">
             <button id="newRequirementSession" type="button" tabindex="-1">開始新需求</button>
             <div id="plannerDetails">
@@ -202,7 +202,7 @@
     <div class="loader-mark">旅</div><h2>正在安排最順的東京動線</h2><p id="loadingText">理解你的旅行偏好…</p><div class="loading-line"><span></span></div>
   </div>
   <div id="dayRouteModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="dayRouteTitle"><div class="modal-backdrop" data-close-route></div><article class="place-detail-panel route-panel"><button id="closeDayRoute" class="modal-close">×</button><span class="detail-tier">TODAY ROUTE</span><h2 id="dayRouteTitle">今日動線</h2><p class="route-estimate-note">目前折線與交通時間為行程預覽估算；按「開始今天旅程」會交給 Apple Maps／Google Maps 取得即時路線。</p><div id="dayRouteMap" class="day-route-map"></div><div id="dayRouteLegs" class="day-route-legs"></div></article></div>
-  <aside id="aiChat" class="ai-chat hidden" aria-label="AI 旅行夥伴聊天室"><button id="toggleChat" class="ai-chat-toggle">旅</button><div class="ai-chat-panel"><header><div><b>AI 旅行夥伴</b><small>直接告訴我怎麼修改</small></div><button id="closeChat">×</button></header><div id="chatMessages" class="chat-messages"><p class="ai-message">行程完成後我還會留在這裡。你可以說「今天不要太累」、「增加購物」或「刪除某景點」。</p></div><form id="chatForm"><input id="chatInput" placeholder="例如：今天想吃燒肉"><button>送出</button></form></div></aside>
+  <aside id="aiChat" class="ai-chat hidden" aria-label="AI 旅行夥伴聊天室"><button id="toggleChat" class="ai-chat-toggle">旅</button><div class="ai-chat-panel"><header><div><b>AI 旅行夥伴</b><small>AI 功能已暫停</small></div><button id="closeChat">×</button></header><div id="chatMessages" class="chat-messages"><p class="ai-message">AI 旅遊服務目前已依產品老闆指示全面暫停。</p></div><form id="chatForm"><input id="chatInput" placeholder="AI 功能已暫停" disabled><button disabled aria-disabled="true">送出</button></form></div></aside>
   <div id="placeModal" class="place-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalPlaceName">
     <div class="modal-backdrop" data-close-modal></div>
     <article class="place-detail-panel">
@@ -241,7 +241,7 @@
   <script src="goshuin-guide.js?v=7"></script>
   <script src="collection-registry.v3.js"></script>
   <script src="vendor/leaflet/leaflet.js"></script>
-  <script src="config.js?v=2"></script>
+  <script src="config.js?v=3"></script>
   <script src="travel-quality.js?v=7"></script>
   <script src="planning-policy.js?v=3"></script>
   <script src="input-routing.js?v=6"></script>
@@ -254,7 +254,7 @@
   <script src="asakusa-p0.js?v=5"></script>
   <script src="popular-entity-registry.js?v=3"></script>
   <script src="app.v50.js?v=61"></script>
-  <script src="companion.v30.js?v=39"></script>
-  <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=78').catch(()=>{}));</script>
+  <script src="companion.v30.js?v=40"></script>
+  <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=79').catch(()=>{}));</script>
 </body>
 </html>
