@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="theme-color" content="#0d4d3f" />
+    <meta
+      name="description"
+      content="旅伴 P0 AI 入口視覺實驗；尚未連接 AI、Planner 或正式旅遊資料。"
+    />
+    <title>旅伴｜AI 旅伴入口 UI 實驗</title>
+    <link rel="stylesheet" href="./tokens.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./page.css" />
+    <script defer src="./copy.zh-Hant.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#companion-input">直接前往輸入欄</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#top" aria-label="旅伴首頁">
+          <span class="brand__mark" aria-hidden="true">旅</span>
+          <span class="brand__wording">
+            <strong class="brand__name">旅伴</strong>
+            <span class="brand__roman">TABI MATE</span>
+          </span>
+        </a>
+
+        <div class="site-header__meta">
+          <span class="experiment-badge">UI 實驗 · AI 未連接</span>
+          <span class="avatar" aria-hidden="true">R</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="hero__eyebrow" data-copy="eyebrow">AI TRAVEL COMPANION</p>
+        <h1 id="hero-title" class="hero__title">
+          <span data-copy="headlinePrimary">想怎麼玩日本？</span>
+          <span class="hero__accent" data-copy="headlineAccent">直接告訴我。</span>
+        </h1>
+        <p class="hero__description" data-copy="heroDescription">
+          一句話就可以開始。資訊不夠時，我只會追問真正影響行程的問題。
+        </p>
+      </section>
+
+      <section class="companion-panel" aria-label="AI 旅伴對話入口">
+        <p class="companion-intro" data-copy="intro">
+          你好，我是你的日本 AI 旅伴。你可以說「幫我排淺草一日遊，帶媽媽，不要太累」；其餘資料我會在需要時再問。
+        </p>
+
+        <div id="conversation-log" class="conversation-log" aria-live="polite" aria-relevant="additions"></div>
+
+        <form id="companion-form" class="companion-form" novalidate>
+          <label class="field-label" for="companion-input" data-copy="inputLabel">你的訊息</label>
+          <textarea
+            id="companion-input"
+            name="message"
+            rows="5"
+            maxlength="1200"
+            autocomplete="off"
+            enterkeyhint="send"
+            data-copy-placeholder="inputPlaceholder"
+            placeholder="例如：幫我排淺草一日遊，帶媽媽，不要太累"
+            aria-describedby="input-hint input-error"
+          ></textarea>
+          <p id="input-hint" class="sr-only">按 Enter 送出，Shift 加 Enter 換行。</p>
+          <p id="input-error" class="field-error" role="alert" hidden></p>
+          <button class="primary-button" type="submit">
+            <span data-copy="submitLabel">送出</span>
+            <span class="primary-button__arrow" aria-hidden="true">→</span>
+          </button>
+        </form>
+
+      </section>
+    </main>
+
+    <div class="floating-mark" aria-hidden="true">旅</div>
+  </body>
+</html>
